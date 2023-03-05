@@ -22,3 +22,6 @@ dist
 tsconfig.tsbuildinfo
 /.eslintrc.json
 !.jsii
+.gen
+.terraform
+cdktf.json
