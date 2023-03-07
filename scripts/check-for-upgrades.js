@@ -8,7 +8,7 @@ const actions = require("@actions/core");
 // the @cdktf/provider-generator package, too)
 // const { versionMatchesConstraint } = require('cdktf-cli/lib/dependencies/version-constraints');
 // set by the projen file that generates this script
-const CONSTRAINT = "0.0.0";
+const CONSTRAINT = "0.0.8";
 const FQ_PROVIDER_NAME = "awlsring/proxmox";
 (async function main() {
   if (await newerMatchingProviderVersionExists()) {

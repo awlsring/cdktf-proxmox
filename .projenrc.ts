@@ -6,7 +6,7 @@ const project = new AwlsringCdktfProviderLibrary({
   provider: {
     owner: 'awlsring',
     name: 'proxmox',
-    version: '0.0.0',
+    version: '0.0.8',
   },
   name: 'cdktf-proxmox',
   repositoryUrl: 'https://github.com/awlsring/cdktf-proxmox.git',
