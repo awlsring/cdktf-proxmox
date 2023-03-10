@@ -43,7 +43,8 @@
     "organization": false
   },
   "devDependencies": {
-    "@awlsring/projen-commons": "^0.0.59",
+    "@actions/core": "^1.1.0",
+    "@awlsring/projen-commons": "^0.0.60",
     "@types/jest": "^27",
     "@types/node": "^14",
     "@typescript-eslint/eslint-plugin": "^5",
@@ -51,6 +52,7 @@
     "cdktf": "0.14.3",
     "cdktf-cli": "^0.14.3",
     "constructs": "^10.1.52",
+    "dot-prop": "^5.2.0",
     "eslint": "^8",
     "eslint-import-resolver-node": "^0.3.7",
     "eslint-import-resolver-typescript": "^3.5.3",
