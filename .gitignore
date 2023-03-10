@@ -65,4 +65,4 @@ tsconfig.json
 .gen
 .terraform
 package-lock.json
-cdktf.json
+!cdktf.json

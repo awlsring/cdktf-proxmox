@@ -42,6 +42,7 @@
     "coverage",
     "!.projenrc.ts",
     "!projenrc/**/*.ts",
+    "src/base/*",
     "src/base/*"
   ],
   "rules": {
