@@ -1,8 +1,8 @@
 // https://www.terraform.io/docs/providers/proxmox/d/nodes
 // generated from terraform resource schema
 
-import * as cdktf from 'cdktf';
 import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
@@ -15,13 +15,13 @@ export interface DataProxmoxNodesConfig extends cdktf.TerraformMetaArguments {
 export interface DataProxmoxNodesFilters {
   /**
   * The name of the attribute to filter on.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/d/nodes#name DataProxmoxNodes#name}
   */
   readonly name: string;
   /**
   * The value(s) to be used in the filter.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/d/nodes#values DataProxmoxNodes#values}
   */
   readonly values: string[];
@@ -30,12 +30,12 @@ export interface DataProxmoxNodesFilters {
 export function dataProxmoxNodesFiltersToTerraform(struct?: DataProxmoxNodesFilters | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
-  };
+  }
 }
 
 export class DataProxmoxNodesFiltersOutputReference extends cdktf.ComplexObject {
@@ -75,10 +75,12 @@ export class DataProxmoxNodesFiltersOutputReference extends cdktf.ComplexObject 
       this.resolvableValue = undefined;
       this._name = undefined;
       this._values = undefined;
-    } else if (cdktf.Tokenization.isResolvable(value)) {
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._name = value.name;
@@ -87,7 +89,7 @@ export class DataProxmoxNodesFiltersOutputReference extends cdktf.ComplexObject 
   }
 
   // name - computed: false, optional: false, required: true
-  private _name?: string;
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -100,7 +102,7 @@ export class DataProxmoxNodesFiltersOutputReference extends cdktf.ComplexObject 
   }
 
   // values - computed: false, optional: false, required: true
-  private _values?: string[];
+  private _values?: string[]; 
   public get values() {
     return this.getListAttribute('values');
   }
@@ -114,7 +116,7 @@ export class DataProxmoxNodesFiltersOutputReference extends cdktf.ComplexObject 
 }
 
 export class DataProxmoxNodesFiltersList extends cdktf.ComplexList {
-  public internalValue? : DataProxmoxNodesFilters[] | cdktf.IResolvable;
+  public internalValue? : DataProxmoxNodesFilters[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -122,7 +124,7 @@ export class DataProxmoxNodesFiltersList extends cdktf.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
+    super(terraformResource, terraformAttribute, wrapsSet)
   }
 
   /**
@@ -138,10 +140,10 @@ export interface DataProxmoxNodesNodesDisks {
 export function dataProxmoxNodesNodesDisksToTerraform(struct?: DataProxmoxNodesNodesDisks): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-  };
+  }
 }
 
 export class DataProxmoxNodesNodesDisksOutputReference extends cdktf.ComplexObject {
@@ -166,7 +168,8 @@ export class DataProxmoxNodesNodesDisksOutputReference extends cdktf.ComplexObje
   public set internalValue(value: DataProxmoxNodesNodesDisks | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
@@ -215,7 +218,7 @@ export class DataProxmoxNodesNodesDisksList extends cdktf.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
+    super(terraformResource, terraformAttribute, wrapsSet)
   }
 
   /**
@@ -231,10 +234,10 @@ export interface DataProxmoxNodesNodes {
 export function dataProxmoxNodesNodesToTerraform(struct?: DataProxmoxNodesNodes): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-  };
+  }
 }
 
 export class DataProxmoxNodesNodesOutputReference extends cdktf.ComplexObject {
@@ -259,7 +262,8 @@ export class DataProxmoxNodesNodesOutputReference extends cdktf.ComplexObject {
   public set internalValue(value: DataProxmoxNodesNodes | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
@@ -270,7 +274,7 @@ export class DataProxmoxNodesNodesOutputReference extends cdktf.ComplexObject {
   }
 
   // disks - computed: true, optional: false, required: false
-  private _disks = new DataProxmoxNodesNodesDisksList(this, 'disks', false);
+  private _disks = new DataProxmoxNodesNodesDisksList(this, "disks", false);
   public get disks() {
     return this._disks;
   }
@@ -309,7 +313,7 @@ export class DataProxmoxNodesNodesList extends cdktf.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
+    super(terraformResource, terraformAttribute, wrapsSet)
   }
 
   /**
@@ -328,7 +332,7 @@ export class DataProxmoxNodes extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = 'proxmox_nodes';
+  public static readonly tfResourceType = "proxmox_nodes";
 
   // ===========
   // INITIALIZER
@@ -346,8 +350,8 @@ export class DataProxmoxNodes extends cdktf.TerraformDataSource {
       terraformResourceType: 'proxmox_nodes',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.8',
-        providerVersionConstraint: '~> 0.0.0',
+        providerVersion: '0.0.9',
+        providerVersionConstraint: '~> 0.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -355,7 +359,7 @@ export class DataProxmoxNodes extends cdktf.TerraformDataSource {
       lifecycle: config.lifecycle,
       provisioners: config.provisioners,
       connection: config.connection,
-      forEach: config.forEach,
+      forEach: config.forEach
     });
     this._filters.internalValue = config.filters;
   }
@@ -365,7 +369,7 @@ export class DataProxmoxNodes extends cdktf.TerraformDataSource {
   // ==========
 
   // filters - computed: false, optional: true, required: false
-  private _filters = new DataProxmoxNodesFiltersList(this, 'filters', false);
+  private _filters = new DataProxmoxNodesFiltersList(this, "filters", false);
   public get filters() {
     return this._filters;
   }
@@ -381,7 +385,7 @@ export class DataProxmoxNodes extends cdktf.TerraformDataSource {
   }
 
   // nodes - computed: true, optional: false, required: false
-  private _nodes = new DataProxmoxNodesNodesList(this, 'nodes', false);
+  private _nodes = new DataProxmoxNodesNodesList(this, "nodes", false);
   public get nodes() {
     return this._nodes;
   }

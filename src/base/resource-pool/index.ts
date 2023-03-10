@@ -1,21 +1,21 @@
 // https://www.terraform.io/docs/providers/proxmox/r/resource_pool
 // generated from terraform resource schema
 
-import * as cdktf from 'cdktf';
 import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
 export interface ResourcePoolConfig extends cdktf.TerraformMetaArguments {
   /**
   * Notes on the resource pool.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/resource_pool#comment ResourcePool#comment}
   */
   readonly comment?: string;
   /**
   * The id of the resource pool.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/resource_pool#id ResourcePool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -24,7 +24,7 @@ export interface ResourcePoolConfig extends cdktf.TerraformMetaArguments {
   readonly id: string;
   /**
   * Resources that are part of the resource pool.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/resource_pool#members ResourcePool#members}
   */
   readonly members?: ResourcePoolMembers[] | cdktf.IResolvable;
@@ -32,7 +32,7 @@ export interface ResourcePoolConfig extends cdktf.TerraformMetaArguments {
 export interface ResourcePoolMembers {
   /**
   * The id of the resource.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/resource_pool#id ResourcePool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -41,7 +41,7 @@ export interface ResourcePoolMembers {
   readonly id: string;
   /**
   * The type of the resource.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/resource_pool#type ResourcePool#type}
   */
   readonly type: string;
@@ -50,12 +50,12 @@ export interface ResourcePoolMembers {
 export function resourcePoolMembersToTerraform(struct?: ResourcePoolMembers | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     id: cdktf.stringToTerraform(struct!.id),
     type: cdktf.stringToTerraform(struct!.type),
-  };
+  }
 }
 
 export class ResourcePoolMembersOutputReference extends cdktf.ComplexObject {
@@ -95,10 +95,12 @@ export class ResourcePoolMembersOutputReference extends cdktf.ComplexObject {
       this.resolvableValue = undefined;
       this._id = undefined;
       this._type = undefined;
-    } else if (cdktf.Tokenization.isResolvable(value)) {
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._id = value.id;
@@ -107,7 +109,7 @@ export class ResourcePoolMembersOutputReference extends cdktf.ComplexObject {
   }
 
   // id - computed: false, optional: false, required: true
-  private _id?: string;
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
@@ -120,7 +122,7 @@ export class ResourcePoolMembersOutputReference extends cdktf.ComplexObject {
   }
 
   // type - computed: false, optional: false, required: true
-  private _type?: string;
+  private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
@@ -134,7 +136,7 @@ export class ResourcePoolMembersOutputReference extends cdktf.ComplexObject {
 }
 
 export class ResourcePoolMembersList extends cdktf.ComplexList {
-  public internalValue? : ResourcePoolMembers[] | cdktf.IResolvable;
+  public internalValue? : ResourcePoolMembers[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -142,7 +144,7 @@ export class ResourcePoolMembersList extends cdktf.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
+    super(terraformResource, terraformAttribute, wrapsSet)
   }
 
   /**
@@ -161,7 +163,7 @@ export class ResourcePool extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = 'proxmox_resource_pool';
+  public static readonly tfResourceType = "proxmox_resource_pool";
 
   // ===========
   // INITIALIZER
@@ -179,8 +181,8 @@ export class ResourcePool extends cdktf.TerraformResource {
       terraformResourceType: 'proxmox_resource_pool',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.8',
-        providerVersionConstraint: '~> 0.0.0',
+        providerVersion: '0.0.9',
+        providerVersionConstraint: '~> 0.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -188,7 +190,7 @@ export class ResourcePool extends cdktf.TerraformResource {
       lifecycle: config.lifecycle,
       provisioners: config.provisioners,
       connection: config.connection,
-      forEach: config.forEach,
+      forEach: config.forEach
     });
     this._comment = config.comment;
     this._id = config.id;
@@ -200,7 +202,7 @@ export class ResourcePool extends cdktf.TerraformResource {
   // ==========
 
   // comment - computed: false, optional: true, required: false
-  private _comment?: string;
+  private _comment?: string; 
   public get comment() {
     return this.getStringAttribute('comment');
   }
@@ -216,7 +218,7 @@ export class ResourcePool extends cdktf.TerraformResource {
   }
 
   // id - computed: false, optional: false, required: true
-  private _id?: string;
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
@@ -229,7 +231,7 @@ export class ResourcePool extends cdktf.TerraformResource {
   }
 
   // members - computed: false, optional: true, required: false
-  private _members = new ResourcePoolMembersList(this, 'members', false);
+  private _members = new ResourcePoolMembersList(this, "members", false);
   public get members() {
     return this._members;
   }

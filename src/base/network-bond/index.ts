@@ -1,81 +1,81 @@
 // https://www.terraform.io/docs/providers/proxmox/r/network_bond
 // generated from terraform resource schema
 
-import * as cdktf from 'cdktf';
 import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
 export interface NetworkBondConfig extends cdktf.TerraformMetaArguments {
   /**
   * If the bond is set to autostart.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/network_bond#autostart NetworkBond#autostart}
   */
   readonly autostart?: boolean | cdktf.IResolvable;
   /**
   * Primary interface on the bond.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/network_bond#bond_primary NetworkBond#bond_primary}
   */
   readonly bondPrimary?: string;
   /**
   * Comment in the bond.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/network_bond#comments NetworkBond#comments}
   */
   readonly comments?: string;
   /**
   * Hash policy used on the bond.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/network_bond#hash_policy NetworkBond#hash_policy}
   */
   readonly hashPolicy?: string;
   /**
   * List of interfaces on the bond.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/network_bond#interfaces NetworkBond#interfaces}
   */
   readonly interfaces: string[];
   /**
   * Information of the ipv4 address.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/network_bond#ipv4 NetworkBond#ipv4}
   */
   readonly ipv4?: NetworkBondIpv4 | cdktf.IResolvable;
   /**
   * The ipv4 gateway.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/network_bond#ipv4_gateway NetworkBond#ipv4_gateway}
   */
   readonly ipv4Gateway?: string;
   /**
   * Information of the ipv6 address.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/network_bond#ipv6 NetworkBond#ipv6}
   */
   readonly ipv6?: NetworkBondIpv6 | cdktf.IResolvable;
   /**
   * The ipv6 gateway.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/network_bond#ipv6_gateway NetworkBond#ipv6_gateway}
   */
   readonly ipv6Gateway?: string;
   /**
   * Mode of the bond.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/network_bond#mode NetworkBond#mode}
   */
   readonly mode: string;
   /**
   * The name of the bond.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/network_bond#name NetworkBond#name}
   */
   readonly name?: string;
   /**
   * The node the bond is on.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/network_bond#node NetworkBond#node}
   */
   readonly nodeAttribute: string;
@@ -94,12 +94,12 @@ export interface NetworkBondIpv4 {
 export function networkBondIpv4ToTerraform(struct?: NetworkBondIpv4 | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     address: cdktf.stringToTerraform(struct!.address),
     netmask: cdktf.stringToTerraform(struct!.netmask),
-  };
+  }
 }
 
 export class NetworkBondIpv4OutputReference extends cdktf.ComplexObject {
@@ -137,10 +137,12 @@ export class NetworkBondIpv4OutputReference extends cdktf.ComplexObject {
       this.resolvableValue = undefined;
       this._address = undefined;
       this._netmask = undefined;
-    } else if (cdktf.Tokenization.isResolvable(value)) {
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._address = value.address;
@@ -149,7 +151,7 @@ export class NetworkBondIpv4OutputReference extends cdktf.ComplexObject {
   }
 
   // address - computed: false, optional: true, required: false
-  private _address?: string;
+  private _address?: string; 
   public get address() {
     return this.getStringAttribute('address');
   }
@@ -165,7 +167,7 @@ export class NetworkBondIpv4OutputReference extends cdktf.ComplexObject {
   }
 
   // netmask - computed: false, optional: true, required: false
-  private _netmask?: string;
+  private _netmask?: string; 
   public get netmask() {
     return this.getStringAttribute('netmask');
   }
@@ -194,12 +196,12 @@ export interface NetworkBondIpv6 {
 export function networkBondIpv6ToTerraform(struct?: NetworkBondIpv6 | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     address: cdktf.stringToTerraform(struct!.address),
     netmask: cdktf.stringToTerraform(struct!.netmask),
-  };
+  }
 }
 
 export class NetworkBondIpv6OutputReference extends cdktf.ComplexObject {
@@ -237,10 +239,12 @@ export class NetworkBondIpv6OutputReference extends cdktf.ComplexObject {
       this.resolvableValue = undefined;
       this._address = undefined;
       this._netmask = undefined;
-    } else if (cdktf.Tokenization.isResolvable(value)) {
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._address = value.address;
@@ -249,7 +253,7 @@ export class NetworkBondIpv6OutputReference extends cdktf.ComplexObject {
   }
 
   // address - computed: false, optional: true, required: false
-  private _address?: string;
+  private _address?: string; 
   public get address() {
     return this.getStringAttribute('address');
   }
@@ -265,7 +269,7 @@ export class NetworkBondIpv6OutputReference extends cdktf.ComplexObject {
   }
 
   // netmask - computed: false, optional: true, required: false
-  private _netmask?: string;
+  private _netmask?: string; 
   public get netmask() {
     return this.getStringAttribute('netmask');
   }
@@ -289,7 +293,7 @@ export class NetworkBond extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = 'proxmox_network_bond';
+  public static readonly tfResourceType = "proxmox_network_bond";
 
   // ===========
   // INITIALIZER
@@ -307,8 +311,8 @@ export class NetworkBond extends cdktf.TerraformResource {
       terraformResourceType: 'proxmox_network_bond',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.8',
-        providerVersionConstraint: '~> 0.0.0',
+        providerVersion: '0.0.9',
+        providerVersionConstraint: '~> 0.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -316,7 +320,7 @@ export class NetworkBond extends cdktf.TerraformResource {
       lifecycle: config.lifecycle,
       provisioners: config.provisioners,
       connection: config.connection,
-      forEach: config.forEach,
+      forEach: config.forEach
     });
     this._autostart = config.autostart;
     this._bondPrimary = config.bondPrimary;
@@ -342,7 +346,7 @@ export class NetworkBond extends cdktf.TerraformResource {
   }
 
   // autostart - computed: false, optional: true, required: false
-  private _autostart?: boolean | cdktf.IResolvable;
+  private _autostart?: boolean | cdktf.IResolvable; 
   public get autostart() {
     return this.getBooleanAttribute('autostart');
   }
@@ -358,7 +362,7 @@ export class NetworkBond extends cdktf.TerraformResource {
   }
 
   // bond_primary - computed: false, optional: true, required: false
-  private _bondPrimary?: string;
+  private _bondPrimary?: string; 
   public get bondPrimary() {
     return this.getStringAttribute('bond_primary');
   }
@@ -374,7 +378,7 @@ export class NetworkBond extends cdktf.TerraformResource {
   }
 
   // comments - computed: false, optional: true, required: false
-  private _comments?: string;
+  private _comments?: string; 
   public get comments() {
     return this.getStringAttribute('comments');
   }
@@ -390,7 +394,7 @@ export class NetworkBond extends cdktf.TerraformResource {
   }
 
   // hash_policy - computed: false, optional: true, required: false
-  private _hashPolicy?: string;
+  private _hashPolicy?: string; 
   public get hashPolicy() {
     return this.getStringAttribute('hash_policy');
   }
@@ -411,7 +415,7 @@ export class NetworkBond extends cdktf.TerraformResource {
   }
 
   // interfaces - computed: false, optional: false, required: true
-  private _interfaces?: string[];
+  private _interfaces?: string[]; 
   public get interfaces() {
     return this.getListAttribute('interfaces');
   }
@@ -424,7 +428,7 @@ export class NetworkBond extends cdktf.TerraformResource {
   }
 
   // ipv4 - computed: false, optional: true, required: false
-  private _ipv4?: NetworkBondIpv4 | cdktf.IResolvable;
+  private _ipv4?: NetworkBondIpv4 | cdktf.IResolvable; 
   public get ipv4() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('ipv4');
@@ -441,7 +445,7 @@ export class NetworkBond extends cdktf.TerraformResource {
   }
 
   // ipv4_gateway - computed: false, optional: true, required: false
-  private _ipv4Gateway?: string;
+  private _ipv4Gateway?: string; 
   public get ipv4Gateway() {
     return this.getStringAttribute('ipv4_gateway');
   }
@@ -457,7 +461,7 @@ export class NetworkBond extends cdktf.TerraformResource {
   }
 
   // ipv6 - computed: false, optional: true, required: false
-  private _ipv6?: NetworkBondIpv6 | cdktf.IResolvable;
+  private _ipv6?: NetworkBondIpv6 | cdktf.IResolvable; 
   public get ipv6() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('ipv6');
@@ -474,7 +478,7 @@ export class NetworkBond extends cdktf.TerraformResource {
   }
 
   // ipv6_gateway - computed: false, optional: true, required: false
-  private _ipv6Gateway?: string;
+  private _ipv6Gateway?: string; 
   public get ipv6Gateway() {
     return this.getStringAttribute('ipv6_gateway');
   }
@@ -495,7 +499,7 @@ export class NetworkBond extends cdktf.TerraformResource {
   }
 
   // mode - computed: false, optional: false, required: true
-  private _mode?: string;
+  private _mode?: string; 
   public get mode() {
     return this.getStringAttribute('mode');
   }
@@ -508,7 +512,7 @@ export class NetworkBond extends cdktf.TerraformResource {
   }
 
   // name - computed: true, optional: true, required: false
-  private _name?: string;
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -524,7 +528,7 @@ export class NetworkBond extends cdktf.TerraformResource {
   }
 
   // node - computed: false, optional: false, required: true
-  private _node?: string;
+  private _node?: string; 
   public get nodeAttribute() {
     return this.getStringAttribute('node');
   }

@@ -1,21 +1,21 @@
 // https://www.terraform.io/docs/providers/proxmox/r/virtual_machine
 // generated from terraform resource schema
 
-import * as cdktf from 'cdktf';
 import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
 export interface VirtualMachineConfig extends cdktf.TerraformMetaArguments {
   /**
   * The agent configuration.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#agent VirtualMachine#agent}
   */
   readonly agent?: VirtualMachineAgent | cdktf.IResolvable;
   /**
   * The BIOS type.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#bios VirtualMachine#bios}
   */
   readonly bios?: string;
@@ -29,25 +29,25 @@ export interface VirtualMachineConfig extends cdktf.TerraformMetaArguments {
   readonly cloudInit?: VirtualMachineCloudInit | cdktf.IResolvable;
   /**
   * The CPU configuration.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#cpu VirtualMachine#cpu}
   */
   readonly cpu?: VirtualMachineCpu | cdktf.IResolvable;
   /**
   * The virtual machine description.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#description VirtualMachine#description}
   */
   readonly description?: string;
   /**
   * The terrafrom generated disks attached to the VM.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#disks VirtualMachine#disks}
   */
   readonly disks?: VirtualMachineDisks[] | cdktf.IResolvable;
   /**
   * The identifier of the virtual machine.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#id VirtualMachine#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -56,25 +56,25 @@ export interface VirtualMachineConfig extends cdktf.TerraformMetaArguments {
   readonly id?: number;
   /**
   * The operating system configuration.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#iso VirtualMachine#iso}
   */
   readonly iso?: VirtualMachineIso | cdktf.IResolvable;
   /**
   * The keyboard layout.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#keyboard_layout VirtualMachine#keyboard_layout}
   */
   readonly keyboardLayout?: string;
   /**
   * The arguments to pass to KVM.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#kvm_arguments VirtualMachine#kvm_arguments}
   */
   readonly kvmArguments?: string;
   /**
   * The machine type.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#machine_type VirtualMachine#machine_type}
   */
   readonly machineType?: string;
@@ -84,7 +84,7 @@ export interface VirtualMachineConfig extends cdktf.TerraformMetaArguments {
   readonly memory?: VirtualMachineMemory | cdktf.IResolvable;
   /**
   * The name of the virtual machine.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#name VirtualMachine#name}
   */
   readonly name?: string;
@@ -94,37 +94,37 @@ export interface VirtualMachineConfig extends cdktf.TerraformMetaArguments {
   readonly networkInterfaces?: VirtualMachineNetworkInterfaces[] | cdktf.IResolvable;
   /**
   * The node to create the virtual machine on.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#node VirtualMachine#node}
   */
   readonly nodeAttribute: string;
   /**
   * PCI devices passed through to the VM.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#pci_devices VirtualMachine#pci_devices}
   */
   readonly pciDevices?: VirtualMachinePciDevices[] | cdktf.IResolvable;
   /**
   * The resource pool the virtual machine is in.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#resource_pool VirtualMachine#resource_pool}
   */
   readonly resourcePool?: string;
   /**
   * Whether to start the virtual machine on creation.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#start_on_create VirtualMachine#start_on_create}
   */
   readonly startOnCreate?: boolean | cdktf.IResolvable;
   /**
   * Whether to start the virtual machine on node boot.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#start_on_node_boot VirtualMachine#start_on_node_boot}
   */
   readonly startOnNodeBoot?: boolean | cdktf.IResolvable;
   /**
   * The tags of the virtual machine.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#tags VirtualMachine#tags}
   */
   readonly tags?: string[];
@@ -134,7 +134,7 @@ export interface VirtualMachineConfig extends cdktf.TerraformMetaArguments {
   readonly timeouts?: VirtualMachineTimeouts | cdktf.IResolvable;
   /**
   * The operating system type.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#type VirtualMachine#type}
   */
   readonly type?: string;
@@ -142,19 +142,19 @@ export interface VirtualMachineConfig extends cdktf.TerraformMetaArguments {
 export interface VirtualMachineAgent {
   /**
   * Whether the agent is enabled.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#enabled VirtualMachine#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * The guest agent type.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#type VirtualMachine#type}
   */
   readonly type?: string;
   /**
   * Whether to use fstrim.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#use_fstrim VirtualMachine#use_fstrim}
   */
   readonly useFstrim?: boolean | cdktf.IResolvable;
@@ -163,13 +163,13 @@ export interface VirtualMachineAgent {
 export function virtualMachineAgentToTerraform(struct?: VirtualMachineAgent | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     type: cdktf.stringToTerraform(struct!.type),
     use_fstrim: cdktf.booleanToTerraform(struct!.useFstrim),
-  };
+  }
 }
 
 export class VirtualMachineAgentOutputReference extends cdktf.ComplexObject {
@@ -212,10 +212,12 @@ export class VirtualMachineAgentOutputReference extends cdktf.ComplexObject {
       this._enabled = undefined;
       this._type = undefined;
       this._useFstrim = undefined;
-    } else if (cdktf.Tokenization.isResolvable(value)) {
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._enabled = value.enabled;
@@ -225,7 +227,7 @@ export class VirtualMachineAgentOutputReference extends cdktf.ComplexObject {
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable;
+  private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
@@ -241,7 +243,7 @@ export class VirtualMachineAgentOutputReference extends cdktf.ComplexObject {
   }
 
   // type - computed: true, optional: true, required: false
-  private _type?: string;
+  private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
@@ -257,7 +259,7 @@ export class VirtualMachineAgentOutputReference extends cdktf.ComplexObject {
   }
 
   // use_fstrim - computed: true, optional: true, required: false
-  private _useFstrim?: boolean | cdktf.IResolvable;
+  private _useFstrim?: boolean | cdktf.IResolvable; 
   public get useFstrim() {
     return this.getBooleanAttribute('use_fstrim');
   }
@@ -275,19 +277,19 @@ export class VirtualMachineAgentOutputReference extends cdktf.ComplexObject {
 export interface VirtualMachineClone {
   /**
   * Whether to clone as a full or linked clone.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#full_clone VirtualMachine#full_clone}
   */
   readonly fullClone?: boolean | cdktf.IResolvable;
   /**
   * The identifier of the virtual machine or template to clone.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#source VirtualMachine#source}
   */
   readonly source: number;
   /**
   * The storage to place the clone on.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#storage VirtualMachine#storage}
   */
   readonly storage?: string;
@@ -296,13 +298,13 @@ export interface VirtualMachineClone {
 export function virtualMachineCloneToTerraform(struct?: VirtualMachineClone | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     full_clone: cdktf.booleanToTerraform(struct!.fullClone),
     source: cdktf.numberToTerraform(struct!.source),
     storage: cdktf.stringToTerraform(struct!.storage),
-  };
+  }
 }
 
 export class VirtualMachineCloneOutputReference extends cdktf.ComplexObject {
@@ -345,10 +347,12 @@ export class VirtualMachineCloneOutputReference extends cdktf.ComplexObject {
       this._fullClone = undefined;
       this._source = undefined;
       this._storage = undefined;
-    } else if (cdktf.Tokenization.isResolvable(value)) {
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._fullClone = value.fullClone;
@@ -358,7 +362,7 @@ export class VirtualMachineCloneOutputReference extends cdktf.ComplexObject {
   }
 
   // full_clone - computed: true, optional: true, required: false
-  private _fullClone?: boolean | cdktf.IResolvable;
+  private _fullClone?: boolean | cdktf.IResolvable; 
   public get fullClone() {
     return this.getBooleanAttribute('full_clone');
   }
@@ -374,7 +378,7 @@ export class VirtualMachineCloneOutputReference extends cdktf.ComplexObject {
   }
 
   // source - computed: false, optional: false, required: true
-  private _source?: number;
+  private _source?: number; 
   public get source() {
     return this.getNumberAttribute('source');
   }
@@ -387,7 +391,7 @@ export class VirtualMachineCloneOutputReference extends cdktf.ComplexObject {
   }
 
   // storage - computed: true, optional: true, required: false
-  private _storage?: string;
+  private _storage?: string; 
   public get storage() {
     return this.getStringAttribute('storage');
   }
@@ -405,13 +409,13 @@ export class VirtualMachineCloneOutputReference extends cdktf.ComplexObject {
 export interface VirtualMachineCloudInitDns {
   /**
   * The domain to use for the machine.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#domain VirtualMachine#domain}
   */
   readonly domain?: string;
   /**
   * The nameserver to use for the machine.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#nameserver VirtualMachine#nameserver}
   */
   readonly nameserver?: string;
@@ -420,12 +424,12 @@ export interface VirtualMachineCloudInitDns {
 export function virtualMachineCloudInitDnsToTerraform(struct?: VirtualMachineCloudInitDns | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     domain: cdktf.stringToTerraform(struct!.domain),
     nameserver: cdktf.stringToTerraform(struct!.nameserver),
-  };
+  }
 }
 
 export class VirtualMachineCloudInitDnsOutputReference extends cdktf.ComplexObject {
@@ -463,10 +467,12 @@ export class VirtualMachineCloudInitDnsOutputReference extends cdktf.ComplexObje
       this.resolvableValue = undefined;
       this._domain = undefined;
       this._nameserver = undefined;
-    } else if (cdktf.Tokenization.isResolvable(value)) {
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._domain = value.domain;
@@ -475,7 +481,7 @@ export class VirtualMachineCloudInitDnsOutputReference extends cdktf.ComplexObje
   }
 
   // domain - computed: false, optional: true, required: false
-  private _domain?: string;
+  private _domain?: string; 
   public get domain() {
     return this.getStringAttribute('domain');
   }
@@ -491,7 +497,7 @@ export class VirtualMachineCloudInitDnsOutputReference extends cdktf.ComplexObje
   }
 
   // nameserver - computed: false, optional: true, required: false
-  private _nameserver?: string;
+  private _nameserver?: string; 
   public get nameserver() {
     return this.getStringAttribute('nameserver');
   }
@@ -509,25 +515,25 @@ export class VirtualMachineCloudInitDnsOutputReference extends cdktf.ComplexObje
 export interface VirtualMachineCloudInitIpV4 {
   /**
   * The IP address to use for the machine.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#address VirtualMachine#address}
   */
   readonly address?: string;
   /**
   * Whether to use DHCP to get the IP address.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#dhcp VirtualMachine#dhcp}
   */
   readonly dhcp?: boolean | cdktf.IResolvable;
   /**
   * The gateway to use for the machine.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#gateway VirtualMachine#gateway}
   */
   readonly gateway?: string;
   /**
   * The IP address netmask to use for the machine.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#netmask VirtualMachine#netmask}
   */
   readonly netmask?: string;
@@ -536,14 +542,14 @@ export interface VirtualMachineCloudInitIpV4 {
 export function virtualMachineCloudInitIpV4ToTerraform(struct?: VirtualMachineCloudInitIpV4 | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     address: cdktf.stringToTerraform(struct!.address),
     dhcp: cdktf.booleanToTerraform(struct!.dhcp),
     gateway: cdktf.stringToTerraform(struct!.gateway),
     netmask: cdktf.stringToTerraform(struct!.netmask),
-  };
+  }
 }
 
 export class VirtualMachineCloudInitIpV4OutputReference extends cdktf.ComplexObject {
@@ -591,10 +597,12 @@ export class VirtualMachineCloudInitIpV4OutputReference extends cdktf.ComplexObj
       this._dhcp = undefined;
       this._gateway = undefined;
       this._netmask = undefined;
-    } else if (cdktf.Tokenization.isResolvable(value)) {
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._address = value.address;
@@ -605,7 +613,7 @@ export class VirtualMachineCloudInitIpV4OutputReference extends cdktf.ComplexObj
   }
 
   // address - computed: false, optional: true, required: false
-  private _address?: string;
+  private _address?: string; 
   public get address() {
     return this.getStringAttribute('address');
   }
@@ -621,7 +629,7 @@ export class VirtualMachineCloudInitIpV4OutputReference extends cdktf.ComplexObj
   }
 
   // dhcp - computed: true, optional: true, required: false
-  private _dhcp?: boolean | cdktf.IResolvable;
+  private _dhcp?: boolean | cdktf.IResolvable; 
   public get dhcp() {
     return this.getBooleanAttribute('dhcp');
   }
@@ -637,7 +645,7 @@ export class VirtualMachineCloudInitIpV4OutputReference extends cdktf.ComplexObj
   }
 
   // gateway - computed: false, optional: true, required: false
-  private _gateway?: string;
+  private _gateway?: string; 
   public get gateway() {
     return this.getStringAttribute('gateway');
   }
@@ -653,7 +661,7 @@ export class VirtualMachineCloudInitIpV4OutputReference extends cdktf.ComplexObj
   }
 
   // netmask - computed: false, optional: true, required: false
-  private _netmask?: string;
+  private _netmask?: string; 
   public get netmask() {
     return this.getStringAttribute('netmask');
   }
@@ -671,25 +679,25 @@ export class VirtualMachineCloudInitIpV4OutputReference extends cdktf.ComplexObj
 export interface VirtualMachineCloudInitIpV6 {
   /**
   * The IP address to use for the machine.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#address VirtualMachine#address}
   */
   readonly address?: string;
   /**
   * Whether to use DHCP to get the IP address.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#dhcp VirtualMachine#dhcp}
   */
   readonly dhcp?: boolean | cdktf.IResolvable;
   /**
   * The gateway to use for the machine.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#gateway VirtualMachine#gateway}
   */
   readonly gateway?: string;
   /**
   * The IP address netmask to use for the machine.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#netmask VirtualMachine#netmask}
   */
   readonly netmask?: string;
@@ -698,14 +706,14 @@ export interface VirtualMachineCloudInitIpV6 {
 export function virtualMachineCloudInitIpV6ToTerraform(struct?: VirtualMachineCloudInitIpV6 | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     address: cdktf.stringToTerraform(struct!.address),
     dhcp: cdktf.booleanToTerraform(struct!.dhcp),
     gateway: cdktf.stringToTerraform(struct!.gateway),
     netmask: cdktf.stringToTerraform(struct!.netmask),
-  };
+  }
 }
 
 export class VirtualMachineCloudInitIpV6OutputReference extends cdktf.ComplexObject {
@@ -753,10 +761,12 @@ export class VirtualMachineCloudInitIpV6OutputReference extends cdktf.ComplexObj
       this._dhcp = undefined;
       this._gateway = undefined;
       this._netmask = undefined;
-    } else if (cdktf.Tokenization.isResolvable(value)) {
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._address = value.address;
@@ -767,7 +777,7 @@ export class VirtualMachineCloudInitIpV6OutputReference extends cdktf.ComplexObj
   }
 
   // address - computed: false, optional: true, required: false
-  private _address?: string;
+  private _address?: string; 
   public get address() {
     return this.getStringAttribute('address');
   }
@@ -783,7 +793,7 @@ export class VirtualMachineCloudInitIpV6OutputReference extends cdktf.ComplexObj
   }
 
   // dhcp - computed: true, optional: true, required: false
-  private _dhcp?: boolean | cdktf.IResolvable;
+  private _dhcp?: boolean | cdktf.IResolvable; 
   public get dhcp() {
     return this.getBooleanAttribute('dhcp');
   }
@@ -799,7 +809,7 @@ export class VirtualMachineCloudInitIpV6OutputReference extends cdktf.ComplexObj
   }
 
   // gateway - computed: false, optional: true, required: false
-  private _gateway?: string;
+  private _gateway?: string; 
   public get gateway() {
     return this.getStringAttribute('gateway');
   }
@@ -815,7 +825,7 @@ export class VirtualMachineCloudInitIpV6OutputReference extends cdktf.ComplexObj
   }
 
   // netmask - computed: false, optional: true, required: false
-  private _netmask?: string;
+  private _netmask?: string; 
   public get netmask() {
     return this.getStringAttribute('netmask');
   }
@@ -833,7 +843,7 @@ export class VirtualMachineCloudInitIpV6OutputReference extends cdktf.ComplexObj
 export interface VirtualMachineCloudInitIp {
   /**
   * The position of the network interface in the VM as an int. Used to determine the interface name (net0, net1, etc).
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#position VirtualMachine#position}
   */
   readonly position: number;
@@ -850,13 +860,13 @@ export interface VirtualMachineCloudInitIp {
 export function virtualMachineCloudInitIpToTerraform(struct?: VirtualMachineCloudInitIp | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     position: cdktf.numberToTerraform(struct!.position),
     v4: virtualMachineCloudInitIpV4ToTerraform(struct!.v4),
     v6: virtualMachineCloudInitIpV6ToTerraform(struct!.v6),
-  };
+  }
 }
 
 export class VirtualMachineCloudInitIpOutputReference extends cdktf.ComplexObject {
@@ -901,10 +911,12 @@ export class VirtualMachineCloudInitIpOutputReference extends cdktf.ComplexObjec
       this._position = undefined;
       this._v4.internalValue = undefined;
       this._v6.internalValue = undefined;
-    } else if (cdktf.Tokenization.isResolvable(value)) {
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._position = value.position;
@@ -914,7 +926,7 @@ export class VirtualMachineCloudInitIpOutputReference extends cdktf.ComplexObjec
   }
 
   // position - computed: false, optional: false, required: true
-  private _position?: number;
+  private _position?: number; 
   public get position() {
     return this.getNumberAttribute('position');
   }
@@ -927,7 +939,7 @@ export class VirtualMachineCloudInitIpOutputReference extends cdktf.ComplexObjec
   }
 
   // v4 - computed: false, optional: true, required: false
-  private _v4 = new VirtualMachineCloudInitIpV4OutputReference(this, 'v4');
+  private _v4 = new VirtualMachineCloudInitIpV4OutputReference(this, "v4");
   public get v4() {
     return this._v4;
   }
@@ -943,7 +955,7 @@ export class VirtualMachineCloudInitIpOutputReference extends cdktf.ComplexObjec
   }
 
   // v6 - computed: false, optional: true, required: false
-  private _v6 = new VirtualMachineCloudInitIpV6OutputReference(this, 'v6');
+  private _v6 = new VirtualMachineCloudInitIpV6OutputReference(this, "v6");
   public get v6() {
     return this._v6;
   }
@@ -960,7 +972,7 @@ export class VirtualMachineCloudInitIpOutputReference extends cdktf.ComplexObjec
 }
 
 export class VirtualMachineCloudInitIpList extends cdktf.ComplexList {
-  public internalValue? : VirtualMachineCloudInitIp[] | cdktf.IResolvable;
+  public internalValue? : VirtualMachineCloudInitIp[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -968,7 +980,7 @@ export class VirtualMachineCloudInitIpList extends cdktf.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
+    super(terraformResource, terraformAttribute, wrapsSet)
   }
 
   /**
@@ -981,19 +993,19 @@ export class VirtualMachineCloudInitIpList extends cdktf.ComplexList {
 export interface VirtualMachineCloudInitUser {
   /**
   * The name of the user.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#name VirtualMachine#name}
   */
   readonly name: string;
   /**
   * The password of the user.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#password VirtualMachine#password}
   */
   readonly password?: string;
   /**
   * The public ssh keys of the user.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#public_keys VirtualMachine#public_keys}
   */
   readonly publicKeys?: string[];
@@ -1002,13 +1014,13 @@ export interface VirtualMachineCloudInitUser {
 export function virtualMachineCloudInitUserToTerraform(struct?: VirtualMachineCloudInitUser | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
     password: cdktf.stringToTerraform(struct!.password),
     public_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.publicKeys),
-  };
+  }
 }
 
 export class VirtualMachineCloudInitUserOutputReference extends cdktf.ComplexObject {
@@ -1051,10 +1063,12 @@ export class VirtualMachineCloudInitUserOutputReference extends cdktf.ComplexObj
       this._name = undefined;
       this._password = undefined;
       this._publicKeys = undefined;
-    } else if (cdktf.Tokenization.isResolvable(value)) {
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._name = value.name;
@@ -1064,7 +1078,7 @@ export class VirtualMachineCloudInitUserOutputReference extends cdktf.ComplexObj
   }
 
   // name - computed: false, optional: false, required: true
-  private _name?: string;
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -1077,7 +1091,7 @@ export class VirtualMachineCloudInitUserOutputReference extends cdktf.ComplexObj
   }
 
   // password - computed: false, optional: true, required: false
-  private _password?: string;
+  private _password?: string; 
   public get password() {
     return this.getStringAttribute('password');
   }
@@ -1093,7 +1107,7 @@ export class VirtualMachineCloudInitUserOutputReference extends cdktf.ComplexObj
   }
 
   // public_keys - computed: false, optional: true, required: false
-  private _publicKeys?: string[];
+  private _publicKeys?: string[]; 
   public get publicKeys() {
     return cdktf.Fn.tolist(this.getListAttribute('public_keys'));
   }
@@ -1126,13 +1140,13 @@ export interface VirtualMachineCloudInit {
 export function virtualMachineCloudInitToTerraform(struct?: VirtualMachineCloudInit | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     dns: virtualMachineCloudInitDnsToTerraform(struct!.dns),
     ip: cdktf.listMapper(virtualMachineCloudInitIpToTerraform, false)(struct!.ip),
     user: virtualMachineCloudInitUserToTerraform(struct!.user),
-  };
+  }
 }
 
 export class VirtualMachineCloudInitOutputReference extends cdktf.ComplexObject {
@@ -1175,10 +1189,12 @@ export class VirtualMachineCloudInitOutputReference extends cdktf.ComplexObject 
       this._dns.internalValue = undefined;
       this._ip.internalValue = undefined;
       this._user.internalValue = undefined;
-    } else if (cdktf.Tokenization.isResolvable(value)) {
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._dns.internalValue = value.dns;
@@ -1188,7 +1204,7 @@ export class VirtualMachineCloudInitOutputReference extends cdktf.ComplexObject 
   }
 
   // dns - computed: false, optional: true, required: false
-  private _dns = new VirtualMachineCloudInitDnsOutputReference(this, 'dns');
+  private _dns = new VirtualMachineCloudInitDnsOutputReference(this, "dns");
   public get dns() {
     return this._dns;
   }
@@ -1204,7 +1220,7 @@ export class VirtualMachineCloudInitOutputReference extends cdktf.ComplexObject 
   }
 
   // ip - computed: false, optional: true, required: false
-  private _ip = new VirtualMachineCloudInitIpList(this, 'ip', true);
+  private _ip = new VirtualMachineCloudInitIpList(this, "ip", true);
   public get ip() {
     return this._ip;
   }
@@ -1220,7 +1236,7 @@ export class VirtualMachineCloudInitOutputReference extends cdktf.ComplexObject 
   }
 
   // user - computed: false, optional: true, required: false
-  private _user = new VirtualMachineCloudInitUserOutputReference(this, 'user');
+  private _user = new VirtualMachineCloudInitUserOutputReference(this, "user");
   public get user() {
     return this._user;
   }
@@ -1238,25 +1254,25 @@ export class VirtualMachineCloudInitOutputReference extends cdktf.ComplexObject 
 export interface VirtualMachineComputedDisksSpeedLimits {
   /**
   * The read speed limit in bytes per second.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#read VirtualMachine#read}
   */
   readonly read?: number;
   /**
   * The read burstable speed limit in bytes per second.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#read_burstable VirtualMachine#read_burstable}
   */
   readonly readBurstable?: number;
   /**
   * The write speed limit in bytes per second.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#write VirtualMachine#write}
   */
   readonly write?: number;
   /**
   * The write burstable speed limit in bytes per second.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#write_burstable VirtualMachine#write_burstable}
   */
   readonly writeBurstable?: number;
@@ -1265,14 +1281,14 @@ export interface VirtualMachineComputedDisksSpeedLimits {
 export function virtualMachineComputedDisksSpeedLimitsToTerraform(struct?: VirtualMachineComputedDisksSpeedLimits | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     read: cdktf.numberToTerraform(struct!.read),
     read_burstable: cdktf.numberToTerraform(struct!.readBurstable),
     write: cdktf.numberToTerraform(struct!.write),
     write_burstable: cdktf.numberToTerraform(struct!.writeBurstable),
-  };
+  }
 }
 
 export class VirtualMachineComputedDisksSpeedLimitsOutputReference extends cdktf.ComplexObject {
@@ -1320,10 +1336,12 @@ export class VirtualMachineComputedDisksSpeedLimitsOutputReference extends cdktf
       this._readBurstable = undefined;
       this._write = undefined;
       this._writeBurstable = undefined;
-    } else if (cdktf.Tokenization.isResolvable(value)) {
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._read = value.read;
@@ -1334,7 +1352,7 @@ export class VirtualMachineComputedDisksSpeedLimitsOutputReference extends cdktf
   }
 
   // read - computed: true, optional: true, required: false
-  private _read?: number;
+  private _read?: number; 
   public get read() {
     return this.getNumberAttribute('read');
   }
@@ -1350,7 +1368,7 @@ export class VirtualMachineComputedDisksSpeedLimitsOutputReference extends cdktf
   }
 
   // read_burstable - computed: true, optional: true, required: false
-  private _readBurstable?: number;
+  private _readBurstable?: number; 
   public get readBurstable() {
     return this.getNumberAttribute('read_burstable');
   }
@@ -1366,7 +1384,7 @@ export class VirtualMachineComputedDisksSpeedLimitsOutputReference extends cdktf
   }
 
   // write - computed: true, optional: true, required: false
-  private _write?: number;
+  private _write?: number; 
   public get write() {
     return this.getNumberAttribute('write');
   }
@@ -1382,7 +1400,7 @@ export class VirtualMachineComputedDisksSpeedLimitsOutputReference extends cdktf
   }
 
   // write_burstable - computed: true, optional: true, required: false
-  private _writeBurstable?: number;
+  private _writeBurstable?: number; 
   public get writeBurstable() {
     return this.getNumberAttribute('write_burstable');
   }
@@ -1400,55 +1418,55 @@ export class VirtualMachineComputedDisksSpeedLimitsOutputReference extends cdktf
 export interface VirtualMachineComputedDisks {
   /**
   * Whether the disk has discard enabled.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#discard VirtualMachine#discard}
   */
   readonly discard?: boolean | cdktf.IResolvable;
   /**
   * The file format of the disk.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#file_format VirtualMachine#file_format}
   */
   readonly fileFormat?: string;
   /**
   * The type of the disk.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#interface_type VirtualMachine#interface_type}
   */
   readonly interfaceType: string;
   /**
   * The position of the disk. (0, 1, 2, etc.) This is combined with the `interface_type` to determine the disk name.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#position VirtualMachine#position}
   */
   readonly position: number;
   /**
   * The size of the disk in GiB.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#size VirtualMachine#size}
   */
   readonly size: number;
   /**
   * The speed limits of the disk. If not set, no speed limitations are applied.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#speed_limits VirtualMachine#speed_limits}
   */
   readonly speedLimits?: VirtualMachineComputedDisksSpeedLimits | cdktf.IResolvable;
   /**
   * Whether to use SSD emulation. conflicts with virtio disk type.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#ssd_emulation VirtualMachine#ssd_emulation}
   */
   readonly ssdEmulation?: boolean | cdktf.IResolvable;
   /**
   * The storage the disk is on.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#storage VirtualMachine#storage}
   */
   readonly storage: string;
   /**
   * Whether to use an iothread for the disk.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#use_iothread VirtualMachine#use_iothread}
   */
   readonly useIothread?: boolean | cdktf.IResolvable;
@@ -1457,7 +1475,7 @@ export interface VirtualMachineComputedDisks {
 export function virtualMachineComputedDisksToTerraform(struct?: VirtualMachineComputedDisks): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     discard: cdktf.booleanToTerraform(struct!.discard),
@@ -1469,7 +1487,7 @@ export function virtualMachineComputedDisksToTerraform(struct?: VirtualMachineCo
     ssd_emulation: cdktf.booleanToTerraform(struct!.ssdEmulation),
     storage: cdktf.stringToTerraform(struct!.storage),
     use_iothread: cdktf.booleanToTerraform(struct!.useIothread),
-  };
+  }
 }
 
 export class VirtualMachineComputedDisksOutputReference extends cdktf.ComplexObject {
@@ -1539,7 +1557,8 @@ export class VirtualMachineComputedDisksOutputReference extends cdktf.ComplexObj
       this._ssdEmulation = undefined;
       this._storage = undefined;
       this._useIothread = undefined;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._discard = value.discard;
       this._fileFormat = value.fileFormat;
@@ -1554,7 +1573,7 @@ export class VirtualMachineComputedDisksOutputReference extends cdktf.ComplexObj
   }
 
   // discard - computed: true, optional: true, required: false
-  private _discard?: boolean | cdktf.IResolvable;
+  private _discard?: boolean | cdktf.IResolvable; 
   public get discard() {
     return this.getBooleanAttribute('discard');
   }
@@ -1570,7 +1589,7 @@ export class VirtualMachineComputedDisksOutputReference extends cdktf.ComplexObj
   }
 
   // file_format - computed: true, optional: true, required: false
-  private _fileFormat?: string;
+  private _fileFormat?: string; 
   public get fileFormat() {
     return this.getStringAttribute('file_format');
   }
@@ -1586,7 +1605,7 @@ export class VirtualMachineComputedDisksOutputReference extends cdktf.ComplexObj
   }
 
   // interface_type - computed: true, optional: false, required: true
-  private _interfaceType?: string;
+  private _interfaceType?: string; 
   public get interfaceType() {
     return this.getStringAttribute('interface_type');
   }
@@ -1599,7 +1618,7 @@ export class VirtualMachineComputedDisksOutputReference extends cdktf.ComplexObj
   }
 
   // position - computed: true, optional: false, required: true
-  private _position?: number;
+  private _position?: number; 
   public get position() {
     return this.getNumberAttribute('position');
   }
@@ -1612,7 +1631,7 @@ export class VirtualMachineComputedDisksOutputReference extends cdktf.ComplexObj
   }
 
   // size - computed: true, optional: false, required: true
-  private _size?: number;
+  private _size?: number; 
   public get size() {
     return this.getNumberAttribute('size');
   }
@@ -1625,7 +1644,7 @@ export class VirtualMachineComputedDisksOutputReference extends cdktf.ComplexObj
   }
 
   // speed_limits - computed: true, optional: true, required: false
-  private _speedLimits = new VirtualMachineComputedDisksSpeedLimitsOutputReference(this, 'speed_limits');
+  private _speedLimits = new VirtualMachineComputedDisksSpeedLimitsOutputReference(this, "speed_limits");
   public get speedLimits() {
     return this._speedLimits;
   }
@@ -1641,7 +1660,7 @@ export class VirtualMachineComputedDisksOutputReference extends cdktf.ComplexObj
   }
 
   // ssd_emulation - computed: true, optional: true, required: false
-  private _ssdEmulation?: boolean | cdktf.IResolvable;
+  private _ssdEmulation?: boolean | cdktf.IResolvable; 
   public get ssdEmulation() {
     return this.getBooleanAttribute('ssd_emulation');
   }
@@ -1657,7 +1676,7 @@ export class VirtualMachineComputedDisksOutputReference extends cdktf.ComplexObj
   }
 
   // storage - computed: true, optional: false, required: true
-  private _storage?: string;
+  private _storage?: string; 
   public get storage() {
     return this.getStringAttribute('storage');
   }
@@ -1670,7 +1689,7 @@ export class VirtualMachineComputedDisksOutputReference extends cdktf.ComplexObj
   }
 
   // use_iothread - computed: true, optional: true, required: false
-  private _useIothread?: boolean | cdktf.IResolvable;
+  private _useIothread?: boolean | cdktf.IResolvable; 
   public get useIothread() {
     return this.getBooleanAttribute('use_iothread');
   }
@@ -1687,7 +1706,7 @@ export class VirtualMachineComputedDisksOutputReference extends cdktf.ComplexObj
 }
 
 export class VirtualMachineComputedDisksList extends cdktf.ComplexList {
-  public internalValue? : VirtualMachineComputedDisks[] | cdktf.IResolvable;
+  public internalValue? : VirtualMachineComputedDisks[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -1695,7 +1714,7 @@ export class VirtualMachineComputedDisksList extends cdktf.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
+    super(terraformResource, terraformAttribute, wrapsSet)
   }
 
   /**
@@ -1708,55 +1727,55 @@ export class VirtualMachineComputedDisksList extends cdktf.ComplexList {
 export interface VirtualMachineComputedNetworkInterfaces {
   /**
   * The bridge the network interface is on.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#bridge VirtualMachine#bridge}
   */
   readonly bridge: string;
   /**
   * Whether the network interface is enabled.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#enabled VirtualMachine#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * The MAC address of the network interface.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#mac_address VirtualMachine#mac_address}
   */
   readonly macAddress?: string;
   /**
   * The model of the network interface.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#model VirtualMachine#model}
   */
   readonly model?: string;
   /**
   * The MTU of the network interface. Only valid for virtio.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#mtu VirtualMachine#mtu}
   */
   readonly mtu?: number;
   /**
   * The position of the network interface in the VM as an int. Used to determine the interface name (net0, net1, etc).
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#position VirtualMachine#position}
   */
   readonly position: number;
   /**
   * The rate limit of the network interface in megabytes per second.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#rate_limit VirtualMachine#rate_limit}
   */
   readonly rateLimit?: number;
   /**
   * Whether the firewall for the network interface is enabled.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#use_firewall VirtualMachine#use_firewall}
   */
   readonly useFirewall?: boolean | cdktf.IResolvable;
   /**
   * The VLAN tag of the network interface.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#vlan VirtualMachine#vlan}
   */
   readonly vlan?: number;
@@ -1765,7 +1784,7 @@ export interface VirtualMachineComputedNetworkInterfaces {
 export function virtualMachineComputedNetworkInterfacesToTerraform(struct?: VirtualMachineComputedNetworkInterfaces): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     bridge: cdktf.stringToTerraform(struct!.bridge),
@@ -1777,7 +1796,7 @@ export function virtualMachineComputedNetworkInterfacesToTerraform(struct?: Virt
     rate_limit: cdktf.numberToTerraform(struct!.rateLimit),
     use_firewall: cdktf.booleanToTerraform(struct!.useFirewall),
     vlan: cdktf.numberToTerraform(struct!.vlan),
-  };
+  }
 }
 
 export class VirtualMachineComputedNetworkInterfacesOutputReference extends cdktf.ComplexObject {
@@ -1847,7 +1866,8 @@ export class VirtualMachineComputedNetworkInterfacesOutputReference extends cdkt
       this._rateLimit = undefined;
       this._useFirewall = undefined;
       this._vlan = undefined;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._bridge = value.bridge;
       this._enabled = value.enabled;
@@ -1862,7 +1882,7 @@ export class VirtualMachineComputedNetworkInterfacesOutputReference extends cdkt
   }
 
   // bridge - computed: true, optional: false, required: true
-  private _bridge?: string;
+  private _bridge?: string; 
   public get bridge() {
     return this.getStringAttribute('bridge');
   }
@@ -1875,7 +1895,7 @@ export class VirtualMachineComputedNetworkInterfacesOutputReference extends cdkt
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable;
+  private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
@@ -1891,7 +1911,7 @@ export class VirtualMachineComputedNetworkInterfacesOutputReference extends cdkt
   }
 
   // mac_address - computed: true, optional: true, required: false
-  private _macAddress?: string;
+  private _macAddress?: string; 
   public get macAddress() {
     return this.getStringAttribute('mac_address');
   }
@@ -1907,7 +1927,7 @@ export class VirtualMachineComputedNetworkInterfacesOutputReference extends cdkt
   }
 
   // model - computed: true, optional: true, required: false
-  private _model?: string;
+  private _model?: string; 
   public get model() {
     return this.getStringAttribute('model');
   }
@@ -1923,7 +1943,7 @@ export class VirtualMachineComputedNetworkInterfacesOutputReference extends cdkt
   }
 
   // mtu - computed: true, optional: true, required: false
-  private _mtu?: number;
+  private _mtu?: number; 
   public get mtu() {
     return this.getNumberAttribute('mtu');
   }
@@ -1939,7 +1959,7 @@ export class VirtualMachineComputedNetworkInterfacesOutputReference extends cdkt
   }
 
   // position - computed: true, optional: false, required: true
-  private _position?: number;
+  private _position?: number; 
   public get position() {
     return this.getNumberAttribute('position');
   }
@@ -1952,7 +1972,7 @@ export class VirtualMachineComputedNetworkInterfacesOutputReference extends cdkt
   }
 
   // rate_limit - computed: true, optional: true, required: false
-  private _rateLimit?: number;
+  private _rateLimit?: number; 
   public get rateLimit() {
     return this.getNumberAttribute('rate_limit');
   }
@@ -1968,7 +1988,7 @@ export class VirtualMachineComputedNetworkInterfacesOutputReference extends cdkt
   }
 
   // use_firewall - computed: true, optional: true, required: false
-  private _useFirewall?: boolean | cdktf.IResolvable;
+  private _useFirewall?: boolean | cdktf.IResolvable; 
   public get useFirewall() {
     return this.getBooleanAttribute('use_firewall');
   }
@@ -1984,7 +2004,7 @@ export class VirtualMachineComputedNetworkInterfacesOutputReference extends cdkt
   }
 
   // vlan - computed: true, optional: true, required: false
-  private _vlan?: number;
+  private _vlan?: number; 
   public get vlan() {
     return this.getNumberAttribute('vlan');
   }
@@ -2001,7 +2021,7 @@ export class VirtualMachineComputedNetworkInterfacesOutputReference extends cdkt
 }
 
 export class VirtualMachineComputedNetworkInterfacesList extends cdktf.ComplexList {
-  public internalValue? : VirtualMachineComputedNetworkInterfaces[] | cdktf.IResolvable;
+  public internalValue? : VirtualMachineComputedNetworkInterfaces[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -2009,7 +2029,7 @@ export class VirtualMachineComputedNetworkInterfacesList extends cdktf.ComplexLi
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
+    super(terraformResource, terraformAttribute, wrapsSet)
   }
 
   /**
@@ -2022,7 +2042,7 @@ export class VirtualMachineComputedNetworkInterfacesList extends cdktf.ComplexLi
 export interface VirtualMachineComputedPciDevices {
   /**
   * The device ID of the PCI device.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#id VirtualMachine#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -2031,37 +2051,37 @@ export interface VirtualMachineComputedPciDevices {
   readonly id: string;
   /**
   * The mediated device name.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#mdev VirtualMachine#mdev}
   */
   readonly mdev?: string;
   /**
   * The device name of the PCI device.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#name VirtualMachine#name}
   */
   readonly name: string;
   /**
   * Whether the PCI device is PCIe.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#pcie VirtualMachine#pcie}
   */
   readonly pcie?: boolean | cdktf.IResolvable;
   /**
   * Whether the PCI device is the primary GPU.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#primary_gpu VirtualMachine#primary_gpu}
   */
   readonly primaryGpu?: boolean | cdktf.IResolvable;
   /**
   * The relative path to the ROM for the device.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#rom_file VirtualMachine#rom_file}
   */
   readonly romFile?: string;
   /**
   * Make the firmware room visible to the VM.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#rombar VirtualMachine#rombar}
   */
   readonly rombar?: boolean | cdktf.IResolvable;
@@ -2070,7 +2090,7 @@ export interface VirtualMachineComputedPciDevices {
 export function virtualMachineComputedPciDevicesToTerraform(struct?: VirtualMachineComputedPciDevices): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     id: cdktf.stringToTerraform(struct!.id),
@@ -2080,7 +2100,7 @@ export function virtualMachineComputedPciDevicesToTerraform(struct?: VirtualMach
     primary_gpu: cdktf.booleanToTerraform(struct!.primaryGpu),
     rom_file: cdktf.stringToTerraform(struct!.romFile),
     rombar: cdktf.booleanToTerraform(struct!.rombar),
-  };
+  }
 }
 
 export class VirtualMachineComputedPciDevicesOutputReference extends cdktf.ComplexObject {
@@ -2140,7 +2160,8 @@ export class VirtualMachineComputedPciDevicesOutputReference extends cdktf.Compl
       this._primaryGpu = undefined;
       this._romFile = undefined;
       this._rombar = undefined;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._id = value.id;
       this._mdev = value.mdev;
@@ -2153,7 +2174,7 @@ export class VirtualMachineComputedPciDevicesOutputReference extends cdktf.Compl
   }
 
   // id - computed: true, optional: false, required: true
-  private _id?: string;
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
@@ -2166,7 +2187,7 @@ export class VirtualMachineComputedPciDevicesOutputReference extends cdktf.Compl
   }
 
   // mdev - computed: true, optional: true, required: false
-  private _mdev?: string;
+  private _mdev?: string; 
   public get mdev() {
     return this.getStringAttribute('mdev');
   }
@@ -2182,7 +2203,7 @@ export class VirtualMachineComputedPciDevicesOutputReference extends cdktf.Compl
   }
 
   // name - computed: true, optional: false, required: true
-  private _name?: string;
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -2195,7 +2216,7 @@ export class VirtualMachineComputedPciDevicesOutputReference extends cdktf.Compl
   }
 
   // pcie - computed: true, optional: true, required: false
-  private _pcie?: boolean | cdktf.IResolvable;
+  private _pcie?: boolean | cdktf.IResolvable; 
   public get pcie() {
     return this.getBooleanAttribute('pcie');
   }
@@ -2211,7 +2232,7 @@ export class VirtualMachineComputedPciDevicesOutputReference extends cdktf.Compl
   }
 
   // primary_gpu - computed: true, optional: true, required: false
-  private _primaryGpu?: boolean | cdktf.IResolvable;
+  private _primaryGpu?: boolean | cdktf.IResolvable; 
   public get primaryGpu() {
     return this.getBooleanAttribute('primary_gpu');
   }
@@ -2227,7 +2248,7 @@ export class VirtualMachineComputedPciDevicesOutputReference extends cdktf.Compl
   }
 
   // rom_file - computed: true, optional: true, required: false
-  private _romFile?: string;
+  private _romFile?: string; 
   public get romFile() {
     return this.getStringAttribute('rom_file');
   }
@@ -2243,7 +2264,7 @@ export class VirtualMachineComputedPciDevicesOutputReference extends cdktf.Compl
   }
 
   // rombar - computed: true, optional: true, required: false
-  private _rombar?: boolean | cdktf.IResolvable;
+  private _rombar?: boolean | cdktf.IResolvable; 
   public get rombar() {
     return this.getBooleanAttribute('rombar');
   }
@@ -2260,7 +2281,7 @@ export class VirtualMachineComputedPciDevicesOutputReference extends cdktf.Compl
 }
 
 export class VirtualMachineComputedPciDevicesList extends cdktf.ComplexList {
-  public internalValue? : VirtualMachineComputedPciDevices[] | cdktf.IResolvable;
+  public internalValue? : VirtualMachineComputedPciDevices[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -2268,7 +2289,7 @@ export class VirtualMachineComputedPciDevicesList extends cdktf.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
+    super(terraformResource, terraformAttribute, wrapsSet)
   }
 
   /**
@@ -2281,31 +2302,31 @@ export class VirtualMachineComputedPciDevicesList extends cdktf.ComplexList {
 export interface VirtualMachineCpu {
   /**
   * The CPU architecture.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#architecture VirtualMachine#architecture}
   */
   readonly architecture?: string;
   /**
   * The number of CPU cores.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#cores VirtualMachine#cores}
   */
   readonly cores?: number;
   /**
   * The CPU units.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#cpu_units VirtualMachine#cpu_units}
   */
   readonly cpuUnits?: number;
   /**
   * The emulated CPU type.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#emulated_type VirtualMachine#emulated_type}
   */
   readonly emulatedType?: string;
   /**
   * The number of CPU sockets.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#sockets VirtualMachine#sockets}
   */
   readonly sockets?: number;
@@ -2314,7 +2335,7 @@ export interface VirtualMachineCpu {
 export function virtualMachineCpuToTerraform(struct?: VirtualMachineCpu | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     architecture: cdktf.stringToTerraform(struct!.architecture),
@@ -2322,7 +2343,7 @@ export function virtualMachineCpuToTerraform(struct?: VirtualMachineCpu | cdktf.
     cpu_units: cdktf.numberToTerraform(struct!.cpuUnits),
     emulated_type: cdktf.stringToTerraform(struct!.emulatedType),
     sockets: cdktf.numberToTerraform(struct!.sockets),
-  };
+  }
 }
 
 export class VirtualMachineCpuOutputReference extends cdktf.ComplexObject {
@@ -2375,10 +2396,12 @@ export class VirtualMachineCpuOutputReference extends cdktf.ComplexObject {
       this._cpuUnits = undefined;
       this._emulatedType = undefined;
       this._sockets = undefined;
-    } else if (cdktf.Tokenization.isResolvable(value)) {
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._architecture = value.architecture;
@@ -2390,7 +2413,7 @@ export class VirtualMachineCpuOutputReference extends cdktf.ComplexObject {
   }
 
   // architecture - computed: true, optional: true, required: false
-  private _architecture?: string;
+  private _architecture?: string; 
   public get architecture() {
     return this.getStringAttribute('architecture');
   }
@@ -2406,7 +2429,7 @@ export class VirtualMachineCpuOutputReference extends cdktf.ComplexObject {
   }
 
   // cores - computed: true, optional: true, required: false
-  private _cores?: number;
+  private _cores?: number; 
   public get cores() {
     return this.getNumberAttribute('cores');
   }
@@ -2422,7 +2445,7 @@ export class VirtualMachineCpuOutputReference extends cdktf.ComplexObject {
   }
 
   // cpu_units - computed: true, optional: true, required: false
-  private _cpuUnits?: number;
+  private _cpuUnits?: number; 
   public get cpuUnits() {
     return this.getNumberAttribute('cpu_units');
   }
@@ -2438,7 +2461,7 @@ export class VirtualMachineCpuOutputReference extends cdktf.ComplexObject {
   }
 
   // emulated_type - computed: true, optional: true, required: false
-  private _emulatedType?: string;
+  private _emulatedType?: string; 
   public get emulatedType() {
     return this.getStringAttribute('emulated_type');
   }
@@ -2454,7 +2477,7 @@ export class VirtualMachineCpuOutputReference extends cdktf.ComplexObject {
   }
 
   // sockets - computed: true, optional: true, required: false
-  private _sockets?: number;
+  private _sockets?: number; 
   public get sockets() {
     return this.getNumberAttribute('sockets');
   }
@@ -2472,25 +2495,25 @@ export class VirtualMachineCpuOutputReference extends cdktf.ComplexObject {
 export interface VirtualMachineDisksSpeedLimits {
   /**
   * The read speed limit in bytes per second.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#read VirtualMachine#read}
   */
   readonly read?: number;
   /**
   * The read burstable speed limit in bytes per second.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#read_burstable VirtualMachine#read_burstable}
   */
   readonly readBurstable?: number;
   /**
   * The write speed limit in bytes per second.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#write VirtualMachine#write}
   */
   readonly write?: number;
   /**
   * The write burstable speed limit in bytes per second.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#write_burstable VirtualMachine#write_burstable}
   */
   readonly writeBurstable?: number;
@@ -2499,14 +2522,14 @@ export interface VirtualMachineDisksSpeedLimits {
 export function virtualMachineDisksSpeedLimitsToTerraform(struct?: VirtualMachineDisksSpeedLimits | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     read: cdktf.numberToTerraform(struct!.read),
     read_burstable: cdktf.numberToTerraform(struct!.readBurstable),
     write: cdktf.numberToTerraform(struct!.write),
     write_burstable: cdktf.numberToTerraform(struct!.writeBurstable),
-  };
+  }
 }
 
 export class VirtualMachineDisksSpeedLimitsOutputReference extends cdktf.ComplexObject {
@@ -2554,10 +2577,12 @@ export class VirtualMachineDisksSpeedLimitsOutputReference extends cdktf.Complex
       this._readBurstable = undefined;
       this._write = undefined;
       this._writeBurstable = undefined;
-    } else if (cdktf.Tokenization.isResolvable(value)) {
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._read = value.read;
@@ -2568,7 +2593,7 @@ export class VirtualMachineDisksSpeedLimitsOutputReference extends cdktf.Complex
   }
 
   // read - computed: false, optional: true, required: false
-  private _read?: number;
+  private _read?: number; 
   public get read() {
     return this.getNumberAttribute('read');
   }
@@ -2584,7 +2609,7 @@ export class VirtualMachineDisksSpeedLimitsOutputReference extends cdktf.Complex
   }
 
   // read_burstable - computed: false, optional: true, required: false
-  private _readBurstable?: number;
+  private _readBurstable?: number; 
   public get readBurstable() {
     return this.getNumberAttribute('read_burstable');
   }
@@ -2600,7 +2625,7 @@ export class VirtualMachineDisksSpeedLimitsOutputReference extends cdktf.Complex
   }
 
   // write - computed: false, optional: true, required: false
-  private _write?: number;
+  private _write?: number; 
   public get write() {
     return this.getNumberAttribute('write');
   }
@@ -2616,7 +2641,7 @@ export class VirtualMachineDisksSpeedLimitsOutputReference extends cdktf.Complex
   }
 
   // write_burstable - computed: false, optional: true, required: false
-  private _writeBurstable?: number;
+  private _writeBurstable?: number; 
   public get writeBurstable() {
     return this.getNumberAttribute('write_burstable');
   }
@@ -2634,55 +2659,55 @@ export class VirtualMachineDisksSpeedLimitsOutputReference extends cdktf.Complex
 export interface VirtualMachineDisks {
   /**
   * Whether the disk has discard enabled.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#discard VirtualMachine#discard}
   */
   readonly discard?: boolean | cdktf.IResolvable;
   /**
   * The file format of the disk.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#file_format VirtualMachine#file_format}
   */
   readonly fileFormat?: string;
   /**
   * The type of the disk.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#interface_type VirtualMachine#interface_type}
   */
   readonly interfaceType: string;
   /**
   * The position of the disk. (0, 1, 2, etc.) This is combined with the `interface_type` to determine the disk name.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#position VirtualMachine#position}
   */
   readonly position: number;
   /**
   * The size of the disk in GiB.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#size VirtualMachine#size}
   */
   readonly size: number;
   /**
   * The speed limits of the disk. If not set, no speed limitations are applied.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#speed_limits VirtualMachine#speed_limits}
   */
   readonly speedLimits?: VirtualMachineDisksSpeedLimits | cdktf.IResolvable;
   /**
   * Whether to use SSD emulation. conflicts with virtio disk type.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#ssd_emulation VirtualMachine#ssd_emulation}
   */
   readonly ssdEmulation?: boolean | cdktf.IResolvable;
   /**
   * The storage the disk is on.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#storage VirtualMachine#storage}
   */
   readonly storage: string;
   /**
   * Whether to use an iothread for the disk.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#use_iothread VirtualMachine#use_iothread}
   */
   readonly useIothread?: boolean | cdktf.IResolvable;
@@ -2691,7 +2716,7 @@ export interface VirtualMachineDisks {
 export function virtualMachineDisksToTerraform(struct?: VirtualMachineDisks | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     discard: cdktf.booleanToTerraform(struct!.discard),
@@ -2703,7 +2728,7 @@ export function virtualMachineDisksToTerraform(struct?: VirtualMachineDisks | cd
     ssd_emulation: cdktf.booleanToTerraform(struct!.ssdEmulation),
     storage: cdktf.stringToTerraform(struct!.storage),
     use_iothread: cdktf.booleanToTerraform(struct!.useIothread),
-  };
+  }
 }
 
 export class VirtualMachineDisksOutputReference extends cdktf.ComplexObject {
@@ -2778,10 +2803,12 @@ export class VirtualMachineDisksOutputReference extends cdktf.ComplexObject {
       this._ssdEmulation = undefined;
       this._storage = undefined;
       this._useIothread = undefined;
-    } else if (cdktf.Tokenization.isResolvable(value)) {
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._discard = value.discard;
@@ -2797,7 +2824,7 @@ export class VirtualMachineDisksOutputReference extends cdktf.ComplexObject {
   }
 
   // discard - computed: true, optional: true, required: false
-  private _discard?: boolean | cdktf.IResolvable;
+  private _discard?: boolean | cdktf.IResolvable; 
   public get discard() {
     return this.getBooleanAttribute('discard');
   }
@@ -2813,7 +2840,7 @@ export class VirtualMachineDisksOutputReference extends cdktf.ComplexObject {
   }
 
   // file_format - computed: false, optional: true, required: false
-  private _fileFormat?: string;
+  private _fileFormat?: string; 
   public get fileFormat() {
     return this.getStringAttribute('file_format');
   }
@@ -2829,7 +2856,7 @@ export class VirtualMachineDisksOutputReference extends cdktf.ComplexObject {
   }
 
   // interface_type - computed: false, optional: false, required: true
-  private _interfaceType?: string;
+  private _interfaceType?: string; 
   public get interfaceType() {
     return this.getStringAttribute('interface_type');
   }
@@ -2842,7 +2869,7 @@ export class VirtualMachineDisksOutputReference extends cdktf.ComplexObject {
   }
 
   // position - computed: false, optional: false, required: true
-  private _position?: number;
+  private _position?: number; 
   public get position() {
     return this.getNumberAttribute('position');
   }
@@ -2855,7 +2882,7 @@ export class VirtualMachineDisksOutputReference extends cdktf.ComplexObject {
   }
 
   // size - computed: false, optional: false, required: true
-  private _size?: number;
+  private _size?: number; 
   public get size() {
     return this.getNumberAttribute('size');
   }
@@ -2868,7 +2895,7 @@ export class VirtualMachineDisksOutputReference extends cdktf.ComplexObject {
   }
 
   // speed_limits - computed: false, optional: true, required: false
-  private _speedLimits = new VirtualMachineDisksSpeedLimitsOutputReference(this, 'speed_limits');
+  private _speedLimits = new VirtualMachineDisksSpeedLimitsOutputReference(this, "speed_limits");
   public get speedLimits() {
     return this._speedLimits;
   }
@@ -2884,7 +2911,7 @@ export class VirtualMachineDisksOutputReference extends cdktf.ComplexObject {
   }
 
   // ssd_emulation - computed: true, optional: true, required: false
-  private _ssdEmulation?: boolean | cdktf.IResolvable;
+  private _ssdEmulation?: boolean | cdktf.IResolvable; 
   public get ssdEmulation() {
     return this.getBooleanAttribute('ssd_emulation');
   }
@@ -2900,7 +2927,7 @@ export class VirtualMachineDisksOutputReference extends cdktf.ComplexObject {
   }
 
   // storage - computed: false, optional: false, required: true
-  private _storage?: string;
+  private _storage?: string; 
   public get storage() {
     return this.getStringAttribute('storage');
   }
@@ -2913,7 +2940,7 @@ export class VirtualMachineDisksOutputReference extends cdktf.ComplexObject {
   }
 
   // use_iothread - computed: true, optional: true, required: false
-  private _useIothread?: boolean | cdktf.IResolvable;
+  private _useIothread?: boolean | cdktf.IResolvable; 
   public get useIothread() {
     return this.getBooleanAttribute('use_iothread');
   }
@@ -2930,7 +2957,7 @@ export class VirtualMachineDisksOutputReference extends cdktf.ComplexObject {
 }
 
 export class VirtualMachineDisksList extends cdktf.ComplexList {
-  public internalValue? : VirtualMachineDisks[] | cdktf.IResolvable;
+  public internalValue? : VirtualMachineDisks[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -2938,7 +2965,7 @@ export class VirtualMachineDisksList extends cdktf.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
+    super(terraformResource, terraformAttribute, wrapsSet)
   }
 
   /**
@@ -2951,13 +2978,13 @@ export class VirtualMachineDisksList extends cdktf.ComplexList {
 export interface VirtualMachineIso {
   /**
   * The image to use for install media.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#image VirtualMachine#image}
   */
   readonly image: string;
   /**
   * The storage to place install media on.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#storage VirtualMachine#storage}
   */
   readonly storage: string;
@@ -2966,12 +2993,12 @@ export interface VirtualMachineIso {
 export function virtualMachineIsoToTerraform(struct?: VirtualMachineIso | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     image: cdktf.stringToTerraform(struct!.image),
     storage: cdktf.stringToTerraform(struct!.storage),
-  };
+  }
 }
 
 export class VirtualMachineIsoOutputReference extends cdktf.ComplexObject {
@@ -3009,10 +3036,12 @@ export class VirtualMachineIsoOutputReference extends cdktf.ComplexObject {
       this.resolvableValue = undefined;
       this._image = undefined;
       this._storage = undefined;
-    } else if (cdktf.Tokenization.isResolvable(value)) {
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._image = value.image;
@@ -3021,7 +3050,7 @@ export class VirtualMachineIsoOutputReference extends cdktf.ComplexObject {
   }
 
   // image - computed: false, optional: false, required: true
-  private _image?: string;
+  private _image?: string; 
   public get image() {
     return this.getStringAttribute('image');
   }
@@ -3034,7 +3063,7 @@ export class VirtualMachineIsoOutputReference extends cdktf.ComplexObject {
   }
 
   // storage - computed: false, optional: false, required: true
-  private _storage?: string;
+  private _storage?: string; 
   public get storage() {
     return this.getStringAttribute('storage');
   }
@@ -3049,19 +3078,19 @@ export class VirtualMachineIsoOutputReference extends cdktf.ComplexObject {
 export interface VirtualMachineMemory {
   /**
   * The size of the memory in MB.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#dedicated VirtualMachine#dedicated}
   */
   readonly dedicated?: number;
   /**
   * The floating memory in MB.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#floating VirtualMachine#floating}
   */
   readonly floating?: number;
   /**
   * The shared memory in MB.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#shared VirtualMachine#shared}
   */
   readonly shared?: number;
@@ -3070,13 +3099,13 @@ export interface VirtualMachineMemory {
 export function virtualMachineMemoryToTerraform(struct?: VirtualMachineMemory | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     dedicated: cdktf.numberToTerraform(struct!.dedicated),
     floating: cdktf.numberToTerraform(struct!.floating),
     shared: cdktf.numberToTerraform(struct!.shared),
-  };
+  }
 }
 
 export class VirtualMachineMemoryOutputReference extends cdktf.ComplexObject {
@@ -3119,10 +3148,12 @@ export class VirtualMachineMemoryOutputReference extends cdktf.ComplexObject {
       this._dedicated = undefined;
       this._floating = undefined;
       this._shared = undefined;
-    } else if (cdktf.Tokenization.isResolvable(value)) {
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._dedicated = value.dedicated;
@@ -3132,7 +3163,7 @@ export class VirtualMachineMemoryOutputReference extends cdktf.ComplexObject {
   }
 
   // dedicated - computed: true, optional: true, required: false
-  private _dedicated?: number;
+  private _dedicated?: number; 
   public get dedicated() {
     return this.getNumberAttribute('dedicated');
   }
@@ -3148,7 +3179,7 @@ export class VirtualMachineMemoryOutputReference extends cdktf.ComplexObject {
   }
 
   // floating - computed: true, optional: true, required: false
-  private _floating?: number;
+  private _floating?: number; 
   public get floating() {
     return this.getNumberAttribute('floating');
   }
@@ -3164,7 +3195,7 @@ export class VirtualMachineMemoryOutputReference extends cdktf.ComplexObject {
   }
 
   // shared - computed: true, optional: true, required: false
-  private _shared?: number;
+  private _shared?: number; 
   public get shared() {
     return this.getNumberAttribute('shared');
   }
@@ -3182,55 +3213,55 @@ export class VirtualMachineMemoryOutputReference extends cdktf.ComplexObject {
 export interface VirtualMachineNetworkInterfaces {
   /**
   * The bridge the network interface is on.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#bridge VirtualMachine#bridge}
   */
   readonly bridge: string;
   /**
   * Whether the network interface is enabled.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#enabled VirtualMachine#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * The MAC address of the network interface.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#mac_address VirtualMachine#mac_address}
   */
   readonly macAddress?: string;
   /**
   * The model of the network interface.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#model VirtualMachine#model}
   */
   readonly model?: string;
   /**
   * The MTU of the network interface. Only valid for virtio.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#mtu VirtualMachine#mtu}
   */
   readonly mtu?: number;
   /**
   * The position of the network interface in the VM as an int. Used to determine the interface name (net0, net1, etc).
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#position VirtualMachine#position}
   */
   readonly position: number;
   /**
   * The rate limit of the network interface in megabytes per second.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#rate_limit VirtualMachine#rate_limit}
   */
   readonly rateLimit?: number;
   /**
   * Whether the firewall for the network interface is enabled.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#use_firewall VirtualMachine#use_firewall}
   */
   readonly useFirewall?: boolean | cdktf.IResolvable;
   /**
   * The VLAN tag of the network interface.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#vlan VirtualMachine#vlan}
   */
   readonly vlan?: number;
@@ -3239,7 +3270,7 @@ export interface VirtualMachineNetworkInterfaces {
 export function virtualMachineNetworkInterfacesToTerraform(struct?: VirtualMachineNetworkInterfaces | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     bridge: cdktf.stringToTerraform(struct!.bridge),
@@ -3251,7 +3282,7 @@ export function virtualMachineNetworkInterfacesToTerraform(struct?: VirtualMachi
     rate_limit: cdktf.numberToTerraform(struct!.rateLimit),
     use_firewall: cdktf.booleanToTerraform(struct!.useFirewall),
     vlan: cdktf.numberToTerraform(struct!.vlan),
-  };
+  }
 }
 
 export class VirtualMachineNetworkInterfacesOutputReference extends cdktf.ComplexObject {
@@ -3326,10 +3357,12 @@ export class VirtualMachineNetworkInterfacesOutputReference extends cdktf.Comple
       this._rateLimit = undefined;
       this._useFirewall = undefined;
       this._vlan = undefined;
-    } else if (cdktf.Tokenization.isResolvable(value)) {
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._bridge = value.bridge;
@@ -3345,7 +3378,7 @@ export class VirtualMachineNetworkInterfacesOutputReference extends cdktf.Comple
   }
 
   // bridge - computed: false, optional: false, required: true
-  private _bridge?: string;
+  private _bridge?: string; 
   public get bridge() {
     return this.getStringAttribute('bridge');
   }
@@ -3358,7 +3391,7 @@ export class VirtualMachineNetworkInterfacesOutputReference extends cdktf.Comple
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable;
+  private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
@@ -3374,7 +3407,7 @@ export class VirtualMachineNetworkInterfacesOutputReference extends cdktf.Comple
   }
 
   // mac_address - computed: true, optional: true, required: false
-  private _macAddress?: string;
+  private _macAddress?: string; 
   public get macAddress() {
     return this.getStringAttribute('mac_address');
   }
@@ -3390,7 +3423,7 @@ export class VirtualMachineNetworkInterfacesOutputReference extends cdktf.Comple
   }
 
   // model - computed: true, optional: true, required: false
-  private _model?: string;
+  private _model?: string; 
   public get model() {
     return this.getStringAttribute('model');
   }
@@ -3406,7 +3439,7 @@ export class VirtualMachineNetworkInterfacesOutputReference extends cdktf.Comple
   }
 
   // mtu - computed: false, optional: true, required: false
-  private _mtu?: number;
+  private _mtu?: number; 
   public get mtu() {
     return this.getNumberAttribute('mtu');
   }
@@ -3422,7 +3455,7 @@ export class VirtualMachineNetworkInterfacesOutputReference extends cdktf.Comple
   }
 
   // position - computed: false, optional: false, required: true
-  private _position?: number;
+  private _position?: number; 
   public get position() {
     return this.getNumberAttribute('position');
   }
@@ -3435,7 +3468,7 @@ export class VirtualMachineNetworkInterfacesOutputReference extends cdktf.Comple
   }
 
   // rate_limit - computed: false, optional: true, required: false
-  private _rateLimit?: number;
+  private _rateLimit?: number; 
   public get rateLimit() {
     return this.getNumberAttribute('rate_limit');
   }
@@ -3451,7 +3484,7 @@ export class VirtualMachineNetworkInterfacesOutputReference extends cdktf.Comple
   }
 
   // use_firewall - computed: true, optional: true, required: false
-  private _useFirewall?: boolean | cdktf.IResolvable;
+  private _useFirewall?: boolean | cdktf.IResolvable; 
   public get useFirewall() {
     return this.getBooleanAttribute('use_firewall');
   }
@@ -3467,7 +3500,7 @@ export class VirtualMachineNetworkInterfacesOutputReference extends cdktf.Comple
   }
 
   // vlan - computed: false, optional: true, required: false
-  private _vlan?: number;
+  private _vlan?: number; 
   public get vlan() {
     return this.getNumberAttribute('vlan');
   }
@@ -3484,7 +3517,7 @@ export class VirtualMachineNetworkInterfacesOutputReference extends cdktf.Comple
 }
 
 export class VirtualMachineNetworkInterfacesList extends cdktf.ComplexList {
-  public internalValue? : VirtualMachineNetworkInterfaces[] | cdktf.IResolvable;
+  public internalValue? : VirtualMachineNetworkInterfaces[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -3492,7 +3525,7 @@ export class VirtualMachineNetworkInterfacesList extends cdktf.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
+    super(terraformResource, terraformAttribute, wrapsSet)
   }
 
   /**
@@ -3505,7 +3538,7 @@ export class VirtualMachineNetworkInterfacesList extends cdktf.ComplexList {
 export interface VirtualMachinePciDevices {
   /**
   * The device ID of the PCI device.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#id VirtualMachine#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -3514,37 +3547,37 @@ export interface VirtualMachinePciDevices {
   readonly id: string;
   /**
   * The mediated device name.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#mdev VirtualMachine#mdev}
   */
   readonly mdev?: string;
   /**
   * The device name of the PCI device.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#name VirtualMachine#name}
   */
   readonly name: string;
   /**
   * Whether the PCI device is PCIe.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#pcie VirtualMachine#pcie}
   */
   readonly pcie?: boolean | cdktf.IResolvable;
   /**
   * Whether the PCI device is the primary GPU.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#primary_gpu VirtualMachine#primary_gpu}
   */
   readonly primaryGpu?: boolean | cdktf.IResolvable;
   /**
   * The relative path to the ROM for the device.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#rom_file VirtualMachine#rom_file}
   */
   readonly romFile?: string;
   /**
   * Make the firmware room visible to the VM.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#rombar VirtualMachine#rombar}
   */
   readonly rombar?: boolean | cdktf.IResolvable;
@@ -3553,7 +3586,7 @@ export interface VirtualMachinePciDevices {
 export function virtualMachinePciDevicesToTerraform(struct?: VirtualMachinePciDevices | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     id: cdktf.stringToTerraform(struct!.id),
@@ -3563,7 +3596,7 @@ export function virtualMachinePciDevicesToTerraform(struct?: VirtualMachinePciDe
     primary_gpu: cdktf.booleanToTerraform(struct!.primaryGpu),
     rom_file: cdktf.stringToTerraform(struct!.romFile),
     rombar: cdktf.booleanToTerraform(struct!.rombar),
-  };
+  }
 }
 
 export class VirtualMachinePciDevicesOutputReference extends cdktf.ComplexObject {
@@ -3628,10 +3661,12 @@ export class VirtualMachinePciDevicesOutputReference extends cdktf.ComplexObject
       this._primaryGpu = undefined;
       this._romFile = undefined;
       this._rombar = undefined;
-    } else if (cdktf.Tokenization.isResolvable(value)) {
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._id = value.id;
@@ -3645,7 +3680,7 @@ export class VirtualMachinePciDevicesOutputReference extends cdktf.ComplexObject
   }
 
   // id - computed: false, optional: false, required: true
-  private _id?: string;
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
@@ -3658,7 +3693,7 @@ export class VirtualMachinePciDevicesOutputReference extends cdktf.ComplexObject
   }
 
   // mdev - computed: false, optional: true, required: false
-  private _mdev?: string;
+  private _mdev?: string; 
   public get mdev() {
     return this.getStringAttribute('mdev');
   }
@@ -3674,7 +3709,7 @@ export class VirtualMachinePciDevicesOutputReference extends cdktf.ComplexObject
   }
 
   // name - computed: false, optional: false, required: true
-  private _name?: string;
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -3687,7 +3722,7 @@ export class VirtualMachinePciDevicesOutputReference extends cdktf.ComplexObject
   }
 
   // pcie - computed: true, optional: true, required: false
-  private _pcie?: boolean | cdktf.IResolvable;
+  private _pcie?: boolean | cdktf.IResolvable; 
   public get pcie() {
     return this.getBooleanAttribute('pcie');
   }
@@ -3703,7 +3738,7 @@ export class VirtualMachinePciDevicesOutputReference extends cdktf.ComplexObject
   }
 
   // primary_gpu - computed: true, optional: true, required: false
-  private _primaryGpu?: boolean | cdktf.IResolvable;
+  private _primaryGpu?: boolean | cdktf.IResolvable; 
   public get primaryGpu() {
     return this.getBooleanAttribute('primary_gpu');
   }
@@ -3719,7 +3754,7 @@ export class VirtualMachinePciDevicesOutputReference extends cdktf.ComplexObject
   }
 
   // rom_file - computed: false, optional: true, required: false
-  private _romFile?: string;
+  private _romFile?: string; 
   public get romFile() {
     return this.getStringAttribute('rom_file');
   }
@@ -3735,7 +3770,7 @@ export class VirtualMachinePciDevicesOutputReference extends cdktf.ComplexObject
   }
 
   // rombar - computed: true, optional: true, required: false
-  private _rombar?: boolean | cdktf.IResolvable;
+  private _rombar?: boolean | cdktf.IResolvable; 
   public get rombar() {
     return this.getBooleanAttribute('rombar');
   }
@@ -3752,7 +3787,7 @@ export class VirtualMachinePciDevicesOutputReference extends cdktf.ComplexObject
 }
 
 export class VirtualMachinePciDevicesList extends cdktf.ComplexList {
-  public internalValue? : VirtualMachinePciDevices[] | cdktf.IResolvable;
+  public internalValue? : VirtualMachinePciDevices[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -3760,7 +3795,7 @@ export class VirtualMachinePciDevicesList extends cdktf.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
+    super(terraformResource, terraformAttribute, wrapsSet)
   }
 
   /**
@@ -3773,55 +3808,55 @@ export class VirtualMachinePciDevicesList extends cdktf.ComplexList {
 export interface VirtualMachineTimeouts {
   /**
   * The timeout for cloning the virtual machine.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#clone VirtualMachine#clone}
   */
   readonly clone?: number;
   /**
   * The timeout for configuring the virtual machine.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#configure VirtualMachine#configure}
   */
   readonly configure?: number;
   /**
   * The timeout for creating the virtual machine.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#create VirtualMachine#create}
   */
   readonly create?: number;
   /**
   * The timeout for deleting the virtual machine.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#delete VirtualMachine#delete}
   */
   readonly delete?: number;
   /**
   * The timeout for rebooting the virtual machine.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#reboot VirtualMachine#reboot}
   */
   readonly reboot?: number;
   /**
   * The timeout for resizing disk the virtual machine.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#resize_disk VirtualMachine#resize_disk}
   */
   readonly resizeDisk?: number;
   /**
   * The timeout for shutting down the virtual machine.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#shutdown VirtualMachine#shutdown}
   */
   readonly shutdown?: number;
   /**
   * The timeout for starting the virtual machine.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#start VirtualMachine#start}
   */
   readonly start?: number;
   /**
   * The timeout for stopping the virtual machine.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/virtual_machine#stop VirtualMachine#stop}
   */
   readonly stop?: number;
@@ -3830,7 +3865,7 @@ export interface VirtualMachineTimeouts {
 export function virtualMachineTimeoutsToTerraform(struct?: VirtualMachineTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     clone: cdktf.numberToTerraform(struct!.clone),
@@ -3842,7 +3877,7 @@ export function virtualMachineTimeoutsToTerraform(struct?: VirtualMachineTimeout
     shutdown: cdktf.numberToTerraform(struct!.shutdown),
     start: cdktf.numberToTerraform(struct!.start),
     stop: cdktf.numberToTerraform(struct!.stop),
-  };
+  }
 }
 
 export class VirtualMachineTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -3915,10 +3950,12 @@ export class VirtualMachineTimeoutsOutputReference extends cdktf.ComplexObject {
       this._shutdown = undefined;
       this._start = undefined;
       this._stop = undefined;
-    } else if (cdktf.Tokenization.isResolvable(value)) {
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._clone = value.clone;
@@ -3934,7 +3971,7 @@ export class VirtualMachineTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   // clone - computed: false, optional: true, required: false
-  private _clone?: number;
+  private _clone?: number; 
   public get clone() {
     return this.getNumberAttribute('clone');
   }
@@ -3950,7 +3987,7 @@ export class VirtualMachineTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   // configure - computed: false, optional: true, required: false
-  private _configure?: number;
+  private _configure?: number; 
   public get configure() {
     return this.getNumberAttribute('configure');
   }
@@ -3966,7 +4003,7 @@ export class VirtualMachineTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   // create - computed: false, optional: true, required: false
-  private _create?: number;
+  private _create?: number; 
   public get create() {
     return this.getNumberAttribute('create');
   }
@@ -3982,7 +4019,7 @@ export class VirtualMachineTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: number;
+  private _delete?: number; 
   public get delete() {
     return this.getNumberAttribute('delete');
   }
@@ -3998,7 +4035,7 @@ export class VirtualMachineTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   // reboot - computed: false, optional: true, required: false
-  private _reboot?: number;
+  private _reboot?: number; 
   public get reboot() {
     return this.getNumberAttribute('reboot');
   }
@@ -4014,7 +4051,7 @@ export class VirtualMachineTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   // resize_disk - computed: false, optional: true, required: false
-  private _resizeDisk?: number;
+  private _resizeDisk?: number; 
   public get resizeDisk() {
     return this.getNumberAttribute('resize_disk');
   }
@@ -4030,7 +4067,7 @@ export class VirtualMachineTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   // shutdown - computed: false, optional: true, required: false
-  private _shutdown?: number;
+  private _shutdown?: number; 
   public get shutdown() {
     return this.getNumberAttribute('shutdown');
   }
@@ -4046,7 +4083,7 @@ export class VirtualMachineTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   // start - computed: false, optional: true, required: false
-  private _start?: number;
+  private _start?: number; 
   public get start() {
     return this.getNumberAttribute('start');
   }
@@ -4062,7 +4099,7 @@ export class VirtualMachineTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   // stop - computed: false, optional: true, required: false
-  private _stop?: number;
+  private _stop?: number; 
   public get stop() {
     return this.getNumberAttribute('stop');
   }
@@ -4086,7 +4123,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = 'proxmox_virtual_machine';
+  public static readonly tfResourceType = "proxmox_virtual_machine";
 
   // ===========
   // INITIALIZER
@@ -4104,8 +4141,8 @@ export class VirtualMachine extends cdktf.TerraformResource {
       terraformResourceType: 'proxmox_virtual_machine',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.8',
-        providerVersionConstraint: '~> 0.0.0',
+        providerVersion: '0.0.9',
+        providerVersionConstraint: '~> 0.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -4113,7 +4150,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
       lifecycle: config.lifecycle,
       provisioners: config.provisioners,
       connection: config.connection,
-      forEach: config.forEach,
+      forEach: config.forEach
     });
     this._agent.internalValue = config.agent;
     this._bios = config.bios;
@@ -4145,7 +4182,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
   // ==========
 
   // agent - computed: true, optional: true, required: false
-  private _agent = new VirtualMachineAgentOutputReference(this, 'agent');
+  private _agent = new VirtualMachineAgentOutputReference(this, "agent");
   public get agent() {
     return this._agent;
   }
@@ -4161,7 +4198,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
   }
 
   // bios - computed: true, optional: true, required: false
-  private _bios?: string;
+  private _bios?: string; 
   public get bios() {
     return this.getStringAttribute('bios');
   }
@@ -4177,7 +4214,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
   }
 
   // clone - computed: false, optional: true, required: false
-  private _clone = new VirtualMachineCloneOutputReference(this, 'clone');
+  private _clone = new VirtualMachineCloneOutputReference(this, "clone");
   public get clone() {
     return this._clone;
   }
@@ -4193,7 +4230,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
   }
 
   // cloud_init - computed: false, optional: true, required: false
-  private _cloudInit = new VirtualMachineCloudInitOutputReference(this, 'cloud_init');
+  private _cloudInit = new VirtualMachineCloudInitOutputReference(this, "cloud_init");
   public get cloudInit() {
     return this._cloudInit;
   }
@@ -4209,25 +4246,25 @@ export class VirtualMachine extends cdktf.TerraformResource {
   }
 
   // computed_disks - computed: true, optional: false, required: false
-  private _computedDisks = new VirtualMachineComputedDisksList(this, 'computed_disks', true);
+  private _computedDisks = new VirtualMachineComputedDisksList(this, "computed_disks", true);
   public get computedDisks() {
     return this._computedDisks;
   }
 
   // computed_network_interfaces - computed: true, optional: false, required: false
-  private _computedNetworkInterfaces = new VirtualMachineComputedNetworkInterfacesList(this, 'computed_network_interfaces', true);
+  private _computedNetworkInterfaces = new VirtualMachineComputedNetworkInterfacesList(this, "computed_network_interfaces", true);
   public get computedNetworkInterfaces() {
     return this._computedNetworkInterfaces;
   }
 
   // computed_pci_devices - computed: true, optional: false, required: false
-  private _computedPciDevices = new VirtualMachineComputedPciDevicesList(this, 'computed_pci_devices', true);
+  private _computedPciDevices = new VirtualMachineComputedPciDevicesList(this, "computed_pci_devices", true);
   public get computedPciDevices() {
     return this._computedPciDevices;
   }
 
   // cpu - computed: true, optional: true, required: false
-  private _cpu = new VirtualMachineCpuOutputReference(this, 'cpu');
+  private _cpu = new VirtualMachineCpuOutputReference(this, "cpu");
   public get cpu() {
     return this._cpu;
   }
@@ -4243,7 +4280,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string;
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
@@ -4259,7 +4296,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
   }
 
   // disks - computed: false, optional: true, required: false
-  private _disks = new VirtualMachineDisksList(this, 'disks', true);
+  private _disks = new VirtualMachineDisksList(this, "disks", true);
   public get disks() {
     return this._disks;
   }
@@ -4275,7 +4312,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: number;
+  private _id?: number; 
   public get id() {
     return this.getNumberAttribute('id');
   }
@@ -4291,7 +4328,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
   }
 
   // iso - computed: false, optional: true, required: false
-  private _iso = new VirtualMachineIsoOutputReference(this, 'iso');
+  private _iso = new VirtualMachineIsoOutputReference(this, "iso");
   public get iso() {
     return this._iso;
   }
@@ -4307,7 +4344,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
   }
 
   // keyboard_layout - computed: true, optional: true, required: false
-  private _keyboardLayout?: string;
+  private _keyboardLayout?: string; 
   public get keyboardLayout() {
     return this.getStringAttribute('keyboard_layout');
   }
@@ -4323,7 +4360,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
   }
 
   // kvm_arguments - computed: false, optional: true, required: false
-  private _kvmArguments?: string;
+  private _kvmArguments?: string; 
   public get kvmArguments() {
     return this.getStringAttribute('kvm_arguments');
   }
@@ -4339,7 +4376,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
   }
 
   // machine_type - computed: true, optional: true, required: false
-  private _machineType?: string;
+  private _machineType?: string; 
   public get machineType() {
     return this.getStringAttribute('machine_type');
   }
@@ -4355,7 +4392,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
   }
 
   // memory - computed: true, optional: true, required: false
-  private _memory = new VirtualMachineMemoryOutputReference(this, 'memory');
+  private _memory = new VirtualMachineMemoryOutputReference(this, "memory");
   public get memory() {
     return this._memory;
   }
@@ -4371,7 +4408,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string;
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -4387,7 +4424,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
   }
 
   // network_interfaces - computed: false, optional: true, required: false
-  private _networkInterfaces = new VirtualMachineNetworkInterfacesList(this, 'network_interfaces', true);
+  private _networkInterfaces = new VirtualMachineNetworkInterfacesList(this, "network_interfaces", true);
   public get networkInterfaces() {
     return this._networkInterfaces;
   }
@@ -4403,7 +4440,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
   }
 
   // node - computed: false, optional: false, required: true
-  private _node?: string;
+  private _node?: string; 
   public get nodeAttribute() {
     return this.getStringAttribute('node');
   }
@@ -4416,7 +4453,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
   }
 
   // pci_devices - computed: false, optional: true, required: false
-  private _pciDevices = new VirtualMachinePciDevicesList(this, 'pci_devices', true);
+  private _pciDevices = new VirtualMachinePciDevicesList(this, "pci_devices", true);
   public get pciDevices() {
     return this._pciDevices;
   }
@@ -4432,7 +4469,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
   }
 
   // resource_pool - computed: false, optional: true, required: false
-  private _resourcePool?: string;
+  private _resourcePool?: string; 
   public get resourcePool() {
     return this.getStringAttribute('resource_pool');
   }
@@ -4448,7 +4485,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
   }
 
   // start_on_create - computed: true, optional: true, required: false
-  private _startOnCreate?: boolean | cdktf.IResolvable;
+  private _startOnCreate?: boolean | cdktf.IResolvable; 
   public get startOnCreate() {
     return this.getBooleanAttribute('start_on_create');
   }
@@ -4464,7 +4501,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
   }
 
   // start_on_node_boot - computed: true, optional: true, required: false
-  private _startOnNodeBoot?: boolean | cdktf.IResolvable;
+  private _startOnNodeBoot?: boolean | cdktf.IResolvable; 
   public get startOnNodeBoot() {
     return this.getBooleanAttribute('start_on_node_boot');
   }
@@ -4480,7 +4517,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: string[];
+  private _tags?: string[]; 
   public get tags() {
     return cdktf.Fn.tolist(this.getListAttribute('tags'));
   }
@@ -4496,7 +4533,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new VirtualMachineTimeoutsOutputReference(this, 'timeouts');
+  private _timeouts = new VirtualMachineTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }
@@ -4512,7 +4549,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
   }
 
   // type - computed: true, optional: true, required: false
-  private _type?: string;
+  private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }

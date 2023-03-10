@@ -1,8 +1,8 @@
 // https://www.terraform.io/docs/providers/proxmox/d/zfs_storage_classes
 // generated from terraform resource schema
 
-import * as cdktf from 'cdktf';
 import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
@@ -15,13 +15,13 @@ export interface DataProxmoxZfsStorageClassesConfig extends cdktf.TerraformMetaA
 export interface DataProxmoxZfsStorageClassesFilters {
   /**
   * The name of the attribute to filter on.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/d/zfs_storage_classes#name DataProxmoxZfsStorageClasses#name}
   */
   readonly name: string;
   /**
   * The value(s) to be used in the filter.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/d/zfs_storage_classes#values DataProxmoxZfsStorageClasses#values}
   */
   readonly values: string[];
@@ -30,12 +30,12 @@ export interface DataProxmoxZfsStorageClassesFilters {
 export function dataProxmoxZfsStorageClassesFiltersToTerraform(struct?: DataProxmoxZfsStorageClassesFilters | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
-  };
+  }
 }
 
 export class DataProxmoxZfsStorageClassesFiltersOutputReference extends cdktf.ComplexObject {
@@ -75,10 +75,12 @@ export class DataProxmoxZfsStorageClassesFiltersOutputReference extends cdktf.Co
       this.resolvableValue = undefined;
       this._name = undefined;
       this._values = undefined;
-    } else if (cdktf.Tokenization.isResolvable(value)) {
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._name = value.name;
@@ -87,7 +89,7 @@ export class DataProxmoxZfsStorageClassesFiltersOutputReference extends cdktf.Co
   }
 
   // name - computed: false, optional: false, required: true
-  private _name?: string;
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -100,7 +102,7 @@ export class DataProxmoxZfsStorageClassesFiltersOutputReference extends cdktf.Co
   }
 
   // values - computed: false, optional: false, required: true
-  private _values?: string[];
+  private _values?: string[]; 
   public get values() {
     return this.getListAttribute('values');
   }
@@ -114,7 +116,7 @@ export class DataProxmoxZfsStorageClassesFiltersOutputReference extends cdktf.Co
 }
 
 export class DataProxmoxZfsStorageClassesFiltersList extends cdktf.ComplexList {
-  public internalValue? : DataProxmoxZfsStorageClassesFilters[] | cdktf.IResolvable;
+  public internalValue? : DataProxmoxZfsStorageClassesFilters[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -122,7 +124,7 @@ export class DataProxmoxZfsStorageClassesFiltersList extends cdktf.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
+    super(terraformResource, terraformAttribute, wrapsSet)
   }
 
   /**
@@ -138,10 +140,10 @@ export interface DataProxmoxZfsStorageClassesZfsStorageClasses {
 export function dataProxmoxZfsStorageClassesZfsStorageClassesToTerraform(struct?: DataProxmoxZfsStorageClassesZfsStorageClasses): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-  };
+  }
 }
 
 export class DataProxmoxZfsStorageClassesZfsStorageClassesOutputReference extends cdktf.ComplexObject {
@@ -166,7 +168,8 @@ export class DataProxmoxZfsStorageClassesZfsStorageClassesOutputReference extend
   public set internalValue(value: DataProxmoxZfsStorageClassesZfsStorageClasses | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
@@ -205,7 +208,7 @@ export class DataProxmoxZfsStorageClassesZfsStorageClassesList extends cdktf.Com
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
+    super(terraformResource, terraformAttribute, wrapsSet)
   }
 
   /**
@@ -224,7 +227,7 @@ export class DataProxmoxZfsStorageClasses extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = 'proxmox_zfs_storage_classes';
+  public static readonly tfResourceType = "proxmox_zfs_storage_classes";
 
   // ===========
   // INITIALIZER
@@ -242,8 +245,8 @@ export class DataProxmoxZfsStorageClasses extends cdktf.TerraformDataSource {
       terraformResourceType: 'proxmox_zfs_storage_classes',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.8',
-        providerVersionConstraint: '~> 0.0.0',
+        providerVersion: '0.0.9',
+        providerVersionConstraint: '~> 0.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -251,7 +254,7 @@ export class DataProxmoxZfsStorageClasses extends cdktf.TerraformDataSource {
       lifecycle: config.lifecycle,
       provisioners: config.provisioners,
       connection: config.connection,
-      forEach: config.forEach,
+      forEach: config.forEach
     });
     this._filters.internalValue = config.filters;
   }
@@ -261,7 +264,7 @@ export class DataProxmoxZfsStorageClasses extends cdktf.TerraformDataSource {
   // ==========
 
   // filters - computed: false, optional: true, required: false
-  private _filters = new DataProxmoxZfsStorageClassesFiltersList(this, 'filters', false);
+  private _filters = new DataProxmoxZfsStorageClassesFiltersList(this, "filters", false);
   public get filters() {
     return this._filters;
   }
@@ -277,7 +280,7 @@ export class DataProxmoxZfsStorageClasses extends cdktf.TerraformDataSource {
   }
 
   // zfs_storage_classes - computed: true, optional: false, required: false
-  private _zfsStorageClasses = new DataProxmoxZfsStorageClassesZfsStorageClassesList(this, 'zfs_storage_classes', false);
+  private _zfsStorageClasses = new DataProxmoxZfsStorageClassesZfsStorageClassesList(this, "zfs_storage_classes", false);
   public get zfsStorageClasses() {
     return this._zfsStorageClasses;
   }

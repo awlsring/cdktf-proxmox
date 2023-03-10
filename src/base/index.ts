@@ -23,6 +23,7 @@ export * as dataProxmoxNodeStorageNfs from './data-proxmox-node-storage-nfs';
 export * as dataProxmoxNodeStorageZfs from './data-proxmox-node-storage-zfs';
 export * as dataProxmoxNodes from './data-proxmox-nodes';
 export * as dataProxmoxResourcePools from './data-proxmox-resource-pools';
+export * as dataProxmoxTemplate from './data-proxmox-template';
 export * as dataProxmoxTemplates from './data-proxmox-templates';
 export * as dataProxmoxVirtualMachines from './data-proxmox-virtual-machines';
 export * as dataProxmoxZfsPools from './data-proxmox-zfs-pools';

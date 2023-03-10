@@ -1,69 +1,69 @@
 // https://www.terraform.io/docs/providers/proxmox/r/network_bridge
 // generated from terraform resource schema
 
-import * as cdktf from 'cdktf';
 import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
 export interface NetworkBridgeConfig extends cdktf.TerraformMetaArguments {
   /**
   * If the bridge is set to autostart.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/network_bridge#autostart NetworkBridge#autostart}
   */
   readonly autostart?: boolean | cdktf.IResolvable;
   /**
   * Comment on the bridge.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/network_bridge#comments NetworkBridge#comments}
   */
   readonly comments?: string;
   /**
   * List of interfaces on the bridge.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/network_bridge#interfaces NetworkBridge#interfaces}
   */
   readonly interfaces: string[];
   /**
   * Information of the ipv4 address.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/network_bridge#ipv4 NetworkBridge#ipv4}
   */
   readonly ipv4?: NetworkBridgeIpv4 | cdktf.IResolvable;
   /**
   * The ipv4 gateway.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/network_bridge#ipv4_gateway NetworkBridge#ipv4_gateway}
   */
   readonly ipv4Gateway?: string;
   /**
   * Information of the ipv6 address.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/network_bridge#ipv6 NetworkBridge#ipv6}
   */
   readonly ipv6?: NetworkBridgeIpv6 | cdktf.IResolvable;
   /**
   * The ipv6 gateway.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/network_bridge#ipv6_gateway NetworkBridge#ipv6_gateway}
   */
   readonly ipv6Gateway?: string;
   /**
   * The name of the bridge. Follows the scheme `vmbr<n>`. If not set, the next available name will be used.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/network_bridge#name NetworkBridge#name}
   */
   readonly name?: string;
   /**
   * The node the bridge is on.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/network_bridge#node NetworkBridge#node}
   */
   readonly nodeAttribute: string;
   /**
   * If the bridge is vlan aware.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/network_bridge#vlan_aware NetworkBridge#vlan_aware}
   */
   readonly vlanAware?: boolean | cdktf.IResolvable;
@@ -82,12 +82,12 @@ export interface NetworkBridgeIpv4 {
 export function networkBridgeIpv4ToTerraform(struct?: NetworkBridgeIpv4 | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     address: cdktf.stringToTerraform(struct!.address),
     netmask: cdktf.stringToTerraform(struct!.netmask),
-  };
+  }
 }
 
 export class NetworkBridgeIpv4OutputReference extends cdktf.ComplexObject {
@@ -125,10 +125,12 @@ export class NetworkBridgeIpv4OutputReference extends cdktf.ComplexObject {
       this.resolvableValue = undefined;
       this._address = undefined;
       this._netmask = undefined;
-    } else if (cdktf.Tokenization.isResolvable(value)) {
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._address = value.address;
@@ -137,7 +139,7 @@ export class NetworkBridgeIpv4OutputReference extends cdktf.ComplexObject {
   }
 
   // address - computed: false, optional: true, required: false
-  private _address?: string;
+  private _address?: string; 
   public get address() {
     return this.getStringAttribute('address');
   }
@@ -153,7 +155,7 @@ export class NetworkBridgeIpv4OutputReference extends cdktf.ComplexObject {
   }
 
   // netmask - computed: false, optional: true, required: false
-  private _netmask?: string;
+  private _netmask?: string; 
   public get netmask() {
     return this.getStringAttribute('netmask');
   }
@@ -182,12 +184,12 @@ export interface NetworkBridgeIpv6 {
 export function networkBridgeIpv6ToTerraform(struct?: NetworkBridgeIpv6 | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     address: cdktf.stringToTerraform(struct!.address),
     netmask: cdktf.stringToTerraform(struct!.netmask),
-  };
+  }
 }
 
 export class NetworkBridgeIpv6OutputReference extends cdktf.ComplexObject {
@@ -225,10 +227,12 @@ export class NetworkBridgeIpv6OutputReference extends cdktf.ComplexObject {
       this.resolvableValue = undefined;
       this._address = undefined;
       this._netmask = undefined;
-    } else if (cdktf.Tokenization.isResolvable(value)) {
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._address = value.address;
@@ -237,7 +241,7 @@ export class NetworkBridgeIpv6OutputReference extends cdktf.ComplexObject {
   }
 
   // address - computed: false, optional: true, required: false
-  private _address?: string;
+  private _address?: string; 
   public get address() {
     return this.getStringAttribute('address');
   }
@@ -253,7 +257,7 @@ export class NetworkBridgeIpv6OutputReference extends cdktf.ComplexObject {
   }
 
   // netmask - computed: false, optional: true, required: false
-  private _netmask?: string;
+  private _netmask?: string; 
   public get netmask() {
     return this.getStringAttribute('netmask');
   }
@@ -277,7 +281,7 @@ export class NetworkBridge extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = 'proxmox_network_bridge';
+  public static readonly tfResourceType = "proxmox_network_bridge";
 
   // ===========
   // INITIALIZER
@@ -295,8 +299,8 @@ export class NetworkBridge extends cdktf.TerraformResource {
       terraformResourceType: 'proxmox_network_bridge',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.8',
-        providerVersionConstraint: '~> 0.0.0',
+        providerVersion: '0.0.9',
+        providerVersionConstraint: '~> 0.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -304,7 +308,7 @@ export class NetworkBridge extends cdktf.TerraformResource {
       lifecycle: config.lifecycle,
       provisioners: config.provisioners,
       connection: config.connection,
-      forEach: config.forEach,
+      forEach: config.forEach
     });
     this._autostart = config.autostart;
     this._comments = config.comments;
@@ -328,7 +332,7 @@ export class NetworkBridge extends cdktf.TerraformResource {
   }
 
   // autostart - computed: true, optional: true, required: false
-  private _autostart?: boolean | cdktf.IResolvable;
+  private _autostart?: boolean | cdktf.IResolvable; 
   public get autostart() {
     return this.getBooleanAttribute('autostart');
   }
@@ -344,7 +348,7 @@ export class NetworkBridge extends cdktf.TerraformResource {
   }
 
   // comments - computed: false, optional: true, required: false
-  private _comments?: string;
+  private _comments?: string; 
   public get comments() {
     return this.getStringAttribute('comments');
   }
@@ -365,7 +369,7 @@ export class NetworkBridge extends cdktf.TerraformResource {
   }
 
   // interfaces - computed: false, optional: false, required: true
-  private _interfaces?: string[];
+  private _interfaces?: string[]; 
   public get interfaces() {
     return this.getListAttribute('interfaces');
   }
@@ -378,7 +382,7 @@ export class NetworkBridge extends cdktf.TerraformResource {
   }
 
   // ipv4 - computed: false, optional: true, required: false
-  private _ipv4?: NetworkBridgeIpv4 | cdktf.IResolvable;
+  private _ipv4?: NetworkBridgeIpv4 | cdktf.IResolvable; 
   public get ipv4() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('ipv4');
@@ -395,7 +399,7 @@ export class NetworkBridge extends cdktf.TerraformResource {
   }
 
   // ipv4_gateway - computed: false, optional: true, required: false
-  private _ipv4Gateway?: string;
+  private _ipv4Gateway?: string; 
   public get ipv4Gateway() {
     return this.getStringAttribute('ipv4_gateway');
   }
@@ -411,7 +415,7 @@ export class NetworkBridge extends cdktf.TerraformResource {
   }
 
   // ipv6 - computed: false, optional: true, required: false
-  private _ipv6?: NetworkBridgeIpv6 | cdktf.IResolvable;
+  private _ipv6?: NetworkBridgeIpv6 | cdktf.IResolvable; 
   public get ipv6() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('ipv6');
@@ -428,7 +432,7 @@ export class NetworkBridge extends cdktf.TerraformResource {
   }
 
   // ipv6_gateway - computed: false, optional: true, required: false
-  private _ipv6Gateway?: string;
+  private _ipv6Gateway?: string; 
   public get ipv6Gateway() {
     return this.getStringAttribute('ipv6_gateway');
   }
@@ -444,7 +448,7 @@ export class NetworkBridge extends cdktf.TerraformResource {
   }
 
   // name - computed: true, optional: true, required: false
-  private _name?: string;
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -460,7 +464,7 @@ export class NetworkBridge extends cdktf.TerraformResource {
   }
 
   // node - computed: false, optional: false, required: true
-  private _node?: string;
+  private _node?: string; 
   public get nodeAttribute() {
     return this.getStringAttribute('node');
   }
@@ -473,7 +477,7 @@ export class NetworkBridge extends cdktf.TerraformResource {
   }
 
   // vlan_aware - computed: true, optional: true, required: false
-  private _vlanAware?: boolean | cdktf.IResolvable;
+  private _vlanAware?: boolean | cdktf.IResolvable; 
   public get vlanAware() {
     return this.getBooleanAttribute('vlan_aware');
   }

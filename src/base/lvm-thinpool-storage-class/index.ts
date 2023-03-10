@@ -1,21 +1,21 @@
 // https://www.terraform.io/docs/providers/proxmox/r/lvm_thinpool_storage_class
 // generated from terraform resource schema
 
-import * as cdktf from 'cdktf';
 import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
 export interface LvmThinpoolStorageClassConfig extends cdktf.TerraformMetaArguments {
   /**
   * The content types that can be stored on this storage class.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/lvm_thinpool_storage_class#content_types LvmThinpoolStorageClass#content_types}
   */
   readonly contentTypes?: string[];
   /**
   * The identifier of the storage class.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/lvm_thinpool_storage_class#id LvmThinpoolStorageClass#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -24,19 +24,19 @@ export interface LvmThinpoolStorageClassConfig extends cdktf.TerraformMetaArgume
   readonly id: string;
   /**
   * Nodes that implement this storage class.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/lvm_thinpool_storage_class#nodes LvmThinpoolStorageClass#nodes}
   */
   readonly nodes?: string[];
   /**
   * The LVM thinpool that should be implemented by each node.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/lvm_thinpool_storage_class#thinpool LvmThinpoolStorageClass#thinpool}
   */
   readonly thinpool: string;
   /**
   * The associated volume group.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/lvm_thinpool_storage_class#volume_group LvmThinpoolStorageClass#volume_group}
   */
   readonly volumeGroup: string;
@@ -50,7 +50,7 @@ export class LvmThinpoolStorageClass extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = 'proxmox_lvm_thinpool_storage_class';
+  public static readonly tfResourceType = "proxmox_lvm_thinpool_storage_class";
 
   // ===========
   // INITIALIZER
@@ -68,8 +68,8 @@ export class LvmThinpoolStorageClass extends cdktf.TerraformResource {
       terraformResourceType: 'proxmox_lvm_thinpool_storage_class',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.8',
-        providerVersionConstraint: '~> 0.0.0',
+        providerVersion: '0.0.9',
+        providerVersionConstraint: '~> 0.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -77,7 +77,7 @@ export class LvmThinpoolStorageClass extends cdktf.TerraformResource {
       lifecycle: config.lifecycle,
       provisioners: config.provisioners,
       connection: config.connection,
-      forEach: config.forEach,
+      forEach: config.forEach
     });
     this._contentTypes = config.contentTypes;
     this._id = config.id;
@@ -91,7 +91,7 @@ export class LvmThinpoolStorageClass extends cdktf.TerraformResource {
   // ==========
 
   // content_types - computed: true, optional: true, required: false
-  private _contentTypes?: string[];
+  private _contentTypes?: string[]; 
   public get contentTypes() {
     return this.getListAttribute('content_types');
   }
@@ -107,7 +107,7 @@ export class LvmThinpoolStorageClass extends cdktf.TerraformResource {
   }
 
   // id - computed: false, optional: false, required: true
-  private _id?: string;
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
@@ -120,7 +120,7 @@ export class LvmThinpoolStorageClass extends cdktf.TerraformResource {
   }
 
   // nodes - computed: true, optional: true, required: false
-  private _nodes?: string[];
+  private _nodes?: string[]; 
   public get nodes() {
     return this.getListAttribute('nodes');
   }
@@ -136,7 +136,7 @@ export class LvmThinpoolStorageClass extends cdktf.TerraformResource {
   }
 
   // thinpool - computed: false, optional: false, required: true
-  private _thinpool?: string;
+  private _thinpool?: string; 
   public get thinpool() {
     return this.getStringAttribute('thinpool');
   }
@@ -149,7 +149,7 @@ export class LvmThinpoolStorageClass extends cdktf.TerraformResource {
   }
 
   // volume_group - computed: false, optional: false, required: true
-  private _volumeGroup?: string;
+  private _volumeGroup?: string; 
   public get volumeGroup() {
     return this.getStringAttribute('volume_group');
   }

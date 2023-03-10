@@ -1,21 +1,21 @@
 // https://www.terraform.io/docs/providers/proxmox/r/zfs_storage_class
 // generated from terraform resource schema
 
-import * as cdktf from 'cdktf';
 import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
 export interface ZfsStorageClassConfig extends cdktf.TerraformMetaArguments {
   /**
   * The content types that can be stored on this storage class.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/zfs_storage_class#content_types ZfsStorageClass#content_types}
   */
   readonly contentTypes?: string[];
   /**
   * The id of the ZFS storage class.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/zfs_storage_class#id ZfsStorageClass#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -24,13 +24,13 @@ export interface ZfsStorageClassConfig extends cdktf.TerraformMetaArguments {
   readonly id: string;
   /**
   * Nodes that implement this storage class.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/zfs_storage_class#nodes ZfsStorageClass#nodes}
   */
   readonly nodes?: string[];
   /**
   * The ZFS pool of the storage.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/zfs_storage_class#pool ZfsStorageClass#pool}
   */
   readonly pool: string;
@@ -44,7 +44,7 @@ export class ZfsStorageClass extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = 'proxmox_zfs_storage_class';
+  public static readonly tfResourceType = "proxmox_zfs_storage_class";
 
   // ===========
   // INITIALIZER
@@ -62,8 +62,8 @@ export class ZfsStorageClass extends cdktf.TerraformResource {
       terraformResourceType: 'proxmox_zfs_storage_class',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.8',
-        providerVersionConstraint: '~> 0.0.0',
+        providerVersion: '0.0.9',
+        providerVersionConstraint: '~> 0.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -71,7 +71,7 @@ export class ZfsStorageClass extends cdktf.TerraformResource {
       lifecycle: config.lifecycle,
       provisioners: config.provisioners,
       connection: config.connection,
-      forEach: config.forEach,
+      forEach: config.forEach
     });
     this._contentTypes = config.contentTypes;
     this._id = config.id;
@@ -84,7 +84,7 @@ export class ZfsStorageClass extends cdktf.TerraformResource {
   // ==========
 
   // content_types - computed: true, optional: true, required: false
-  private _contentTypes?: string[];
+  private _contentTypes?: string[]; 
   public get contentTypes() {
     return this.getListAttribute('content_types');
   }
@@ -100,7 +100,7 @@ export class ZfsStorageClass extends cdktf.TerraformResource {
   }
 
   // id - computed: false, optional: false, required: true
-  private _id?: string;
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
@@ -118,7 +118,7 @@ export class ZfsStorageClass extends cdktf.TerraformResource {
   }
 
   // nodes - computed: true, optional: true, required: false
-  private _nodes?: string[];
+  private _nodes?: string[]; 
   public get nodes() {
     return this.getListAttribute('nodes');
   }
@@ -134,7 +134,7 @@ export class ZfsStorageClass extends cdktf.TerraformResource {
   }
 
   // pool - computed: false, optional: false, required: true
-  private _pool?: string;
+  private _pool?: string; 
   public get pool() {
     return this.getStringAttribute('pool');
   }
