@@ -1,33 +1,33 @@
 // https://www.terraform.io/docs/providers/proxmox/r/zfs_pool
 // generated from terraform resource schema
 
-import * as cdktf from 'cdktf';
 import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
 export interface ZfsPoolConfig extends cdktf.TerraformMetaArguments {
   /**
   * List of disks that make the ZFS pool.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/zfs_pool#disks ZfsPool#disks}
   */
   readonly disks: string[];
   /**
   * The name of the ZFS pool.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/zfs_pool#name ZfsPool#name}
   */
   readonly name: string;
   /**
   * The node the ZFS pool is on.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/zfs_pool#node ZfsPool#node}
   */
   readonly nodeAttribute: string;
   /**
   * The RAID level of the ZFS pool.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/zfs_pool#raid_level ZfsPool#raid_level}
   */
   readonly raidLevel: string;
@@ -41,7 +41,7 @@ export class ZfsPool extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = 'proxmox_zfs_pool';
+  public static readonly tfResourceType = "proxmox_zfs_pool";
 
   // ===========
   // INITIALIZER
@@ -59,8 +59,8 @@ export class ZfsPool extends cdktf.TerraformResource {
       terraformResourceType: 'proxmox_zfs_pool',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.8',
-        providerVersionConstraint: '~> 0.0.0',
+        providerVersion: '0.0.9',
+        providerVersionConstraint: '~> 0.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -68,7 +68,7 @@ export class ZfsPool extends cdktf.TerraformResource {
       lifecycle: config.lifecycle,
       provisioners: config.provisioners,
       connection: config.connection,
-      forEach: config.forEach,
+      forEach: config.forEach
     });
     this._disks = config.disks;
     this._name = config.name;
@@ -81,7 +81,7 @@ export class ZfsPool extends cdktf.TerraformResource {
   // ==========
 
   // disks - computed: false, optional: false, required: true
-  private _disks?: string[];
+  private _disks?: string[]; 
   public get disks() {
     return this.getListAttribute('disks');
   }
@@ -104,7 +104,7 @@ export class ZfsPool extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: false, required: true
-  private _name?: string;
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -117,7 +117,7 @@ export class ZfsPool extends cdktf.TerraformResource {
   }
 
   // node - computed: false, optional: false, required: true
-  private _node?: string;
+  private _node?: string; 
   public get nodeAttribute() {
     return this.getStringAttribute('node');
   }
@@ -130,7 +130,7 @@ export class ZfsPool extends cdktf.TerraformResource {
   }
 
   // raid_level - computed: false, optional: false, required: true
-  private _raidLevel?: string;
+  private _raidLevel?: string; 
   public get raidLevel() {
     return this.getStringAttribute('raid_level');
   }

@@ -1,8 +1,8 @@
 // https://www.terraform.io/docs/providers/proxmox/d/network_bonds
 // generated from terraform resource schema
 
-import * as cdktf from 'cdktf';
 import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
@@ -15,13 +15,13 @@ export interface DataProxmoxNetworkBondsConfig extends cdktf.TerraformMetaArgume
 export interface DataProxmoxNetworkBondsFilters {
   /**
   * The name of the attribute to filter on.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/d/network_bonds#name DataProxmoxNetworkBonds#name}
   */
   readonly name: string;
   /**
   * The value(s) to be used in the filter.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/d/network_bonds#values DataProxmoxNetworkBonds#values}
   */
   readonly values: string[];
@@ -30,12 +30,12 @@ export interface DataProxmoxNetworkBondsFilters {
 export function dataProxmoxNetworkBondsFiltersToTerraform(struct?: DataProxmoxNetworkBondsFilters | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
-  };
+  }
 }
 
 export class DataProxmoxNetworkBondsFiltersOutputReference extends cdktf.ComplexObject {
@@ -75,10 +75,12 @@ export class DataProxmoxNetworkBondsFiltersOutputReference extends cdktf.Complex
       this.resolvableValue = undefined;
       this._name = undefined;
       this._values = undefined;
-    } else if (cdktf.Tokenization.isResolvable(value)) {
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._name = value.name;
@@ -87,7 +89,7 @@ export class DataProxmoxNetworkBondsFiltersOutputReference extends cdktf.Complex
   }
 
   // name - computed: false, optional: false, required: true
-  private _name?: string;
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -100,7 +102,7 @@ export class DataProxmoxNetworkBondsFiltersOutputReference extends cdktf.Complex
   }
 
   // values - computed: false, optional: false, required: true
-  private _values?: string[];
+  private _values?: string[]; 
   public get values() {
     return this.getListAttribute('values');
   }
@@ -114,7 +116,7 @@ export class DataProxmoxNetworkBondsFiltersOutputReference extends cdktf.Complex
 }
 
 export class DataProxmoxNetworkBondsFiltersList extends cdktf.ComplexList {
-  public internalValue? : DataProxmoxNetworkBondsFilters[] | cdktf.IResolvable;
+  public internalValue? : DataProxmoxNetworkBondsFilters[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -122,7 +124,7 @@ export class DataProxmoxNetworkBondsFiltersList extends cdktf.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
+    super(terraformResource, terraformAttribute, wrapsSet)
   }
 
   /**
@@ -138,10 +140,10 @@ export interface DataProxmoxNetworkBondsNetworkBondsIpv4 {
 export function dataProxmoxNetworkBondsNetworkBondsIpv4ToTerraform(struct?: DataProxmoxNetworkBondsNetworkBondsIpv4): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-  };
+  }
 }
 
 export class DataProxmoxNetworkBondsNetworkBondsIpv4OutputReference extends cdktf.ComplexObject {
@@ -164,7 +166,8 @@ export class DataProxmoxNetworkBondsNetworkBondsIpv4OutputReference extends cdkt
   public set internalValue(value: DataProxmoxNetworkBondsNetworkBondsIpv4 | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
@@ -185,10 +188,10 @@ export interface DataProxmoxNetworkBondsNetworkBondsIpv6 {
 export function dataProxmoxNetworkBondsNetworkBondsIpv6ToTerraform(struct?: DataProxmoxNetworkBondsNetworkBondsIpv6): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-  };
+  }
 }
 
 export class DataProxmoxNetworkBondsNetworkBondsIpv6OutputReference extends cdktf.ComplexObject {
@@ -211,7 +214,8 @@ export class DataProxmoxNetworkBondsNetworkBondsIpv6OutputReference extends cdkt
   public set internalValue(value: DataProxmoxNetworkBondsNetworkBondsIpv6 | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
@@ -229,13 +233,13 @@ export class DataProxmoxNetworkBondsNetworkBondsIpv6OutputReference extends cdkt
 export interface DataProxmoxNetworkBondsNetworkBonds {
   /**
   * The ipv4 gateway.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/d/network_bonds#ipv4_gateway DataProxmoxNetworkBonds#ipv4_gateway}
   */
   readonly ipv4Gateway?: string;
   /**
   * The ipv6 gateway.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/d/network_bonds#ipv6_gateway DataProxmoxNetworkBonds#ipv6_gateway}
   */
   readonly ipv6Gateway?: string;
@@ -244,12 +248,12 @@ export interface DataProxmoxNetworkBondsNetworkBonds {
 export function dataProxmoxNetworkBondsNetworkBondsToTerraform(struct?: DataProxmoxNetworkBondsNetworkBonds): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     ipv4_gateway: cdktf.stringToTerraform(struct!.ipv4Gateway),
     ipv6_gateway: cdktf.stringToTerraform(struct!.ipv6Gateway),
-  };
+  }
 }
 
 export class DataProxmoxNetworkBondsNetworkBondsOutputReference extends cdktf.ComplexObject {
@@ -284,7 +288,8 @@ export class DataProxmoxNetworkBondsNetworkBondsOutputReference extends cdktf.Co
       this.isEmptyObject = false;
       this._ipv4Gateway = undefined;
       this._ipv6Gateway = undefined;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._ipv4Gateway = value.ipv4Gateway;
       this._ipv6Gateway = value.ipv6Gateway;
@@ -333,7 +338,7 @@ export class DataProxmoxNetworkBondsNetworkBondsOutputReference extends cdktf.Co
   }
 
   // ipv4_gateway - computed: true, optional: true, required: false
-  private _ipv4Gateway?: string;
+  private _ipv4Gateway?: string; 
   public get ipv4Gateway() {
     return this.getStringAttribute('ipv4_gateway');
   }
@@ -355,7 +360,7 @@ export class DataProxmoxNetworkBondsNetworkBondsOutputReference extends cdktf.Co
   }
 
   // ipv6_gateway - computed: true, optional: true, required: false
-  private _ipv6Gateway?: string;
+  private _ipv6Gateway?: string; 
   public get ipv6Gateway() {
     return this.getStringAttribute('ipv6_gateway');
   }
@@ -392,7 +397,7 @@ export class DataProxmoxNetworkBondsNetworkBondsOutputReference extends cdktf.Co
 }
 
 export class DataProxmoxNetworkBondsNetworkBondsList extends cdktf.ComplexList {
-  public internalValue? : DataProxmoxNetworkBondsNetworkBonds[] | cdktf.IResolvable;
+  public internalValue? : DataProxmoxNetworkBondsNetworkBonds[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -400,7 +405,7 @@ export class DataProxmoxNetworkBondsNetworkBondsList extends cdktf.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
+    super(terraformResource, terraformAttribute, wrapsSet)
   }
 
   /**
@@ -419,7 +424,7 @@ export class DataProxmoxNetworkBonds extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = 'proxmox_network_bonds';
+  public static readonly tfResourceType = "proxmox_network_bonds";
 
   // ===========
   // INITIALIZER
@@ -437,8 +442,8 @@ export class DataProxmoxNetworkBonds extends cdktf.TerraformDataSource {
       terraformResourceType: 'proxmox_network_bonds',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.8',
-        providerVersionConstraint: '~> 0.0.0',
+        providerVersion: '0.0.9',
+        providerVersionConstraint: '~> 0.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -446,7 +451,7 @@ export class DataProxmoxNetworkBonds extends cdktf.TerraformDataSource {
       lifecycle: config.lifecycle,
       provisioners: config.provisioners,
       connection: config.connection,
-      forEach: config.forEach,
+      forEach: config.forEach
     });
     this._filters.internalValue = config.filters;
   }
@@ -456,7 +461,7 @@ export class DataProxmoxNetworkBonds extends cdktf.TerraformDataSource {
   // ==========
 
   // filters - computed: false, optional: true, required: false
-  private _filters = new DataProxmoxNetworkBondsFiltersList(this, 'filters', false);
+  private _filters = new DataProxmoxNetworkBondsFiltersList(this, "filters", false);
   public get filters() {
     return this._filters;
   }
@@ -472,7 +477,7 @@ export class DataProxmoxNetworkBonds extends cdktf.TerraformDataSource {
   }
 
   // network_bonds - computed: true, optional: false, required: false
-  private _networkBonds = new DataProxmoxNetworkBondsNetworkBondsList(this, 'network_bonds', false);
+  private _networkBonds = new DataProxmoxNetworkBondsNetworkBondsList(this, "network_bonds", false);
   public get networkBonds() {
     return this._networkBonds;
   }

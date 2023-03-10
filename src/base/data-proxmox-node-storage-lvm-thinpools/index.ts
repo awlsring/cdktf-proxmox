@@ -1,8 +1,8 @@
 // https://www.terraform.io/docs/providers/proxmox/d/node_storage_lvm_thinpools
 // generated from terraform resource schema
 
-import * as cdktf from 'cdktf';
 import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
@@ -15,13 +15,13 @@ export interface DataProxmoxNodeStorageLvmThinpoolsConfig extends cdktf.Terrafor
 export interface DataProxmoxNodeStorageLvmThinpoolsFilters {
   /**
   * The name of the attribute to filter on.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/d/node_storage_lvm_thinpools#name DataProxmoxNodeStorageLvmThinpools#name}
   */
   readonly name: string;
   /**
   * The value(s) to be used in the filter.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/d/node_storage_lvm_thinpools#values DataProxmoxNodeStorageLvmThinpools#values}
   */
   readonly values: string[];
@@ -30,12 +30,12 @@ export interface DataProxmoxNodeStorageLvmThinpoolsFilters {
 export function dataProxmoxNodeStorageLvmThinpoolsFiltersToTerraform(struct?: DataProxmoxNodeStorageLvmThinpoolsFilters | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
-  };
+  }
 }
 
 export class DataProxmoxNodeStorageLvmThinpoolsFiltersOutputReference extends cdktf.ComplexObject {
@@ -75,10 +75,12 @@ export class DataProxmoxNodeStorageLvmThinpoolsFiltersOutputReference extends cd
       this.resolvableValue = undefined;
       this._name = undefined;
       this._values = undefined;
-    } else if (cdktf.Tokenization.isResolvable(value)) {
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._name = value.name;
@@ -87,7 +89,7 @@ export class DataProxmoxNodeStorageLvmThinpoolsFiltersOutputReference extends cd
   }
 
   // name - computed: false, optional: false, required: true
-  private _name?: string;
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -100,7 +102,7 @@ export class DataProxmoxNodeStorageLvmThinpoolsFiltersOutputReference extends cd
   }
 
   // values - computed: false, optional: false, required: true
-  private _values?: string[];
+  private _values?: string[]; 
   public get values() {
     return this.getListAttribute('values');
   }
@@ -114,7 +116,7 @@ export class DataProxmoxNodeStorageLvmThinpoolsFiltersOutputReference extends cd
 }
 
 export class DataProxmoxNodeStorageLvmThinpoolsFiltersList extends cdktf.ComplexList {
-  public internalValue? : DataProxmoxNodeStorageLvmThinpoolsFilters[] | cdktf.IResolvable;
+  public internalValue? : DataProxmoxNodeStorageLvmThinpoolsFilters[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -122,7 +124,7 @@ export class DataProxmoxNodeStorageLvmThinpoolsFiltersList extends cdktf.Complex
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
+    super(terraformResource, terraformAttribute, wrapsSet)
   }
 
   /**
@@ -138,10 +140,10 @@ export interface DataProxmoxNodeStorageLvmThinpoolsNodeStorageLvmThinpools {
 export function dataProxmoxNodeStorageLvmThinpoolsNodeStorageLvmThinpoolsToTerraform(struct?: DataProxmoxNodeStorageLvmThinpoolsNodeStorageLvmThinpools): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
-    throw new Error('A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration');
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-  };
+  }
 }
 
 export class DataProxmoxNodeStorageLvmThinpoolsNodeStorageLvmThinpoolsOutputReference extends cdktf.ComplexObject {
@@ -166,7 +168,8 @@ export class DataProxmoxNodeStorageLvmThinpoolsNodeStorageLvmThinpoolsOutputRefe
   public set internalValue(value: DataProxmoxNodeStorageLvmThinpoolsNodeStorageLvmThinpools | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-    } else {
+    }
+    else {
       this.isEmptyObject = Object.keys(value).length === 0;
     }
   }
@@ -215,7 +218,7 @@ export class DataProxmoxNodeStorageLvmThinpoolsNodeStorageLvmThinpoolsList exten
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
+    super(terraformResource, terraformAttribute, wrapsSet)
   }
 
   /**
@@ -234,7 +237,7 @@ export class DataProxmoxNodeStorageLvmThinpools extends cdktf.TerraformDataSourc
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = 'proxmox_node_storage_lvm_thinpools';
+  public static readonly tfResourceType = "proxmox_node_storage_lvm_thinpools";
 
   // ===========
   // INITIALIZER
@@ -252,8 +255,8 @@ export class DataProxmoxNodeStorageLvmThinpools extends cdktf.TerraformDataSourc
       terraformResourceType: 'proxmox_node_storage_lvm_thinpools',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.8',
-        providerVersionConstraint: '~> 0.0.0',
+        providerVersion: '0.0.9',
+        providerVersionConstraint: '~> 0.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -261,7 +264,7 @@ export class DataProxmoxNodeStorageLvmThinpools extends cdktf.TerraformDataSourc
       lifecycle: config.lifecycle,
       provisioners: config.provisioners,
       connection: config.connection,
-      forEach: config.forEach,
+      forEach: config.forEach
     });
     this._filters.internalValue = config.filters;
   }
@@ -271,7 +274,7 @@ export class DataProxmoxNodeStorageLvmThinpools extends cdktf.TerraformDataSourc
   // ==========
 
   // filters - computed: false, optional: true, required: false
-  private _filters = new DataProxmoxNodeStorageLvmThinpoolsFiltersList(this, 'filters', false);
+  private _filters = new DataProxmoxNodeStorageLvmThinpoolsFiltersList(this, "filters", false);
   public get filters() {
     return this._filters;
   }
@@ -287,7 +290,7 @@ export class DataProxmoxNodeStorageLvmThinpools extends cdktf.TerraformDataSourc
   }
 
   // node_storage_lvm_thinpools - computed: true, optional: false, required: false
-  private _nodeStorageLvmThinpools = new DataProxmoxNodeStorageLvmThinpoolsNodeStorageLvmThinpoolsList(this, 'node_storage_lvm_thinpools', false);
+  private _nodeStorageLvmThinpools = new DataProxmoxNodeStorageLvmThinpoolsNodeStorageLvmThinpoolsList(this, "node_storage_lvm_thinpools", false);
   public get nodeStorageLvmThinpools() {
     return this._nodeStorageLvmThinpools;
   }

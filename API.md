@@ -6931,6 +6931,742 @@ public readonly tfResourceType: string;
 
 ---
 
+### DataProxmoxTemplate <a name="DataProxmoxTemplate" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/proxmox/d/template proxmox_template}.
+
+#### Initializers <a name="Initializers" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+new dataProxmoxTemplate.DataProxmoxTemplate(scope: Construct, id: string, config: DataProxmoxTemplateConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.Initializer.parameter.config">config</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateConfig</code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.Initializer.parameter.config"></a>
+
+- *Type:* @awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateConfig
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.resetName">resetName</a></code> | *No description.* |
+
+---
+
+##### `toString` <a name="toString" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `addOverride` <a name="addOverride" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.addOverride"></a>
+
+```typescript
+public addOverride(path: string, value: any): void
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.addOverride.parameter.value"></a>
+
+- *Type:* any
+
+---
+
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.overrideLogicalId"></a>
+
+```typescript
+public overrideLogicalId(newLogicalId: string): void
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.resetOverrideLogicalId"></a>
+
+```typescript
+public resetOverrideLogicalId(): void
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toMetadata` <a name="toMetadata" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.toMetadata"></a>
+
+```typescript
+public toMetadata(): any
+```
+
+##### `toTerraform` <a name="toTerraform" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.toTerraform"></a>
+
+```typescript
+public toTerraform(): any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `resetId` <a name="resetId" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.resetId"></a>
+
+```typescript
+public resetId(): void
+```
+
+##### `resetName` <a name="resetName" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.resetName"></a>
+
+```typescript
+public resetName(): void
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
+
+---
+
+##### `isConstruct` <a name="isConstruct" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.isConstruct"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+dataProxmoxTemplate.DataProxmoxTemplate.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.isTerraformElement"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+dataProxmoxTemplate.DataProxmoxTemplate.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.isTerraformDataSource"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+dataProxmoxTemplate.DataProxmoxTemplate.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.agent">agent</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.bios">bios</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.cloudInit">cloudInit</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.cpu">cpu</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.disks">disks</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksList</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.keyboardLayout">keyboardLayout</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.kvmArguments">kvmArguments</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.machineType">machineType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.memory">memory</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.networkInterfaces">networkInterfaces</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesList</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.pciDevices">pciDevices</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesList</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.resourcePool">resourcePool</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.startOnNodeBoot">startOnNodeBoot</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.tags">tags</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.idInput">idInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.nodeAttributeInput">nodeAttributeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.id">id</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.nodeAttribute">nodeAttribute</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.cdktfStack"></a>
+
+```typescript
+public readonly cdktfStack: TerraformStack;
+```
+
+- *Type:* cdktf.TerraformStack
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.friendlyUniqueId"></a>
+
+```typescript
+public readonly friendlyUniqueId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.terraformMetaArguments"></a>
+
+```typescript
+public readonly terraformMetaArguments: {[ key: string ]: any};
+```
+
+- *Type:* {[ key: string ]: any}
+
+---
+
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.terraformResourceType"></a>
+
+```typescript
+public readonly terraformResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.terraformGeneratorMetadata"></a>
+
+```typescript
+public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
+```
+
+- *Type:* cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `agent`<sup>Required</sup> <a name="agent" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.agent"></a>
+
+```typescript
+public readonly agent: DataProxmoxTemplateAgentOutputReference;
+```
+
+- *Type:* @awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference
+
+---
+
+##### `bios`<sup>Required</sup> <a name="bios" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.bios"></a>
+
+```typescript
+public readonly bios: string;
+```
+
+- *Type:* string
+
+---
+
+##### `cloudInit`<sup>Required</sup> <a name="cloudInit" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.cloudInit"></a>
+
+```typescript
+public readonly cloudInit: DataProxmoxTemplateCloudInitOutputReference;
+```
+
+- *Type:* @awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference
+
+---
+
+##### `cpu`<sup>Required</sup> <a name="cpu" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.cpu"></a>
+
+```typescript
+public readonly cpu: DataProxmoxTemplateCpuOutputReference;
+```
+
+- *Type:* @awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* string
+
+---
+
+##### `disks`<sup>Required</sup> <a name="disks" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.disks"></a>
+
+```typescript
+public readonly disks: DataProxmoxTemplateDisksList;
+```
+
+- *Type:* @awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksList
+
+---
+
+##### `keyboardLayout`<sup>Required</sup> <a name="keyboardLayout" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.keyboardLayout"></a>
+
+```typescript
+public readonly keyboardLayout: string;
+```
+
+- *Type:* string
+
+---
+
+##### `kvmArguments`<sup>Required</sup> <a name="kvmArguments" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.kvmArguments"></a>
+
+```typescript
+public readonly kvmArguments: string;
+```
+
+- *Type:* string
+
+---
+
+##### `machineType`<sup>Required</sup> <a name="machineType" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.machineType"></a>
+
+```typescript
+public readonly machineType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `memory`<sup>Required</sup> <a name="memory" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.memory"></a>
+
+```typescript
+public readonly memory: DataProxmoxTemplateMemoryOutputReference;
+```
+
+- *Type:* @awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference
+
+---
+
+##### `networkInterfaces`<sup>Required</sup> <a name="networkInterfaces" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.networkInterfaces"></a>
+
+```typescript
+public readonly networkInterfaces: DataProxmoxTemplateNetworkInterfacesList;
+```
+
+- *Type:* @awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesList
+
+---
+
+##### `pciDevices`<sup>Required</sup> <a name="pciDevices" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.pciDevices"></a>
+
+```typescript
+public readonly pciDevices: DataProxmoxTemplatePciDevicesList;
+```
+
+- *Type:* @awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesList
+
+---
+
+##### `resourcePool`<sup>Required</sup> <a name="resourcePool" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.resourcePool"></a>
+
+```typescript
+public readonly resourcePool: string;
+```
+
+- *Type:* string
+
+---
+
+##### `startOnNodeBoot`<sup>Required</sup> <a name="startOnNodeBoot" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.startOnNodeBoot"></a>
+
+```typescript
+public readonly startOnNodeBoot: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.tags"></a>
+
+```typescript
+public readonly tags: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* string
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.idInput"></a>
+
+```typescript
+public readonly idInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nodeAttributeInput`<sup>Optional</sup> <a name="nodeAttributeInput" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.nodeAttributeInput"></a>
+
+```typescript
+public readonly nodeAttributeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.id"></a>
+
+```typescript
+public readonly id: number;
+```
+
+- *Type:* number
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nodeAttribute`<sup>Required</sup> <a name="nodeAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.nodeAttribute"></a>
+
+```typescript
+public readonly nodeAttribute: string;
+```
+
+- *Type:* string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplate.property.tfResourceType"></a>
+
+```typescript
+public readonly tfResourceType: string;
+```
+
+- *Type:* string
+
+---
+
 ### DataProxmoxTemplates <a name="DataProxmoxTemplates" id="@awlsring/cdktf-proxmox.dataProxmoxTemplates.DataProxmoxTemplates"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/proxmox/d/templates proxmox_templates}.
@@ -19722,6 +20458,291 @@ const dataProxmoxResourcePoolsResourcePools: dataProxmoxResourcePools.DataProxmo
 import { dataProxmoxResourcePools } from '@awlsring/cdktf-proxmox'
 
 const dataProxmoxResourcePoolsResourcePoolsMembers: dataProxmoxResourcePools.DataProxmoxResourcePoolsResourcePoolsMembers = { ... }
+```
+
+
+### DataProxmoxTemplateAgent <a name="DataProxmoxTemplateAgent" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgent"></a>
+
+#### Initializer <a name="Initializer" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgent.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+const dataProxmoxTemplateAgent: dataProxmoxTemplate.DataProxmoxTemplateAgent = { ... }
+```
+
+
+### DataProxmoxTemplateCloudInit <a name="DataProxmoxTemplateCloudInit" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInit"></a>
+
+#### Initializer <a name="Initializer" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInit.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+const dataProxmoxTemplateCloudInit: dataProxmoxTemplate.DataProxmoxTemplateCloudInit = { ... }
+```
+
+
+### DataProxmoxTemplateCloudInitDns <a name="DataProxmoxTemplateCloudInitDns" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDns"></a>
+
+#### Initializer <a name="Initializer" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDns.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+const dataProxmoxTemplateCloudInitDns: dataProxmoxTemplate.DataProxmoxTemplateCloudInitDns = { ... }
+```
+
+
+### DataProxmoxTemplateCloudInitIp <a name="DataProxmoxTemplateCloudInitIp" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIp"></a>
+
+#### Initializer <a name="Initializer" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIp.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+const dataProxmoxTemplateCloudInitIp: dataProxmoxTemplate.DataProxmoxTemplateCloudInitIp = { ... }
+```
+
+
+### DataProxmoxTemplateCloudInitIpV4 <a name="DataProxmoxTemplateCloudInitIpV4" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4"></a>
+
+#### Initializer <a name="Initializer" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+const dataProxmoxTemplateCloudInitIpV4: dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4 = { ... }
+```
+
+
+### DataProxmoxTemplateCloudInitIpV6 <a name="DataProxmoxTemplateCloudInitIpV6" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6"></a>
+
+#### Initializer <a name="Initializer" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+const dataProxmoxTemplateCloudInitIpV6: dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6 = { ... }
+```
+
+
+### DataProxmoxTemplateCloudInitUser <a name="DataProxmoxTemplateCloudInitUser" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUser"></a>
+
+#### Initializer <a name="Initializer" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUser.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+const dataProxmoxTemplateCloudInitUser: dataProxmoxTemplate.DataProxmoxTemplateCloudInitUser = { ... }
+```
+
+
+### DataProxmoxTemplateConfig <a name="DataProxmoxTemplateConfig" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateConfig"></a>
+
+#### Initializer <a name="Initializer" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateConfig.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+const dataProxmoxTemplateConfig: dataProxmoxTemplate.DataProxmoxTemplateConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateConfig.property.nodeAttribute">nodeAttribute</a></code> | <code>string</code> | The node to create the template on. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateConfig.property.id">id</a></code> | <code>number</code> | The identifier of the template. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateConfig.property.name">name</a></code> | <code>string</code> | The name of the template. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateConfig.property.connection"></a>
+
+```typescript
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* cdktf.ITerraformDependable[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+
+---
+
+##### `nodeAttribute`<sup>Required</sup> <a name="nodeAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateConfig.property.nodeAttribute"></a>
+
+```typescript
+public readonly nodeAttribute: string;
+```
+
+- *Type:* string
+
+The node to create the template on.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/d/template#node DataProxmoxTemplate#node}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateConfig.property.id"></a>
+
+```typescript
+public readonly id: number;
+```
+
+- *Type:* number
+
+The identifier of the template.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/d/template#id DataProxmoxTemplate#id}
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+The name of the template.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/d/template#name DataProxmoxTemplate#name}
+
+---
+
+### DataProxmoxTemplateCpu <a name="DataProxmoxTemplateCpu" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpu"></a>
+
+#### Initializer <a name="Initializer" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpu.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+const dataProxmoxTemplateCpu: dataProxmoxTemplate.DataProxmoxTemplateCpu = { ... }
+```
+
+
+### DataProxmoxTemplateDisks <a name="DataProxmoxTemplateDisks" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisks"></a>
+
+#### Initializer <a name="Initializer" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisks.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+const dataProxmoxTemplateDisks: dataProxmoxTemplate.DataProxmoxTemplateDisks = { ... }
+```
+
+
+### DataProxmoxTemplateDisksSpeedLimits <a name="DataProxmoxTemplateDisksSpeedLimits" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimits"></a>
+
+#### Initializer <a name="Initializer" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimits.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+const dataProxmoxTemplateDisksSpeedLimits: dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimits = { ... }
+```
+
+
+### DataProxmoxTemplateMemory <a name="DataProxmoxTemplateMemory" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemory"></a>
+
+#### Initializer <a name="Initializer" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemory.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+const dataProxmoxTemplateMemory: dataProxmoxTemplate.DataProxmoxTemplateMemory = { ... }
+```
+
+
+### DataProxmoxTemplateNetworkInterfaces <a name="DataProxmoxTemplateNetworkInterfaces" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfaces"></a>
+
+#### Initializer <a name="Initializer" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfaces.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+const dataProxmoxTemplateNetworkInterfaces: dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfaces = { ... }
+```
+
+
+### DataProxmoxTemplatePciDevices <a name="DataProxmoxTemplatePciDevices" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevices"></a>
+
+#### Initializer <a name="Initializer" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevices.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+const dataProxmoxTemplatePciDevices: dataProxmoxTemplate.DataProxmoxTemplatePciDevices = { ... }
 ```
 
 
@@ -39250,6 +40271,4492 @@ public readonly internalValue: DataProxmoxResourcePoolsResourcePools;
 ```
 
 - *Type:* @awlsring/cdktf-proxmox.dataProxmoxResourcePools.DataProxmoxResourcePoolsResourcePools
+
+---
+
+
+### DataProxmoxTemplateAgentOutputReference <a name="DataProxmoxTemplateAgentOutputReference" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+new dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.property.useFstrim">useFstrim</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.property.internalValue">internalValue</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgent</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.property.enabled"></a>
+
+```typescript
+public readonly enabled: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* string
+
+---
+
+##### `useFstrim`<sup>Required</sup> <a name="useFstrim" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.property.useFstrim"></a>
+
+```typescript
+public readonly useFstrim: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgentOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataProxmoxTemplateAgent;
+```
+
+- *Type:* @awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateAgent
+
+---
+
+
+### DataProxmoxTemplateCloudInitDnsOutputReference <a name="DataProxmoxTemplateCloudInitDnsOutputReference" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+new dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.property.domain">domain</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.property.nameserver">nameserver</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.property.internalValue">internalValue</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDns</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `domain`<sup>Required</sup> <a name="domain" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.property.domain"></a>
+
+```typescript
+public readonly domain: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nameserver`<sup>Required</sup> <a name="nameserver" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.property.nameserver"></a>
+
+```typescript
+public readonly nameserver: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataProxmoxTemplateCloudInitDns;
+```
+
+- *Type:* @awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDns
+
+---
+
+
+### DataProxmoxTemplateCloudInitIpList <a name="DataProxmoxTemplateCloudInitIpList" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpList"></a>
+
+#### Initializers <a name="Initializers" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpList.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+new dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpList.get">get</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpList.get"></a>
+
+```typescript
+public get(index: number): DataProxmoxTemplateCloudInitIpOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataProxmoxTemplateCloudInitIpOutputReference <a name="DataProxmoxTemplateCloudInitIpOutputReference" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+new dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.property.position">position</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.property.v4">v4</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.property.v6">v6</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.property.internalValue">internalValue</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIp</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `position`<sup>Required</sup> <a name="position" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.property.position"></a>
+
+```typescript
+public readonly position: number;
+```
+
+- *Type:* number
+
+---
+
+##### `v4`<sup>Required</sup> <a name="v4" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.property.v4"></a>
+
+```typescript
+public readonly v4: DataProxmoxTemplateCloudInitIpV4OutputReference;
+```
+
+- *Type:* @awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference
+
+---
+
+##### `v6`<sup>Required</sup> <a name="v6" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.property.v6"></a>
+
+```typescript
+public readonly v6: DataProxmoxTemplateCloudInitIpV6OutputReference;
+```
+
+- *Type:* @awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataProxmoxTemplateCloudInitIp;
+```
+
+- *Type:* @awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIp
+
+---
+
+
+### DataProxmoxTemplateCloudInitIpV4OutputReference <a name="DataProxmoxTemplateCloudInitIpV4OutputReference" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+new dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.property.address">address</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.property.dhcp">dhcp</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.property.gateway">gateway</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.property.netmask">netmask</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.property.internalValue">internalValue</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `address`<sup>Required</sup> <a name="address" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.property.address"></a>
+
+```typescript
+public readonly address: string;
+```
+
+- *Type:* string
+
+---
+
+##### `dhcp`<sup>Required</sup> <a name="dhcp" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.property.dhcp"></a>
+
+```typescript
+public readonly dhcp: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `gateway`<sup>Required</sup> <a name="gateway" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.property.gateway"></a>
+
+```typescript
+public readonly gateway: string;
+```
+
+- *Type:* string
+
+---
+
+##### `netmask`<sup>Required</sup> <a name="netmask" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.property.netmask"></a>
+
+```typescript
+public readonly netmask: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4OutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataProxmoxTemplateCloudInitIpV4;
+```
+
+- *Type:* @awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV4
+
+---
+
+
+### DataProxmoxTemplateCloudInitIpV6OutputReference <a name="DataProxmoxTemplateCloudInitIpV6OutputReference" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+new dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.property.address">address</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.property.dhcp">dhcp</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.property.gateway">gateway</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.property.netmask">netmask</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.property.internalValue">internalValue</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `address`<sup>Required</sup> <a name="address" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.property.address"></a>
+
+```typescript
+public readonly address: string;
+```
+
+- *Type:* string
+
+---
+
+##### `dhcp`<sup>Required</sup> <a name="dhcp" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.property.dhcp"></a>
+
+```typescript
+public readonly dhcp: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `gateway`<sup>Required</sup> <a name="gateway" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.property.gateway"></a>
+
+```typescript
+public readonly gateway: string;
+```
+
+- *Type:* string
+
+---
+
+##### `netmask`<sup>Required</sup> <a name="netmask" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.property.netmask"></a>
+
+```typescript
+public readonly netmask: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6OutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataProxmoxTemplateCloudInitIpV6;
+```
+
+- *Type:* @awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpV6
+
+---
+
+
+### DataProxmoxTemplateCloudInitOutputReference <a name="DataProxmoxTemplateCloudInitOutputReference" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+new dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.property.dns">dns</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.property.ip">ip</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpList</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.property.user">user</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.property.internalValue">internalValue</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInit</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `dns`<sup>Required</sup> <a name="dns" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.property.dns"></a>
+
+```typescript
+public readonly dns: DataProxmoxTemplateCloudInitDnsOutputReference;
+```
+
+- *Type:* @awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitDnsOutputReference
+
+---
+
+##### `ip`<sup>Required</sup> <a name="ip" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.property.ip"></a>
+
+```typescript
+public readonly ip: DataProxmoxTemplateCloudInitIpList;
+```
+
+- *Type:* @awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitIpList
+
+---
+
+##### `user`<sup>Required</sup> <a name="user" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.property.user"></a>
+
+```typescript
+public readonly user: DataProxmoxTemplateCloudInitUserOutputReference;
+```
+
+- *Type:* @awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataProxmoxTemplateCloudInit;
+```
+
+- *Type:* @awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInit
+
+---
+
+
+### DataProxmoxTemplateCloudInitUserOutputReference <a name="DataProxmoxTemplateCloudInitUserOutputReference" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+new dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.property.password">password</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.property.publicKeys">publicKeys</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.property.internalValue">internalValue</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUser</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `password`<sup>Required</sup> <a name="password" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.property.password"></a>
+
+```typescript
+public readonly password: string;
+```
+
+- *Type:* string
+
+---
+
+##### `publicKeys`<sup>Required</sup> <a name="publicKeys" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.property.publicKeys"></a>
+
+```typescript
+public readonly publicKeys: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUserOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataProxmoxTemplateCloudInitUser;
+```
+
+- *Type:* @awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCloudInitUser
+
+---
+
+
+### DataProxmoxTemplateCpuOutputReference <a name="DataProxmoxTemplateCpuOutputReference" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+new dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.property.architecture">architecture</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.property.cores">cores</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.property.cpuUnits">cpuUnits</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.property.emulatedType">emulatedType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.property.sockets">sockets</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.property.internalValue">internalValue</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpu</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `architecture`<sup>Required</sup> <a name="architecture" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.property.architecture"></a>
+
+```typescript
+public readonly architecture: string;
+```
+
+- *Type:* string
+
+---
+
+##### `cores`<sup>Required</sup> <a name="cores" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.property.cores"></a>
+
+```typescript
+public readonly cores: number;
+```
+
+- *Type:* number
+
+---
+
+##### `cpuUnits`<sup>Required</sup> <a name="cpuUnits" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.property.cpuUnits"></a>
+
+```typescript
+public readonly cpuUnits: number;
+```
+
+- *Type:* number
+
+---
+
+##### `emulatedType`<sup>Required</sup> <a name="emulatedType" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.property.emulatedType"></a>
+
+```typescript
+public readonly emulatedType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `sockets`<sup>Required</sup> <a name="sockets" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.property.sockets"></a>
+
+```typescript
+public readonly sockets: number;
+```
+
+- *Type:* number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpuOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataProxmoxTemplateCpu;
+```
+
+- *Type:* @awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateCpu
+
+---
+
+
+### DataProxmoxTemplateDisksList <a name="DataProxmoxTemplateDisksList" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksList"></a>
+
+#### Initializers <a name="Initializers" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksList.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+new dataProxmoxTemplate.DataProxmoxTemplateDisksList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksList.get">get</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksList.get"></a>
+
+```typescript
+public get(index: number): DataProxmoxTemplateDisksOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataProxmoxTemplateDisksOutputReference <a name="DataProxmoxTemplateDisksOutputReference" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+new dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.discard">discard</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.fileFormat">fileFormat</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.interfaceType">interfaceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.position">position</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.size">size</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.speedLimits">speedLimits</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.ssdEmulation">ssdEmulation</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.storage">storage</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.useIothread">useIothread</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.internalValue">internalValue</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisks</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `discard`<sup>Required</sup> <a name="discard" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.discard"></a>
+
+```typescript
+public readonly discard: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `fileFormat`<sup>Required</sup> <a name="fileFormat" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.fileFormat"></a>
+
+```typescript
+public readonly fileFormat: string;
+```
+
+- *Type:* string
+
+---
+
+##### `interfaceType`<sup>Required</sup> <a name="interfaceType" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.interfaceType"></a>
+
+```typescript
+public readonly interfaceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `position`<sup>Required</sup> <a name="position" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.position"></a>
+
+```typescript
+public readonly position: number;
+```
+
+- *Type:* number
+
+---
+
+##### `size`<sup>Required</sup> <a name="size" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.size"></a>
+
+```typescript
+public readonly size: number;
+```
+
+- *Type:* number
+
+---
+
+##### `speedLimits`<sup>Required</sup> <a name="speedLimits" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.speedLimits"></a>
+
+```typescript
+public readonly speedLimits: DataProxmoxTemplateDisksSpeedLimitsOutputReference;
+```
+
+- *Type:* @awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference
+
+---
+
+##### `ssdEmulation`<sup>Required</sup> <a name="ssdEmulation" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.ssdEmulation"></a>
+
+```typescript
+public readonly ssdEmulation: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `storage`<sup>Required</sup> <a name="storage" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.storage"></a>
+
+```typescript
+public readonly storage: string;
+```
+
+- *Type:* string
+
+---
+
+##### `useIothread`<sup>Required</sup> <a name="useIothread" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.useIothread"></a>
+
+```typescript
+public readonly useIothread: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataProxmoxTemplateDisks;
+```
+
+- *Type:* @awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisks
+
+---
+
+
+### DataProxmoxTemplateDisksSpeedLimitsOutputReference <a name="DataProxmoxTemplateDisksSpeedLimitsOutputReference" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+new dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.property.read">read</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.property.readBurstable">readBurstable</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.property.write">write</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.property.writeBurstable">writeBurstable</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.property.internalValue">internalValue</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimits</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `read`<sup>Required</sup> <a name="read" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.property.read"></a>
+
+```typescript
+public readonly read: number;
+```
+
+- *Type:* number
+
+---
+
+##### `readBurstable`<sup>Required</sup> <a name="readBurstable" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.property.readBurstable"></a>
+
+```typescript
+public readonly readBurstable: number;
+```
+
+- *Type:* number
+
+---
+
+##### `write`<sup>Required</sup> <a name="write" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.property.write"></a>
+
+```typescript
+public readonly write: number;
+```
+
+- *Type:* number
+
+---
+
+##### `writeBurstable`<sup>Required</sup> <a name="writeBurstable" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.property.writeBurstable"></a>
+
+```typescript
+public readonly writeBurstable: number;
+```
+
+- *Type:* number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataProxmoxTemplateDisksSpeedLimits;
+```
+
+- *Type:* @awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimits
+
+---
+
+
+### DataProxmoxTemplateMemoryOutputReference <a name="DataProxmoxTemplateMemoryOutputReference" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+new dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.property.dedicated">dedicated</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.property.floating">floating</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.property.shared">shared</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.property.internalValue">internalValue</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemory</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `dedicated`<sup>Required</sup> <a name="dedicated" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.property.dedicated"></a>
+
+```typescript
+public readonly dedicated: number;
+```
+
+- *Type:* number
+
+---
+
+##### `floating`<sup>Required</sup> <a name="floating" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.property.floating"></a>
+
+```typescript
+public readonly floating: number;
+```
+
+- *Type:* number
+
+---
+
+##### `shared`<sup>Required</sup> <a name="shared" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.property.shared"></a>
+
+```typescript
+public readonly shared: number;
+```
+
+- *Type:* number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemoryOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataProxmoxTemplateMemory;
+```
+
+- *Type:* @awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateMemory
+
+---
+
+
+### DataProxmoxTemplateNetworkInterfacesList <a name="DataProxmoxTemplateNetworkInterfacesList" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesList"></a>
+
+#### Initializers <a name="Initializers" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesList.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+new dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesList.get"></a>
+
+```typescript
+public get(index: number): DataProxmoxTemplateNetworkInterfacesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataProxmoxTemplateNetworkInterfacesOutputReference <a name="DataProxmoxTemplateNetworkInterfacesOutputReference" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+new dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.property.bridge">bridge</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.property.macAddress">macAddress</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.property.model">model</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.property.mtu">mtu</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.property.position">position</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.property.rateLimit">rateLimit</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.property.useFirewall">useFirewall</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.property.vlan">vlan</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.property.internalValue">internalValue</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfaces</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `bridge`<sup>Required</sup> <a name="bridge" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.property.bridge"></a>
+
+```typescript
+public readonly bridge: string;
+```
+
+- *Type:* string
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.property.enabled"></a>
+
+```typescript
+public readonly enabled: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `macAddress`<sup>Required</sup> <a name="macAddress" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.property.macAddress"></a>
+
+```typescript
+public readonly macAddress: string;
+```
+
+- *Type:* string
+
+---
+
+##### `model`<sup>Required</sup> <a name="model" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.property.model"></a>
+
+```typescript
+public readonly model: string;
+```
+
+- *Type:* string
+
+---
+
+##### `mtu`<sup>Required</sup> <a name="mtu" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.property.mtu"></a>
+
+```typescript
+public readonly mtu: number;
+```
+
+- *Type:* number
+
+---
+
+##### `position`<sup>Required</sup> <a name="position" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.property.position"></a>
+
+```typescript
+public readonly position: number;
+```
+
+- *Type:* number
+
+---
+
+##### `rateLimit`<sup>Required</sup> <a name="rateLimit" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.property.rateLimit"></a>
+
+```typescript
+public readonly rateLimit: number;
+```
+
+- *Type:* number
+
+---
+
+##### `useFirewall`<sup>Required</sup> <a name="useFirewall" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.property.useFirewall"></a>
+
+```typescript
+public readonly useFirewall: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `vlan`<sup>Required</sup> <a name="vlan" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.property.vlan"></a>
+
+```typescript
+public readonly vlan: number;
+```
+
+- *Type:* number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfacesOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataProxmoxTemplateNetworkInterfaces;
+```
+
+- *Type:* @awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateNetworkInterfaces
+
+---
+
+
+### DataProxmoxTemplatePciDevicesList <a name="DataProxmoxTemplatePciDevicesList" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesList"></a>
+
+#### Initializers <a name="Initializers" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesList.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+new dataProxmoxTemplate.DataProxmoxTemplatePciDevicesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesList.get"></a>
+
+```typescript
+public get(index: number): DataProxmoxTemplatePciDevicesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataProxmoxTemplatePciDevicesOutputReference <a name="DataProxmoxTemplatePciDevicesOutputReference" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.Initializer"></a>
+
+```typescript
+import { dataProxmoxTemplate } from '@awlsring/cdktf-proxmox'
+
+new dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.property.mdev">mdev</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.property.pcie">pcie</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.property.primaryGpu">primaryGpu</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.property.rombar">rombar</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.property.romFile">romFile</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.property.internalValue">internalValue</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevices</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `mdev`<sup>Required</sup> <a name="mdev" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.property.mdev"></a>
+
+```typescript
+public readonly mdev: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `pcie`<sup>Required</sup> <a name="pcie" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.property.pcie"></a>
+
+```typescript
+public readonly pcie: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `primaryGpu`<sup>Required</sup> <a name="primaryGpu" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.property.primaryGpu"></a>
+
+```typescript
+public readonly primaryGpu: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `rombar`<sup>Required</sup> <a name="rombar" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.property.rombar"></a>
+
+```typescript
+public readonly rombar: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `romFile`<sup>Required</sup> <a name="romFile" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.property.romFile"></a>
+
+```typescript
+public readonly romFile: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevicesOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataProxmoxTemplatePciDevices;
+```
+
+- *Type:* @awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplatePciDevices
 
 ---
 

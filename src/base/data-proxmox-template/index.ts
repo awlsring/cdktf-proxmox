@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/proxmox/d/virtual_machines
+// https://www.terraform.io/docs/providers/proxmox/d/template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,138 +6,33 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataProxmoxVirtualMachinesConfig extends cdktf.TerraformMetaArguments {
+export interface DataProxmoxTemplateConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/d/virtual_machines#filters DataProxmoxVirtualMachines#filters}
-  */
-  readonly filters?: DataProxmoxVirtualMachinesFilters[] | cdktf.IResolvable;
-}
-export interface DataProxmoxVirtualMachinesFilters {
-  /**
-  * The name of the attribute to filter on.
+  * The identifier of the template.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/d/virtual_machines#name DataProxmoxVirtualMachines#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/d/template#id DataProxmoxTemplate#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
-  readonly name: string;
+  readonly id?: number;
   /**
-  * The value(s) to be used in the filter.
+  * The name of the template.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/d/virtual_machines#values DataProxmoxVirtualMachines#values}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/d/template#name DataProxmoxTemplate#name}
   */
-  readonly values: string[];
-}
-
-export function dataProxmoxVirtualMachinesFiltersToTerraform(struct?: DataProxmoxVirtualMachinesFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
-  }
-}
-
-export class DataProxmoxVirtualMachinesFiltersOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
+  readonly name?: string;
   /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  * The node to create the template on.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/d/template#node DataProxmoxTemplate#node}
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): DataProxmoxVirtualMachinesFilters | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._name !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.name = this._name;
-    }
-    if (this._values !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.values = this._values;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataProxmoxVirtualMachinesFilters | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._name = undefined;
-      this._values = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._name = value.name;
-      this._values = value.values;
-    }
-  }
-
-  // name - computed: false, optional: false, required: true
-  private _name?: string; 
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-  public set name(value: string) {
-    this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name;
-  }
-
-  // values - computed: false, optional: false, required: true
-  private _values?: string[]; 
-  public get values() {
-    return this.getListAttribute('values');
-  }
-  public set values(value: string[]) {
-    this._values = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get valuesInput() {
-    return this._values;
-  }
+  readonly nodeAttribute: string;
+}
+export interface DataProxmoxTemplateAgent {
 }
 
-export class DataProxmoxVirtualMachinesFiltersList extends cdktf.ComplexList {
-  public internalValue? : DataProxmoxVirtualMachinesFilters[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): DataProxmoxVirtualMachinesFiltersOutputReference {
-    return new DataProxmoxVirtualMachinesFiltersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface DataProxmoxVirtualMachinesVirtualMachinesAgent {
-}
-
-export function dataProxmoxVirtualMachinesVirtualMachinesAgentToTerraform(struct?: DataProxmoxVirtualMachinesVirtualMachinesAgent): any {
+export function dataProxmoxTemplateAgentToTerraform(struct?: DataProxmoxTemplateAgent): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -146,7 +41,7 @@ export function dataProxmoxVirtualMachinesVirtualMachinesAgentToTerraform(struct
   }
 }
 
-export class DataProxmoxVirtualMachinesVirtualMachinesAgentOutputReference extends cdktf.ComplexObject {
+export class DataProxmoxTemplateAgentOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -157,13 +52,13 @@ export class DataProxmoxVirtualMachinesVirtualMachinesAgentOutputReference exten
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataProxmoxVirtualMachinesVirtualMachinesAgent | undefined {
+  public get internalValue(): DataProxmoxTemplateAgent | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataProxmoxVirtualMachinesVirtualMachinesAgent | undefined) {
+  public set internalValue(value: DataProxmoxTemplateAgent | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -187,10 +82,10 @@ export class DataProxmoxVirtualMachinesVirtualMachinesAgentOutputReference exten
     return this.getBooleanAttribute('use_fstrim');
   }
 }
-export interface DataProxmoxVirtualMachinesVirtualMachinesCloudInitDns {
+export interface DataProxmoxTemplateCloudInitDns {
 }
 
-export function dataProxmoxVirtualMachinesVirtualMachinesCloudInitDnsToTerraform(struct?: DataProxmoxVirtualMachinesVirtualMachinesCloudInitDns): any {
+export function dataProxmoxTemplateCloudInitDnsToTerraform(struct?: DataProxmoxTemplateCloudInitDns): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -199,7 +94,7 @@ export function dataProxmoxVirtualMachinesVirtualMachinesCloudInitDnsToTerraform
   }
 }
 
-export class DataProxmoxVirtualMachinesVirtualMachinesCloudInitDnsOutputReference extends cdktf.ComplexObject {
+export class DataProxmoxTemplateCloudInitDnsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -210,13 +105,13 @@ export class DataProxmoxVirtualMachinesVirtualMachinesCloudInitDnsOutputReferenc
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataProxmoxVirtualMachinesVirtualMachinesCloudInitDns | undefined {
+  public get internalValue(): DataProxmoxTemplateCloudInitDns | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataProxmoxVirtualMachinesVirtualMachinesCloudInitDns | undefined) {
+  public set internalValue(value: DataProxmoxTemplateCloudInitDns | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -235,10 +130,10 @@ export class DataProxmoxVirtualMachinesVirtualMachinesCloudInitDnsOutputReferenc
     return this.getStringAttribute('nameserver');
   }
 }
-export interface DataProxmoxVirtualMachinesVirtualMachinesCloudInitIpV4 {
+export interface DataProxmoxTemplateCloudInitIpV4 {
 }
 
-export function dataProxmoxVirtualMachinesVirtualMachinesCloudInitIpV4ToTerraform(struct?: DataProxmoxVirtualMachinesVirtualMachinesCloudInitIpV4): any {
+export function dataProxmoxTemplateCloudInitIpV4ToTerraform(struct?: DataProxmoxTemplateCloudInitIpV4): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -247,7 +142,7 @@ export function dataProxmoxVirtualMachinesVirtualMachinesCloudInitIpV4ToTerrafor
   }
 }
 
-export class DataProxmoxVirtualMachinesVirtualMachinesCloudInitIpV4OutputReference extends cdktf.ComplexObject {
+export class DataProxmoxTemplateCloudInitIpV4OutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -258,13 +153,13 @@ export class DataProxmoxVirtualMachinesVirtualMachinesCloudInitIpV4OutputReferen
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataProxmoxVirtualMachinesVirtualMachinesCloudInitIpV4 | undefined {
+  public get internalValue(): DataProxmoxTemplateCloudInitIpV4 | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataProxmoxVirtualMachinesVirtualMachinesCloudInitIpV4 | undefined) {
+  public set internalValue(value: DataProxmoxTemplateCloudInitIpV4 | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -293,10 +188,10 @@ export class DataProxmoxVirtualMachinesVirtualMachinesCloudInitIpV4OutputReferen
     return this.getStringAttribute('netmask');
   }
 }
-export interface DataProxmoxVirtualMachinesVirtualMachinesCloudInitIpV6 {
+export interface DataProxmoxTemplateCloudInitIpV6 {
 }
 
-export function dataProxmoxVirtualMachinesVirtualMachinesCloudInitIpV6ToTerraform(struct?: DataProxmoxVirtualMachinesVirtualMachinesCloudInitIpV6): any {
+export function dataProxmoxTemplateCloudInitIpV6ToTerraform(struct?: DataProxmoxTemplateCloudInitIpV6): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -305,7 +200,7 @@ export function dataProxmoxVirtualMachinesVirtualMachinesCloudInitIpV6ToTerrafor
   }
 }
 
-export class DataProxmoxVirtualMachinesVirtualMachinesCloudInitIpV6OutputReference extends cdktf.ComplexObject {
+export class DataProxmoxTemplateCloudInitIpV6OutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -316,13 +211,13 @@ export class DataProxmoxVirtualMachinesVirtualMachinesCloudInitIpV6OutputReferen
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataProxmoxVirtualMachinesVirtualMachinesCloudInitIpV6 | undefined {
+  public get internalValue(): DataProxmoxTemplateCloudInitIpV6 | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataProxmoxVirtualMachinesVirtualMachinesCloudInitIpV6 | undefined) {
+  public set internalValue(value: DataProxmoxTemplateCloudInitIpV6 | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -351,10 +246,10 @@ export class DataProxmoxVirtualMachinesVirtualMachinesCloudInitIpV6OutputReferen
     return this.getStringAttribute('netmask');
   }
 }
-export interface DataProxmoxVirtualMachinesVirtualMachinesCloudInitIp {
+export interface DataProxmoxTemplateCloudInitIp {
 }
 
-export function dataProxmoxVirtualMachinesVirtualMachinesCloudInitIpToTerraform(struct?: DataProxmoxVirtualMachinesVirtualMachinesCloudInitIp): any {
+export function dataProxmoxTemplateCloudInitIpToTerraform(struct?: DataProxmoxTemplateCloudInitIp): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -363,7 +258,7 @@ export function dataProxmoxVirtualMachinesVirtualMachinesCloudInitIpToTerraform(
   }
 }
 
-export class DataProxmoxVirtualMachinesVirtualMachinesCloudInitIpOutputReference extends cdktf.ComplexObject {
+export class DataProxmoxTemplateCloudInitIpOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -376,13 +271,13 @@ export class DataProxmoxVirtualMachinesVirtualMachinesCloudInitIpOutputReference
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataProxmoxVirtualMachinesVirtualMachinesCloudInitIp | undefined {
+  public get internalValue(): DataProxmoxTemplateCloudInitIp | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataProxmoxVirtualMachinesVirtualMachinesCloudInitIp | undefined) {
+  public set internalValue(value: DataProxmoxTemplateCloudInitIp | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -397,19 +292,19 @@ export class DataProxmoxVirtualMachinesVirtualMachinesCloudInitIpOutputReference
   }
 
   // v4 - computed: true, optional: false, required: false
-  private _v4 = new DataProxmoxVirtualMachinesVirtualMachinesCloudInitIpV4OutputReference(this, "v4");
+  private _v4 = new DataProxmoxTemplateCloudInitIpV4OutputReference(this, "v4");
   public get v4() {
     return this._v4;
   }
 
   // v6 - computed: true, optional: false, required: false
-  private _v6 = new DataProxmoxVirtualMachinesVirtualMachinesCloudInitIpV6OutputReference(this, "v6");
+  private _v6 = new DataProxmoxTemplateCloudInitIpV6OutputReference(this, "v6");
   public get v6() {
     return this._v6;
   }
 }
 
-export class DataProxmoxVirtualMachinesVirtualMachinesCloudInitIpList extends cdktf.ComplexList {
+export class DataProxmoxTemplateCloudInitIpList extends cdktf.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -423,14 +318,14 @@ export class DataProxmoxVirtualMachinesVirtualMachinesCloudInitIpList extends cd
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataProxmoxVirtualMachinesVirtualMachinesCloudInitIpOutputReference {
-    return new DataProxmoxVirtualMachinesVirtualMachinesCloudInitIpOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataProxmoxTemplateCloudInitIpOutputReference {
+    return new DataProxmoxTemplateCloudInitIpOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface DataProxmoxVirtualMachinesVirtualMachinesCloudInitUser {
+export interface DataProxmoxTemplateCloudInitUser {
 }
 
-export function dataProxmoxVirtualMachinesVirtualMachinesCloudInitUserToTerraform(struct?: DataProxmoxVirtualMachinesVirtualMachinesCloudInitUser): any {
+export function dataProxmoxTemplateCloudInitUserToTerraform(struct?: DataProxmoxTemplateCloudInitUser): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -439,7 +334,7 @@ export function dataProxmoxVirtualMachinesVirtualMachinesCloudInitUserToTerrafor
   }
 }
 
-export class DataProxmoxVirtualMachinesVirtualMachinesCloudInitUserOutputReference extends cdktf.ComplexObject {
+export class DataProxmoxTemplateCloudInitUserOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -450,13 +345,13 @@ export class DataProxmoxVirtualMachinesVirtualMachinesCloudInitUserOutputReferen
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataProxmoxVirtualMachinesVirtualMachinesCloudInitUser | undefined {
+  public get internalValue(): DataProxmoxTemplateCloudInitUser | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataProxmoxVirtualMachinesVirtualMachinesCloudInitUser | undefined) {
+  public set internalValue(value: DataProxmoxTemplateCloudInitUser | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -480,10 +375,10 @@ export class DataProxmoxVirtualMachinesVirtualMachinesCloudInitUserOutputReferen
     return cdktf.Fn.tolist(this.getListAttribute('public_keys'));
   }
 }
-export interface DataProxmoxVirtualMachinesVirtualMachinesCloudInit {
+export interface DataProxmoxTemplateCloudInit {
 }
 
-export function dataProxmoxVirtualMachinesVirtualMachinesCloudInitToTerraform(struct?: DataProxmoxVirtualMachinesVirtualMachinesCloudInit): any {
+export function dataProxmoxTemplateCloudInitToTerraform(struct?: DataProxmoxTemplateCloudInit): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -492,7 +387,7 @@ export function dataProxmoxVirtualMachinesVirtualMachinesCloudInitToTerraform(st
   }
 }
 
-export class DataProxmoxVirtualMachinesVirtualMachinesCloudInitOutputReference extends cdktf.ComplexObject {
+export class DataProxmoxTemplateCloudInitOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -503,13 +398,13 @@ export class DataProxmoxVirtualMachinesVirtualMachinesCloudInitOutputReference e
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataProxmoxVirtualMachinesVirtualMachinesCloudInit | undefined {
+  public get internalValue(): DataProxmoxTemplateCloudInit | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataProxmoxVirtualMachinesVirtualMachinesCloudInit | undefined) {
+  public set internalValue(value: DataProxmoxTemplateCloudInit | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -519,27 +414,27 @@ export class DataProxmoxVirtualMachinesVirtualMachinesCloudInitOutputReference e
   }
 
   // dns - computed: true, optional: false, required: false
-  private _dns = new DataProxmoxVirtualMachinesVirtualMachinesCloudInitDnsOutputReference(this, "dns");
+  private _dns = new DataProxmoxTemplateCloudInitDnsOutputReference(this, "dns");
   public get dns() {
     return this._dns;
   }
 
   // ip - computed: true, optional: false, required: false
-  private _ip = new DataProxmoxVirtualMachinesVirtualMachinesCloudInitIpList(this, "ip", true);
+  private _ip = new DataProxmoxTemplateCloudInitIpList(this, "ip", true);
   public get ip() {
     return this._ip;
   }
 
   // user - computed: true, optional: false, required: false
-  private _user = new DataProxmoxVirtualMachinesVirtualMachinesCloudInitUserOutputReference(this, "user");
+  private _user = new DataProxmoxTemplateCloudInitUserOutputReference(this, "user");
   public get user() {
     return this._user;
   }
 }
-export interface DataProxmoxVirtualMachinesVirtualMachinesCpu {
+export interface DataProxmoxTemplateCpu {
 }
 
-export function dataProxmoxVirtualMachinesVirtualMachinesCpuToTerraform(struct?: DataProxmoxVirtualMachinesVirtualMachinesCpu): any {
+export function dataProxmoxTemplateCpuToTerraform(struct?: DataProxmoxTemplateCpu): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -548,7 +443,7 @@ export function dataProxmoxVirtualMachinesVirtualMachinesCpuToTerraform(struct?:
   }
 }
 
-export class DataProxmoxVirtualMachinesVirtualMachinesCpuOutputReference extends cdktf.ComplexObject {
+export class DataProxmoxTemplateCpuOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -559,13 +454,13 @@ export class DataProxmoxVirtualMachinesVirtualMachinesCpuOutputReference extends
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataProxmoxVirtualMachinesVirtualMachinesCpu | undefined {
+  public get internalValue(): DataProxmoxTemplateCpu | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataProxmoxVirtualMachinesVirtualMachinesCpu | undefined) {
+  public set internalValue(value: DataProxmoxTemplateCpu | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -599,10 +494,10 @@ export class DataProxmoxVirtualMachinesVirtualMachinesCpuOutputReference extends
     return this.getNumberAttribute('sockets');
   }
 }
-export interface DataProxmoxVirtualMachinesVirtualMachinesDisksSpeedLimits {
+export interface DataProxmoxTemplateDisksSpeedLimits {
 }
 
-export function dataProxmoxVirtualMachinesVirtualMachinesDisksSpeedLimitsToTerraform(struct?: DataProxmoxVirtualMachinesVirtualMachinesDisksSpeedLimits): any {
+export function dataProxmoxTemplateDisksSpeedLimitsToTerraform(struct?: DataProxmoxTemplateDisksSpeedLimits): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -611,7 +506,7 @@ export function dataProxmoxVirtualMachinesVirtualMachinesDisksSpeedLimitsToTerra
   }
 }
 
-export class DataProxmoxVirtualMachinesVirtualMachinesDisksSpeedLimitsOutputReference extends cdktf.ComplexObject {
+export class DataProxmoxTemplateDisksSpeedLimitsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -622,13 +517,13 @@ export class DataProxmoxVirtualMachinesVirtualMachinesDisksSpeedLimitsOutputRefe
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataProxmoxVirtualMachinesVirtualMachinesDisksSpeedLimits | undefined {
+  public get internalValue(): DataProxmoxTemplateDisksSpeedLimits | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataProxmoxVirtualMachinesVirtualMachinesDisksSpeedLimits | undefined) {
+  public set internalValue(value: DataProxmoxTemplateDisksSpeedLimits | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -657,10 +552,10 @@ export class DataProxmoxVirtualMachinesVirtualMachinesDisksSpeedLimitsOutputRefe
     return this.getNumberAttribute('write_burstable');
   }
 }
-export interface DataProxmoxVirtualMachinesVirtualMachinesDisks {
+export interface DataProxmoxTemplateDisks {
 }
 
-export function dataProxmoxVirtualMachinesVirtualMachinesDisksToTerraform(struct?: DataProxmoxVirtualMachinesVirtualMachinesDisks): any {
+export function dataProxmoxTemplateDisksToTerraform(struct?: DataProxmoxTemplateDisks): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -669,7 +564,7 @@ export function dataProxmoxVirtualMachinesVirtualMachinesDisksToTerraform(struct
   }
 }
 
-export class DataProxmoxVirtualMachinesVirtualMachinesDisksOutputReference extends cdktf.ComplexObject {
+export class DataProxmoxTemplateDisksOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -682,13 +577,13 @@ export class DataProxmoxVirtualMachinesVirtualMachinesDisksOutputReference exten
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataProxmoxVirtualMachinesVirtualMachinesDisks | undefined {
+  public get internalValue(): DataProxmoxTemplateDisks | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataProxmoxVirtualMachinesVirtualMachinesDisks | undefined) {
+  public set internalValue(value: DataProxmoxTemplateDisks | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -723,7 +618,7 @@ export class DataProxmoxVirtualMachinesVirtualMachinesDisksOutputReference exten
   }
 
   // speed_limits - computed: true, optional: false, required: false
-  private _speedLimits = new DataProxmoxVirtualMachinesVirtualMachinesDisksSpeedLimitsOutputReference(this, "speed_limits");
+  private _speedLimits = new DataProxmoxTemplateDisksSpeedLimitsOutputReference(this, "speed_limits");
   public get speedLimits() {
     return this._speedLimits;
   }
@@ -744,7 +639,7 @@ export class DataProxmoxVirtualMachinesVirtualMachinesDisksOutputReference exten
   }
 }
 
-export class DataProxmoxVirtualMachinesVirtualMachinesDisksList extends cdktf.ComplexList {
+export class DataProxmoxTemplateDisksList extends cdktf.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -758,14 +653,14 @@ export class DataProxmoxVirtualMachinesVirtualMachinesDisksList extends cdktf.Co
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataProxmoxVirtualMachinesVirtualMachinesDisksOutputReference {
-    return new DataProxmoxVirtualMachinesVirtualMachinesDisksOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataProxmoxTemplateDisksOutputReference {
+    return new DataProxmoxTemplateDisksOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface DataProxmoxVirtualMachinesVirtualMachinesMemory {
+export interface DataProxmoxTemplateMemory {
 }
 
-export function dataProxmoxVirtualMachinesVirtualMachinesMemoryToTerraform(struct?: DataProxmoxVirtualMachinesVirtualMachinesMemory): any {
+export function dataProxmoxTemplateMemoryToTerraform(struct?: DataProxmoxTemplateMemory): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -774,7 +669,7 @@ export function dataProxmoxVirtualMachinesVirtualMachinesMemoryToTerraform(struc
   }
 }
 
-export class DataProxmoxVirtualMachinesVirtualMachinesMemoryOutputReference extends cdktf.ComplexObject {
+export class DataProxmoxTemplateMemoryOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -785,13 +680,13 @@ export class DataProxmoxVirtualMachinesVirtualMachinesMemoryOutputReference exte
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataProxmoxVirtualMachinesVirtualMachinesMemory | undefined {
+  public get internalValue(): DataProxmoxTemplateMemory | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataProxmoxVirtualMachinesVirtualMachinesMemory | undefined) {
+  public set internalValue(value: DataProxmoxTemplateMemory | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -815,10 +710,10 @@ export class DataProxmoxVirtualMachinesVirtualMachinesMemoryOutputReference exte
     return this.getNumberAttribute('shared');
   }
 }
-export interface DataProxmoxVirtualMachinesVirtualMachinesNetworkInterfaces {
+export interface DataProxmoxTemplateNetworkInterfaces {
 }
 
-export function dataProxmoxVirtualMachinesVirtualMachinesNetworkInterfacesToTerraform(struct?: DataProxmoxVirtualMachinesVirtualMachinesNetworkInterfaces): any {
+export function dataProxmoxTemplateNetworkInterfacesToTerraform(struct?: DataProxmoxTemplateNetworkInterfaces): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -827,7 +722,7 @@ export function dataProxmoxVirtualMachinesVirtualMachinesNetworkInterfacesToTerr
   }
 }
 
-export class DataProxmoxVirtualMachinesVirtualMachinesNetworkInterfacesOutputReference extends cdktf.ComplexObject {
+export class DataProxmoxTemplateNetworkInterfacesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -840,13 +735,13 @@ export class DataProxmoxVirtualMachinesVirtualMachinesNetworkInterfacesOutputRef
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataProxmoxVirtualMachinesVirtualMachinesNetworkInterfaces | undefined {
+  public get internalValue(): DataProxmoxTemplateNetworkInterfaces | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataProxmoxVirtualMachinesVirtualMachinesNetworkInterfaces | undefined) {
+  public set internalValue(value: DataProxmoxTemplateNetworkInterfaces | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -901,7 +796,7 @@ export class DataProxmoxVirtualMachinesVirtualMachinesNetworkInterfacesOutputRef
   }
 }
 
-export class DataProxmoxVirtualMachinesVirtualMachinesNetworkInterfacesList extends cdktf.ComplexList {
+export class DataProxmoxTemplateNetworkInterfacesList extends cdktf.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -915,14 +810,14 @@ export class DataProxmoxVirtualMachinesVirtualMachinesNetworkInterfacesList exte
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataProxmoxVirtualMachinesVirtualMachinesNetworkInterfacesOutputReference {
-    return new DataProxmoxVirtualMachinesVirtualMachinesNetworkInterfacesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataProxmoxTemplateNetworkInterfacesOutputReference {
+    return new DataProxmoxTemplateNetworkInterfacesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface DataProxmoxVirtualMachinesVirtualMachinesPciDevices {
+export interface DataProxmoxTemplatePciDevices {
 }
 
-export function dataProxmoxVirtualMachinesVirtualMachinesPciDevicesToTerraform(struct?: DataProxmoxVirtualMachinesVirtualMachinesPciDevices): any {
+export function dataProxmoxTemplatePciDevicesToTerraform(struct?: DataProxmoxTemplatePciDevices): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -931,7 +826,7 @@ export function dataProxmoxVirtualMachinesVirtualMachinesPciDevicesToTerraform(s
   }
 }
 
-export class DataProxmoxVirtualMachinesVirtualMachinesPciDevicesOutputReference extends cdktf.ComplexObject {
+export class DataProxmoxTemplatePciDevicesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -944,13 +839,13 @@ export class DataProxmoxVirtualMachinesVirtualMachinesPciDevicesOutputReference 
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataProxmoxVirtualMachinesVirtualMachinesPciDevices | undefined {
+  public get internalValue(): DataProxmoxTemplatePciDevices | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataProxmoxVirtualMachinesVirtualMachinesPciDevices | undefined) {
+  public set internalValue(value: DataProxmoxTemplatePciDevices | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -995,7 +890,7 @@ export class DataProxmoxVirtualMachinesVirtualMachinesPciDevicesOutputReference 
   }
 }
 
-export class DataProxmoxVirtualMachinesVirtualMachinesPciDevicesList extends cdktf.ComplexList {
+export class DataProxmoxTemplatePciDevicesList extends cdktf.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -1009,52 +904,59 @@ export class DataProxmoxVirtualMachinesVirtualMachinesPciDevicesList extends cdk
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataProxmoxVirtualMachinesVirtualMachinesPciDevicesOutputReference {
-    return new DataProxmoxVirtualMachinesVirtualMachinesPciDevicesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface DataProxmoxVirtualMachinesVirtualMachines {
-}
-
-export function dataProxmoxVirtualMachinesVirtualMachinesToTerraform(struct?: DataProxmoxVirtualMachinesVirtualMachines): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
+  public get(index: number): DataProxmoxTemplatePciDevicesOutputReference {
+    return new DataProxmoxTemplatePciDevicesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
-export class DataProxmoxVirtualMachinesVirtualMachinesOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/proxmox/d/template proxmox_template}
+*/
+export class DataProxmoxTemplate extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType = "proxmox_template";
+
+  // ===========
+  // INITIALIZER
+  // ===========
 
   /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  * Create a new {@link https://www.terraform.io/docs/providers/proxmox/d/template proxmox_template} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataProxmoxTemplateConfig
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(scope: Construct, id: string, config: DataProxmoxTemplateConfig) {
+    super(scope, id, {
+      terraformResourceType: 'proxmox_template',
+      terraformGeneratorMetadata: {
+        providerName: 'proxmox',
+        providerVersion: '0.0.9',
+        providerVersionConstraint: '~> 0.0'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
+    });
+    this._id = config.id;
+    this._name = config.name;
+    this._node = config.nodeAttribute;
   }
 
-  public get internalValue(): DataProxmoxVirtualMachinesVirtualMachines | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataProxmoxVirtualMachinesVirtualMachines | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
+  // ==========
+  // ATTRIBUTES
+  // ==========
 
   // agent - computed: true, optional: false, required: false
-  private _agent = new DataProxmoxVirtualMachinesVirtualMachinesAgentOutputReference(this, "agent");
+  private _agent = new DataProxmoxTemplateAgentOutputReference(this, "agent");
   public get agent() {
     return this._agent;
   }
@@ -1065,13 +967,13 @@ export class DataProxmoxVirtualMachinesVirtualMachinesOutputReference extends cd
   }
 
   // cloud_init - computed: true, optional: false, required: false
-  private _cloudInit = new DataProxmoxVirtualMachinesVirtualMachinesCloudInitOutputReference(this, "cloud_init");
+  private _cloudInit = new DataProxmoxTemplateCloudInitOutputReference(this, "cloud_init");
   public get cloudInit() {
     return this._cloudInit;
   }
 
   // cpu - computed: true, optional: false, required: false
-  private _cpu = new DataProxmoxVirtualMachinesVirtualMachinesCpuOutputReference(this, "cpu");
+  private _cpu = new DataProxmoxTemplateCpuOutputReference(this, "cpu");
   public get cpu() {
     return this._cpu;
   }
@@ -1082,14 +984,25 @@ export class DataProxmoxVirtualMachinesVirtualMachinesOutputReference extends cd
   }
 
   // disks - computed: true, optional: false, required: false
-  private _disks = new DataProxmoxVirtualMachinesVirtualMachinesDisksList(this, "disks", true);
+  private _disks = new DataProxmoxTemplateDisksList(this, "disks", true);
   public get disks() {
     return this._disks;
   }
 
-  // id - computed: true, optional: false, required: false
+  // id - computed: true, optional: true, required: false
+  private _id?: number; 
   public get id() {
     return this.getNumberAttribute('id');
+  }
+  public set id(value: number) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // keyboard_layout - computed: true, optional: false, required: false
@@ -1108,29 +1021,48 @@ export class DataProxmoxVirtualMachinesVirtualMachinesOutputReference extends cd
   }
 
   // memory - computed: true, optional: false, required: false
-  private _memory = new DataProxmoxVirtualMachinesVirtualMachinesMemoryOutputReference(this, "memory");
+  private _memory = new DataProxmoxTemplateMemoryOutputReference(this, "memory");
   public get memory() {
     return this._memory;
   }
 
-  // name - computed: true, optional: false, required: false
+  // name - computed: true, optional: true, required: false
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
 
   // network_interfaces - computed: true, optional: false, required: false
-  private _networkInterfaces = new DataProxmoxVirtualMachinesVirtualMachinesNetworkInterfacesList(this, "network_interfaces", true);
+  private _networkInterfaces = new DataProxmoxTemplateNetworkInterfacesList(this, "network_interfaces", true);
   public get networkInterfaces() {
     return this._networkInterfaces;
   }
 
-  // node - computed: true, optional: false, required: false
+  // node - computed: false, optional: false, required: true
+  private _node?: string; 
   public get nodeAttribute() {
     return this.getStringAttribute('node');
   }
+  public set nodeAttribute(value: string) {
+    this._node = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodeAttributeInput() {
+    return this._node;
+  }
 
   // pci_devices - computed: true, optional: false, required: false
-  private _pciDevices = new DataProxmoxVirtualMachinesVirtualMachinesPciDevicesList(this, "pci_devices", true);
+  private _pciDevices = new DataProxmoxTemplatePciDevicesList(this, "pci_devices", true);
   public get pciDevices() {
     return this._pciDevices;
   }
@@ -1154,92 +1086,6 @@ export class DataProxmoxVirtualMachinesVirtualMachinesOutputReference extends cd
   public get type() {
     return this.getStringAttribute('type');
   }
-}
-
-export class DataProxmoxVirtualMachinesVirtualMachinesList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): DataProxmoxVirtualMachinesVirtualMachinesOutputReference {
-    return new DataProxmoxVirtualMachinesVirtualMachinesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-
-/**
-* Represents a {@link https://www.terraform.io/docs/providers/proxmox/d/virtual_machines proxmox_virtual_machines}
-*/
-export class DataProxmoxVirtualMachines extends cdktf.TerraformDataSource {
-
-  // =================
-  // STATIC PROPERTIES
-  // =================
-  public static readonly tfResourceType = "proxmox_virtual_machines";
-
-  // ===========
-  // INITIALIZER
-  // ===========
-
-  /**
-  * Create a new {@link https://www.terraform.io/docs/providers/proxmox/d/virtual_machines proxmox_virtual_machines} Data Source
-  *
-  * @param scope The scope in which to define this construct
-  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataProxmoxVirtualMachinesConfig = {}
-  */
-  public constructor(scope: Construct, id: string, config: DataProxmoxVirtualMachinesConfig = {}) {
-    super(scope, id, {
-      terraformResourceType: 'proxmox_virtual_machines',
-      terraformGeneratorMetadata: {
-        providerName: 'proxmox',
-        providerVersion: '0.0.9',
-        providerVersionConstraint: '~> 0.0'
-      },
-      provider: config.provider,
-      dependsOn: config.dependsOn,
-      count: config.count,
-      lifecycle: config.lifecycle,
-      provisioners: config.provisioners,
-      connection: config.connection,
-      forEach: config.forEach
-    });
-    this._filters.internalValue = config.filters;
-  }
-
-  // ==========
-  // ATTRIBUTES
-  // ==========
-
-  // filters - computed: false, optional: true, required: false
-  private _filters = new DataProxmoxVirtualMachinesFiltersList(this, "filters", false);
-  public get filters() {
-    return this._filters;
-  }
-  public putFilters(value: DataProxmoxVirtualMachinesFilters[] | cdktf.IResolvable) {
-    this._filters.internalValue = value;
-  }
-  public resetFilters() {
-    this._filters.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get filtersInput() {
-    return this._filters.internalValue;
-  }
-
-  // virtual_machines - computed: true, optional: false, required: false
-  private _virtualMachines = new DataProxmoxVirtualMachinesVirtualMachinesList(this, "virtual_machines", true);
-  public get virtualMachines() {
-    return this._virtualMachines;
-  }
 
   // =========
   // SYNTHESIS
@@ -1247,7 +1093,9 @@ export class DataProxmoxVirtualMachines extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      filters: cdktf.listMapper(dataProxmoxVirtualMachinesFiltersToTerraform, false)(this._filters.internalValue),
+      id: cdktf.numberToTerraform(this._id),
+      name: cdktf.stringToTerraform(this._name),
+      node: cdktf.stringToTerraform(this._node),
     };
   }
 }

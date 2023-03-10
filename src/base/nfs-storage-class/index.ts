@@ -1,27 +1,27 @@
 // https://www.terraform.io/docs/providers/proxmox/r/nfs_storage_class
 // generated from terraform resource schema
 
-import * as cdktf from 'cdktf';
 import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
 export interface NfsStorageClassConfig extends cdktf.TerraformMetaArguments {
   /**
   * The content types that can be stored on this storage class.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/nfs_storage_class#content_types NfsStorageClass#content_types}
   */
   readonly contentTypes?: string[];
   /**
   * The remote export path of the NFS server.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/nfs_storage_class#export NfsStorageClass#export}
   */
   readonly export: string;
   /**
   * The identifier of the storage class.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/nfs_storage_class#id NfsStorageClass#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -30,13 +30,13 @@ export interface NfsStorageClassConfig extends cdktf.TerraformMetaArguments {
   readonly id: string;
   /**
   * Nodes that implement this storage class.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/nfs_storage_class#nodes NfsStorageClass#nodes}
   */
   readonly nodes?: string[];
   /**
   * The NFS server used in the storage class.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox/r/nfs_storage_class#server NfsStorageClass#server}
   */
   readonly server: string;
@@ -50,7 +50,7 @@ export class NfsStorageClass extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = 'proxmox_nfs_storage_class';
+  public static readonly tfResourceType = "proxmox_nfs_storage_class";
 
   // ===========
   // INITIALIZER
@@ -68,8 +68,8 @@ export class NfsStorageClass extends cdktf.TerraformResource {
       terraformResourceType: 'proxmox_nfs_storage_class',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.8',
-        providerVersionConstraint: '~> 0.0.0',
+        providerVersion: '0.0.9',
+        providerVersionConstraint: '~> 0.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -77,7 +77,7 @@ export class NfsStorageClass extends cdktf.TerraformResource {
       lifecycle: config.lifecycle,
       provisioners: config.provisioners,
       connection: config.connection,
-      forEach: config.forEach,
+      forEach: config.forEach
     });
     this._contentTypes = config.contentTypes;
     this._export = config.export;
@@ -91,7 +91,7 @@ export class NfsStorageClass extends cdktf.TerraformResource {
   // ==========
 
   // content_types - computed: true, optional: true, required: false
-  private _contentTypes?: string[];
+  private _contentTypes?: string[]; 
   public get contentTypes() {
     return this.getListAttribute('content_types');
   }
@@ -107,7 +107,7 @@ export class NfsStorageClass extends cdktf.TerraformResource {
   }
 
   // export - computed: false, optional: false, required: true
-  private _export?: string;
+  private _export?: string; 
   public get export() {
     return this.getStringAttribute('export');
   }
@@ -120,7 +120,7 @@ export class NfsStorageClass extends cdktf.TerraformResource {
   }
 
   // id - computed: false, optional: false, required: true
-  private _id?: string;
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
@@ -138,7 +138,7 @@ export class NfsStorageClass extends cdktf.TerraformResource {
   }
 
   // nodes - computed: true, optional: true, required: false
-  private _nodes?: string[];
+  private _nodes?: string[]; 
   public get nodes() {
     return this.getListAttribute('nodes');
   }
@@ -154,7 +154,7 @@ export class NfsStorageClass extends cdktf.TerraformResource {
   }
 
   // server - computed: false, optional: false, required: true
-  private _server?: string;
+  private _server?: string; 
   public get server() {
     return this.getStringAttribute('server');
   }

@@ -1,45 +1,45 @@
 // https://www.terraform.io/docs/providers/proxmox
 // generated from terraform resource schema
 
-import * as cdktf from 'cdktf';
 import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
 export interface ProxmoxProviderConfig {
   /**
   * A proxmox api key.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox#api_key ProxmoxProvider#api_key}
   */
   readonly apiKey?: string;
   /**
   * Proxmox endpoint to connect with. **Ex `https://10.0.0.2:8006`**
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox#endpoint ProxmoxProvider#endpoint}
   */
   readonly endpoint: string;
   /**
   * Skip TLS verification. Defaults to true.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox#insecure ProxmoxProvider#insecure}
   */
   readonly insecure?: boolean | cdktf.IResolvable;
   /**
   * Password for specified user.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox#password ProxmoxProvider#password}
   */
   readonly password?: string;
   /**
   * The username to use for authentication.
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox#username ProxmoxProvider#username}
   */
   readonly username?: string;
   /**
   * Alias name
-  *
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/proxmox#alias ProxmoxProvider#alias}
   */
   readonly alias?: string;
@@ -53,7 +53,7 @@ export class ProxmoxProvider extends cdktf.TerraformProvider {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = 'proxmox';
+  public static readonly tfResourceType = "proxmox";
 
   // ===========
   // INITIALIZER
@@ -71,10 +71,10 @@ export class ProxmoxProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'proxmox',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.8',
-        providerVersionConstraint: '~> 0.0.0',
+        providerVersion: '0.0.9',
+        providerVersionConstraint: '~> 0.0'
       },
-      terraformProviderSource: 'awlsring/proxmox',
+      terraformProviderSource: 'awlsring/proxmox'
     });
     this._apiKey = config.apiKey;
     this._endpoint = config.endpoint;
@@ -89,7 +89,7 @@ export class ProxmoxProvider extends cdktf.TerraformProvider {
   // ==========
 
   // api_key - computed: false, optional: true, required: false
-  private _apiKey?: string;
+  private _apiKey?: string; 
   public get apiKey() {
     return this._apiKey;
   }
@@ -105,7 +105,7 @@ export class ProxmoxProvider extends cdktf.TerraformProvider {
   }
 
   // endpoint - computed: false, optional: false, required: true
-  private _endpoint?: string;
+  private _endpoint?: string; 
   public get endpoint() {
     return this._endpoint;
   }
@@ -118,7 +118,7 @@ export class ProxmoxProvider extends cdktf.TerraformProvider {
   }
 
   // insecure - computed: false, optional: true, required: false
-  private _insecure?: boolean | cdktf.IResolvable;
+  private _insecure?: boolean | cdktf.IResolvable; 
   public get insecure() {
     return this._insecure;
   }
@@ -134,7 +134,7 @@ export class ProxmoxProvider extends cdktf.TerraformProvider {
   }
 
   // password - computed: false, optional: true, required: false
-  private _password?: string;
+  private _password?: string; 
   public get password() {
     return this._password;
   }
@@ -150,7 +150,7 @@ export class ProxmoxProvider extends cdktf.TerraformProvider {
   }
 
   // username - computed: false, optional: true, required: false
-  private _username?: string;
+  private _username?: string; 
   public get username() {
     return this._username;
   }
@@ -166,7 +166,7 @@ export class ProxmoxProvider extends cdktf.TerraformProvider {
   }
 
   // alias - computed: false, optional: true, required: false
-  private _alias?: string;
+  private _alias?: string; 
   public get alias() {
     return this._alias;
   }
