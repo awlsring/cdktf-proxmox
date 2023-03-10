@@ -145,7 +145,7 @@
       },
       "steps": [
         {
-          "exec": "mkdir -p src/base && rm -rf ./src/base/* && cdktf get && cp -R .gen/providers/proxmox/* ./src/base/ && cp .gen/versions.json ./src/base/version.json"
+          "exec": "mkdir -p src/base && rm -rf ./src/base/* && cdktf get && cp -R .gen/providers/proxmox/* ./src/base/ && cp .gen/versions.json ./src/version.json"
         }
       ]
     },
