@@ -68387,3 +68387,841 @@ public readonly internalValue: VirtualMachineTimeouts | IResolvable;
 
 
 
+## Enums <a name="Enums" id="Enums"></a>
+
+### AgentType <a name="AgentType" id="@awlsring/cdktf-proxmox.AgentType"></a>
+
+#### Members <a name="Members" id="Members"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.AgentType.VIRTIO">VIRTIO</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.AgentType.ISA">ISA</a></code> | *No description.* |
+
+---
+
+##### `VIRTIO` <a name="VIRTIO" id="@awlsring/cdktf-proxmox.AgentType.VIRTIO"></a>
+
+---
+
+
+##### `ISA` <a name="ISA" id="@awlsring/cdktf-proxmox.AgentType.ISA"></a>
+
+---
+
+
+### Architecture <a name="Architecture" id="@awlsring/cdktf-proxmox.Architecture"></a>
+
+#### Members <a name="Members" id="Members"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.Architecture.X86_64">X86_64</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.Architecture.AARCH64">AARCH64</a></code> | *No description.* |
+
+---
+
+##### `X86_64` <a name="X86_64" id="@awlsring/cdktf-proxmox.Architecture.X86_64"></a>
+
+---
+
+
+##### `AARCH64` <a name="AARCH64" id="@awlsring/cdktf-proxmox.Architecture.AARCH64"></a>
+
+---
+
+
+### Bios <a name="Bios" id="@awlsring/cdktf-proxmox.Bios"></a>
+
+#### Members <a name="Members" id="Members"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.Bios.SEABIOS">SEABIOS</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.Bios.OVMF">OVMF</a></code> | *No description.* |
+
+---
+
+##### `SEABIOS` <a name="SEABIOS" id="@awlsring/cdktf-proxmox.Bios.SEABIOS"></a>
+
+---
+
+
+##### `OVMF` <a name="OVMF" id="@awlsring/cdktf-proxmox.Bios.OVMF"></a>
+
+---
+
+
+### DiskInterface <a name="DiskInterface" id="@awlsring/cdktf-proxmox.DiskInterface"></a>
+
+#### Members <a name="Members" id="Members"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.DiskInterface.SCSI">SCSI</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.DiskInterface.SATA">SATA</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.DiskInterface.VIRTIO">VIRTIO</a></code> | *No description.* |
+
+---
+
+##### `SCSI` <a name="SCSI" id="@awlsring/cdktf-proxmox.DiskInterface.SCSI"></a>
+
+---
+
+
+##### `SATA` <a name="SATA" id="@awlsring/cdktf-proxmox.DiskInterface.SATA"></a>
+
+---
+
+
+##### `VIRTIO` <a name="VIRTIO" id="@awlsring/cdktf-proxmox.DiskInterface.VIRTIO"></a>
+
+---
+
+
+### EmulatedType <a name="EmulatedType" id="@awlsring/cdktf-proxmox.EmulatedType"></a>
+
+#### Members <a name="Members" id="Members"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType._486">_486</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.BROADWELL">BROADWELL</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.BROADWELL_IBRS">BROADWELL_IBRS</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.BROADWELL_NO_TSX">BROADWELL_NO_TSX</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.BROADWELL_NO_TSX_IBRS">BROADWELL_NO_TSX_IBRS</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.CASCADELAKE_SERVER">CASCADELAKE_SERVER</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.CONROE">CONROE</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.EPYC">EPYC</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.EPYC_IBPB">EPYC_IBPB</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.EPYC_ROME">EPYC_ROME</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.EPYC_MILAN">EPYC_MILAN</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.HASWELL">HASWELL</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.HASWELL_IBRS">HASWELL_IBRS</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.HASWELL_NO_TSX">HASWELL_NO_TSX</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.HASWELL_NO_TSX_IBRS">HASWELL_NO_TSX_IBRS</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.HOST">HOST</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.IVY_BRIDGE">IVY_BRIDGE</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.IVY_BRIDGE_IBRS">IVY_BRIDGE_IBRS</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.KNIGHTS_MILL">KNIGHTS_MILL</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.NEHALEM">NEHALEM</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.NEHALEM_IBRS">NEHALEM_IBRS</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.OPTERON_G1">OPTERON_G1</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.OPTERON_G2">OPTERON_G2</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.OPTERON_G3">OPTERON_G3</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.OPTERON_G4">OPTERON_G4</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.OPTERON_G5">OPTERON_G5</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.PENRYN">PENRYN</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.SKYLAKE_CLIENT">SKYLAKE_CLIENT</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.SKYLAKE_CLIENT_IBRS">SKYLAKE_CLIENT_IBRS</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.SKYLAKE_SERVER">SKYLAKE_SERVER</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.SKYLAKE_SERVER_IBRS">SKYLAKE_SERVER_IBRS</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.SANDY_BRIDGE">SANDY_BRIDGE</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.SANDY_BRIDGE_IBRS">SANDY_BRIDGE_IBRS</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.WESTMERE">WESTMERE</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.WESTMERE_IBRS">WESTMERE_IBRS</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.ATHLON">ATHLON</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.CORE2DUO">CORE2DUO</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.COREDUO">COREDUO</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.KVM32">KVM32</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.KVM64">KVM64</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.MAX">MAX</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.PENTIUM">PENTIUM</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.PENTIUM2">PENTIUM2</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.PENTIUM3">PENTIUM3</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.PHENOM">PHENOM</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.QEMU32">QEMU32</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.EmulatedType.QEMU64">QEMU64</a></code> | *No description.* |
+
+---
+
+##### `_486` <a name="_486" id="@awlsring/cdktf-proxmox.EmulatedType._486"></a>
+
+---
+
+
+##### `BROADWELL` <a name="BROADWELL" id="@awlsring/cdktf-proxmox.EmulatedType.BROADWELL"></a>
+
+---
+
+
+##### `BROADWELL_IBRS` <a name="BROADWELL_IBRS" id="@awlsring/cdktf-proxmox.EmulatedType.BROADWELL_IBRS"></a>
+
+---
+
+
+##### `BROADWELL_NO_TSX` <a name="BROADWELL_NO_TSX" id="@awlsring/cdktf-proxmox.EmulatedType.BROADWELL_NO_TSX"></a>
+
+---
+
+
+##### `BROADWELL_NO_TSX_IBRS` <a name="BROADWELL_NO_TSX_IBRS" id="@awlsring/cdktf-proxmox.EmulatedType.BROADWELL_NO_TSX_IBRS"></a>
+
+---
+
+
+##### `CASCADELAKE_SERVER` <a name="CASCADELAKE_SERVER" id="@awlsring/cdktf-proxmox.EmulatedType.CASCADELAKE_SERVER"></a>
+
+---
+
+
+##### `CONROE` <a name="CONROE" id="@awlsring/cdktf-proxmox.EmulatedType.CONROE"></a>
+
+---
+
+
+##### `EPYC` <a name="EPYC" id="@awlsring/cdktf-proxmox.EmulatedType.EPYC"></a>
+
+---
+
+
+##### `EPYC_IBPB` <a name="EPYC_IBPB" id="@awlsring/cdktf-proxmox.EmulatedType.EPYC_IBPB"></a>
+
+---
+
+
+##### `EPYC_ROME` <a name="EPYC_ROME" id="@awlsring/cdktf-proxmox.EmulatedType.EPYC_ROME"></a>
+
+---
+
+
+##### `EPYC_MILAN` <a name="EPYC_MILAN" id="@awlsring/cdktf-proxmox.EmulatedType.EPYC_MILAN"></a>
+
+---
+
+
+##### `HASWELL` <a name="HASWELL" id="@awlsring/cdktf-proxmox.EmulatedType.HASWELL"></a>
+
+---
+
+
+##### `HASWELL_IBRS` <a name="HASWELL_IBRS" id="@awlsring/cdktf-proxmox.EmulatedType.HASWELL_IBRS"></a>
+
+---
+
+
+##### `HASWELL_NO_TSX` <a name="HASWELL_NO_TSX" id="@awlsring/cdktf-proxmox.EmulatedType.HASWELL_NO_TSX"></a>
+
+---
+
+
+##### `HASWELL_NO_TSX_IBRS` <a name="HASWELL_NO_TSX_IBRS" id="@awlsring/cdktf-proxmox.EmulatedType.HASWELL_NO_TSX_IBRS"></a>
+
+---
+
+
+##### `HOST` <a name="HOST" id="@awlsring/cdktf-proxmox.EmulatedType.HOST"></a>
+
+---
+
+
+##### `IVY_BRIDGE` <a name="IVY_BRIDGE" id="@awlsring/cdktf-proxmox.EmulatedType.IVY_BRIDGE"></a>
+
+---
+
+
+##### `IVY_BRIDGE_IBRS` <a name="IVY_BRIDGE_IBRS" id="@awlsring/cdktf-proxmox.EmulatedType.IVY_BRIDGE_IBRS"></a>
+
+---
+
+
+##### `KNIGHTS_MILL` <a name="KNIGHTS_MILL" id="@awlsring/cdktf-proxmox.EmulatedType.KNIGHTS_MILL"></a>
+
+---
+
+
+##### `NEHALEM` <a name="NEHALEM" id="@awlsring/cdktf-proxmox.EmulatedType.NEHALEM"></a>
+
+---
+
+
+##### `NEHALEM_IBRS` <a name="NEHALEM_IBRS" id="@awlsring/cdktf-proxmox.EmulatedType.NEHALEM_IBRS"></a>
+
+---
+
+
+##### `OPTERON_G1` <a name="OPTERON_G1" id="@awlsring/cdktf-proxmox.EmulatedType.OPTERON_G1"></a>
+
+---
+
+
+##### `OPTERON_G2` <a name="OPTERON_G2" id="@awlsring/cdktf-proxmox.EmulatedType.OPTERON_G2"></a>
+
+---
+
+
+##### `OPTERON_G3` <a name="OPTERON_G3" id="@awlsring/cdktf-proxmox.EmulatedType.OPTERON_G3"></a>
+
+---
+
+
+##### `OPTERON_G4` <a name="OPTERON_G4" id="@awlsring/cdktf-proxmox.EmulatedType.OPTERON_G4"></a>
+
+---
+
+
+##### `OPTERON_G5` <a name="OPTERON_G5" id="@awlsring/cdktf-proxmox.EmulatedType.OPTERON_G5"></a>
+
+---
+
+
+##### `PENRYN` <a name="PENRYN" id="@awlsring/cdktf-proxmox.EmulatedType.PENRYN"></a>
+
+---
+
+
+##### `SKYLAKE_CLIENT` <a name="SKYLAKE_CLIENT" id="@awlsring/cdktf-proxmox.EmulatedType.SKYLAKE_CLIENT"></a>
+
+---
+
+
+##### `SKYLAKE_CLIENT_IBRS` <a name="SKYLAKE_CLIENT_IBRS" id="@awlsring/cdktf-proxmox.EmulatedType.SKYLAKE_CLIENT_IBRS"></a>
+
+---
+
+
+##### `SKYLAKE_SERVER` <a name="SKYLAKE_SERVER" id="@awlsring/cdktf-proxmox.EmulatedType.SKYLAKE_SERVER"></a>
+
+---
+
+
+##### `SKYLAKE_SERVER_IBRS` <a name="SKYLAKE_SERVER_IBRS" id="@awlsring/cdktf-proxmox.EmulatedType.SKYLAKE_SERVER_IBRS"></a>
+
+---
+
+
+##### `SANDY_BRIDGE` <a name="SANDY_BRIDGE" id="@awlsring/cdktf-proxmox.EmulatedType.SANDY_BRIDGE"></a>
+
+---
+
+
+##### `SANDY_BRIDGE_IBRS` <a name="SANDY_BRIDGE_IBRS" id="@awlsring/cdktf-proxmox.EmulatedType.SANDY_BRIDGE_IBRS"></a>
+
+---
+
+
+##### `WESTMERE` <a name="WESTMERE" id="@awlsring/cdktf-proxmox.EmulatedType.WESTMERE"></a>
+
+---
+
+
+##### `WESTMERE_IBRS` <a name="WESTMERE_IBRS" id="@awlsring/cdktf-proxmox.EmulatedType.WESTMERE_IBRS"></a>
+
+---
+
+
+##### `ATHLON` <a name="ATHLON" id="@awlsring/cdktf-proxmox.EmulatedType.ATHLON"></a>
+
+---
+
+
+##### `CORE2DUO` <a name="CORE2DUO" id="@awlsring/cdktf-proxmox.EmulatedType.CORE2DUO"></a>
+
+---
+
+
+##### `COREDUO` <a name="COREDUO" id="@awlsring/cdktf-proxmox.EmulatedType.COREDUO"></a>
+
+---
+
+
+##### `KVM32` <a name="KVM32" id="@awlsring/cdktf-proxmox.EmulatedType.KVM32"></a>
+
+---
+
+
+##### `KVM64` <a name="KVM64" id="@awlsring/cdktf-proxmox.EmulatedType.KVM64"></a>
+
+---
+
+
+##### `MAX` <a name="MAX" id="@awlsring/cdktf-proxmox.EmulatedType.MAX"></a>
+
+---
+
+
+##### `PENTIUM` <a name="PENTIUM" id="@awlsring/cdktf-proxmox.EmulatedType.PENTIUM"></a>
+
+---
+
+
+##### `PENTIUM2` <a name="PENTIUM2" id="@awlsring/cdktf-proxmox.EmulatedType.PENTIUM2"></a>
+
+---
+
+
+##### `PENTIUM3` <a name="PENTIUM3" id="@awlsring/cdktf-proxmox.EmulatedType.PENTIUM3"></a>
+
+---
+
+
+##### `PHENOM` <a name="PHENOM" id="@awlsring/cdktf-proxmox.EmulatedType.PHENOM"></a>
+
+---
+
+
+##### `QEMU32` <a name="QEMU32" id="@awlsring/cdktf-proxmox.EmulatedType.QEMU32"></a>
+
+---
+
+
+##### `QEMU64` <a name="QEMU64" id="@awlsring/cdktf-proxmox.EmulatedType.QEMU64"></a>
+
+---
+
+
+### FileFormat <a name="FileFormat" id="@awlsring/cdktf-proxmox.FileFormat"></a>
+
+#### Members <a name="Members" id="Members"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.FileFormat.RAW">RAW</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.FileFormat.VMDK">VMDK</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.FileFormat.QCOW2">QCOW2</a></code> | *No description.* |
+
+---
+
+##### `RAW` <a name="RAW" id="@awlsring/cdktf-proxmox.FileFormat.RAW"></a>
+
+---
+
+
+##### `VMDK` <a name="VMDK" id="@awlsring/cdktf-proxmox.FileFormat.VMDK"></a>
+
+---
+
+
+##### `QCOW2` <a name="QCOW2" id="@awlsring/cdktf-proxmox.FileFormat.QCOW2"></a>
+
+---
+
+
+### KeyboardLayout <a name="KeyboardLayout" id="@awlsring/cdktf-proxmox.KeyboardLayout"></a>
+
+#### Members <a name="Members" id="Members"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.KeyboardLayout.DA">DA</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.KeyboardLayout.DE">DE</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.KeyboardLayout.DE_CH">DE_CH</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.KeyboardLayout.EN_GB">EN_GB</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.KeyboardLayout.EN_US">EN_US</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.KeyboardLayout.ES">ES</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.KeyboardLayout.FI">FI</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.KeyboardLayout.FR">FR</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.KeyboardLayout.FR_BE">FR_BE</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.KeyboardLayout.FR_CA">FR_CA</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.KeyboardLayout.FR_CH">FR_CH</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.KeyboardLayout.HU">HU</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.KeyboardLayout.IS">IS</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.KeyboardLayout.IT">IT</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.KeyboardLayout.JA">JA</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.KeyboardLayout.LT">LT</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.KeyboardLayout.NL">NL</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.KeyboardLayout.NO">NO</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.KeyboardLayout.PL">PL</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.KeyboardLayout.PT">PT</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.KeyboardLayout.PT_BR">PT_BR</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.KeyboardLayout.SL">SL</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.KeyboardLayout.SV">SV</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.KeyboardLayout.TR">TR</a></code> | *No description.* |
+
+---
+
+##### `DA` <a name="DA" id="@awlsring/cdktf-proxmox.KeyboardLayout.DA"></a>
+
+---
+
+
+##### `DE` <a name="DE" id="@awlsring/cdktf-proxmox.KeyboardLayout.DE"></a>
+
+---
+
+
+##### `DE_CH` <a name="DE_CH" id="@awlsring/cdktf-proxmox.KeyboardLayout.DE_CH"></a>
+
+---
+
+
+##### `EN_GB` <a name="EN_GB" id="@awlsring/cdktf-proxmox.KeyboardLayout.EN_GB"></a>
+
+---
+
+
+##### `EN_US` <a name="EN_US" id="@awlsring/cdktf-proxmox.KeyboardLayout.EN_US"></a>
+
+---
+
+
+##### `ES` <a name="ES" id="@awlsring/cdktf-proxmox.KeyboardLayout.ES"></a>
+
+---
+
+
+##### `FI` <a name="FI" id="@awlsring/cdktf-proxmox.KeyboardLayout.FI"></a>
+
+---
+
+
+##### `FR` <a name="FR" id="@awlsring/cdktf-proxmox.KeyboardLayout.FR"></a>
+
+---
+
+
+##### `FR_BE` <a name="FR_BE" id="@awlsring/cdktf-proxmox.KeyboardLayout.FR_BE"></a>
+
+---
+
+
+##### `FR_CA` <a name="FR_CA" id="@awlsring/cdktf-proxmox.KeyboardLayout.FR_CA"></a>
+
+---
+
+
+##### `FR_CH` <a name="FR_CH" id="@awlsring/cdktf-proxmox.KeyboardLayout.FR_CH"></a>
+
+---
+
+
+##### `HU` <a name="HU" id="@awlsring/cdktf-proxmox.KeyboardLayout.HU"></a>
+
+---
+
+
+##### `IS` <a name="IS" id="@awlsring/cdktf-proxmox.KeyboardLayout.IS"></a>
+
+---
+
+
+##### `IT` <a name="IT" id="@awlsring/cdktf-proxmox.KeyboardLayout.IT"></a>
+
+---
+
+
+##### `JA` <a name="JA" id="@awlsring/cdktf-proxmox.KeyboardLayout.JA"></a>
+
+---
+
+
+##### `LT` <a name="LT" id="@awlsring/cdktf-proxmox.KeyboardLayout.LT"></a>
+
+---
+
+
+##### `NL` <a name="NL" id="@awlsring/cdktf-proxmox.KeyboardLayout.NL"></a>
+
+---
+
+
+##### `NO` <a name="NO" id="@awlsring/cdktf-proxmox.KeyboardLayout.NO"></a>
+
+---
+
+
+##### `PL` <a name="PL" id="@awlsring/cdktf-proxmox.KeyboardLayout.PL"></a>
+
+---
+
+
+##### `PT` <a name="PT" id="@awlsring/cdktf-proxmox.KeyboardLayout.PT"></a>
+
+---
+
+
+##### `PT_BR` <a name="PT_BR" id="@awlsring/cdktf-proxmox.KeyboardLayout.PT_BR"></a>
+
+---
+
+
+##### `SL` <a name="SL" id="@awlsring/cdktf-proxmox.KeyboardLayout.SL"></a>
+
+---
+
+
+##### `SV` <a name="SV" id="@awlsring/cdktf-proxmox.KeyboardLayout.SV"></a>
+
+---
+
+
+##### `TR` <a name="TR" id="@awlsring/cdktf-proxmox.KeyboardLayout.TR"></a>
+
+---
+
+
+### MachineType <a name="MachineType" id="@awlsring/cdktf-proxmox.MachineType"></a>
+
+#### Members <a name="Members" id="Members"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.MachineType.I440FX">I440FX</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.MachineType.Q35">Q35</a></code> | *No description.* |
+
+---
+
+##### `I440FX` <a name="I440FX" id="@awlsring/cdktf-proxmox.MachineType.I440FX"></a>
+
+---
+
+
+##### `Q35` <a name="Q35" id="@awlsring/cdktf-proxmox.MachineType.Q35"></a>
+
+---
+
+
+### NetworkHashPolicy <a name="NetworkHashPolicy" id="@awlsring/cdktf-proxmox.NetworkHashPolicy"></a>
+
+#### Members <a name="Members" id="Members"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.NetworkHashPolicy.LAYER_2">LAYER_2</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.NetworkHashPolicy.LAYER_2_3">LAYER_2_3</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.NetworkHashPolicy.LAYER_3">LAYER_3</a></code> | *No description.* |
+
+---
+
+##### `LAYER_2` <a name="LAYER_2" id="@awlsring/cdktf-proxmox.NetworkHashPolicy.LAYER_2"></a>
+
+---
+
+
+##### `LAYER_2_3` <a name="LAYER_2_3" id="@awlsring/cdktf-proxmox.NetworkHashPolicy.LAYER_2_3"></a>
+
+---
+
+
+##### `LAYER_3` <a name="LAYER_3" id="@awlsring/cdktf-proxmox.NetworkHashPolicy.LAYER_3"></a>
+
+---
+
+
+### NetworkInterfaceModel <a name="NetworkInterfaceModel" id="@awlsring/cdktf-proxmox.NetworkInterfaceModel"></a>
+
+#### Members <a name="Members" id="Members"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.NetworkInterfaceModel.VIRTIO">VIRTIO</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.NetworkInterfaceModel.E1000">E1000</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.NetworkInterfaceModel.RTL8139">RTL8139</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.NetworkInterfaceModel.VMXNET3">VMXNET3</a></code> | *No description.* |
+
+---
+
+##### `VIRTIO` <a name="VIRTIO" id="@awlsring/cdktf-proxmox.NetworkInterfaceModel.VIRTIO"></a>
+
+---
+
+
+##### `E1000` <a name="E1000" id="@awlsring/cdktf-proxmox.NetworkInterfaceModel.E1000"></a>
+
+---
+
+
+##### `RTL8139` <a name="RTL8139" id="@awlsring/cdktf-proxmox.NetworkInterfaceModel.RTL8139"></a>
+
+---
+
+
+##### `VMXNET3` <a name="VMXNET3" id="@awlsring/cdktf-proxmox.NetworkInterfaceModel.VMXNET3"></a>
+
+---
+
+
+### NetworkMode <a name="NetworkMode" id="@awlsring/cdktf-proxmox.NetworkMode"></a>
+
+#### Members <a name="Members" id="Members"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.NetworkMode.BALANCE_RR">BALANCE_RR</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.NetworkMode.ACTIVE_BACKUP">ACTIVE_BACKUP</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.NetworkMode.BALANCE_XOR">BALANCE_XOR</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.NetworkMode.BALANCE_TLB">BALANCE_TLB</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.NetworkMode.BALANCE_ALB">BALANCE_ALB</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.NetworkMode.BALANCE_SLB">BALANCE_SLB</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.NetworkMode.BROADCAST">BROADCAST</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.NetworkMode.LCAP_802_3AD">LCAP_802_3AD</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.NetworkMode.LCAP_BALANCE_SLB">LCAP_BALANCE_SLB</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.NetworkMode.LCAP_BALANCE_TCP">LCAP_BALANCE_TCP</a></code> | *No description.* |
+
+---
+
+##### `BALANCE_RR` <a name="BALANCE_RR" id="@awlsring/cdktf-proxmox.NetworkMode.BALANCE_RR"></a>
+
+---
+
+
+##### `ACTIVE_BACKUP` <a name="ACTIVE_BACKUP" id="@awlsring/cdktf-proxmox.NetworkMode.ACTIVE_BACKUP"></a>
+
+---
+
+
+##### `BALANCE_XOR` <a name="BALANCE_XOR" id="@awlsring/cdktf-proxmox.NetworkMode.BALANCE_XOR"></a>
+
+---
+
+
+##### `BALANCE_TLB` <a name="BALANCE_TLB" id="@awlsring/cdktf-proxmox.NetworkMode.BALANCE_TLB"></a>
+
+---
+
+
+##### `BALANCE_ALB` <a name="BALANCE_ALB" id="@awlsring/cdktf-proxmox.NetworkMode.BALANCE_ALB"></a>
+
+---
+
+
+##### `BALANCE_SLB` <a name="BALANCE_SLB" id="@awlsring/cdktf-proxmox.NetworkMode.BALANCE_SLB"></a>
+
+---
+
+
+##### `BROADCAST` <a name="BROADCAST" id="@awlsring/cdktf-proxmox.NetworkMode.BROADCAST"></a>
+
+---
+
+
+##### `LCAP_802_3AD` <a name="LCAP_802_3AD" id="@awlsring/cdktf-proxmox.NetworkMode.LCAP_802_3AD"></a>
+
+---
+
+
+##### `LCAP_BALANCE_SLB` <a name="LCAP_BALANCE_SLB" id="@awlsring/cdktf-proxmox.NetworkMode.LCAP_BALANCE_SLB"></a>
+
+---
+
+
+##### `LCAP_BALANCE_TCP` <a name="LCAP_BALANCE_TCP" id="@awlsring/cdktf-proxmox.NetworkMode.LCAP_BALANCE_TCP"></a>
+
+---
+
+
+### OsType <a name="OsType" id="@awlsring/cdktf-proxmox.OsType"></a>
+
+#### Members <a name="Members" id="Members"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.OsType.L24">L24</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.OsType.L26">L26</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.OsType.OTHER">OTHER</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.OsType.WINDOWS_XP">WINDOWS_XP</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.OsType.WINDOWS_2000">WINDOWS_2000</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.OsType.WINDOWS_2003">WINDOWS_2003</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.OsType.WINDOWS_2008">WINDOWS_2008</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.OsType.WINDOWS_VISTA">WINDOWS_VISTA</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.OsType.WINDOWS_7">WINDOWS_7</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.OsType.WINDOWS_8">WINDOWS_8</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.OsType.WINDOWS_10">WINDOWS_10</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.OsType.WINDOWS_11">WINDOWS_11</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.OsType.SOLARIS">SOLARIS</a></code> | *No description.* |
+
+---
+
+##### `L24` <a name="L24" id="@awlsring/cdktf-proxmox.OsType.L24"></a>
+
+---
+
+
+##### `L26` <a name="L26" id="@awlsring/cdktf-proxmox.OsType.L26"></a>
+
+---
+
+
+##### `OTHER` <a name="OTHER" id="@awlsring/cdktf-proxmox.OsType.OTHER"></a>
+
+---
+
+
+##### `WINDOWS_XP` <a name="WINDOWS_XP" id="@awlsring/cdktf-proxmox.OsType.WINDOWS_XP"></a>
+
+---
+
+
+##### `WINDOWS_2000` <a name="WINDOWS_2000" id="@awlsring/cdktf-proxmox.OsType.WINDOWS_2000"></a>
+
+---
+
+
+##### `WINDOWS_2003` <a name="WINDOWS_2003" id="@awlsring/cdktf-proxmox.OsType.WINDOWS_2003"></a>
+
+---
+
+
+##### `WINDOWS_2008` <a name="WINDOWS_2008" id="@awlsring/cdktf-proxmox.OsType.WINDOWS_2008"></a>
+
+---
+
+
+##### `WINDOWS_VISTA` <a name="WINDOWS_VISTA" id="@awlsring/cdktf-proxmox.OsType.WINDOWS_VISTA"></a>
+
+---
+
+
+##### `WINDOWS_7` <a name="WINDOWS_7" id="@awlsring/cdktf-proxmox.OsType.WINDOWS_7"></a>
+
+---
+
+
+##### `WINDOWS_8` <a name="WINDOWS_8" id="@awlsring/cdktf-proxmox.OsType.WINDOWS_8"></a>
+
+---
+
+
+##### `WINDOWS_10` <a name="WINDOWS_10" id="@awlsring/cdktf-proxmox.OsType.WINDOWS_10"></a>
+
+---
+
+
+##### `WINDOWS_11` <a name="WINDOWS_11" id="@awlsring/cdktf-proxmox.OsType.WINDOWS_11"></a>
+
+---
+
+
+##### `SOLARIS` <a name="SOLARIS" id="@awlsring/cdktf-proxmox.OsType.SOLARIS"></a>
+
+---
+
+
+### ZFSRaidLevel <a name="ZFSRaidLevel" id="@awlsring/cdktf-proxmox.ZFSRaidLevel"></a>
+
+#### Members <a name="Members" id="Members"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@awlsring/cdktf-proxmox.ZFSRaidLevel.SINGLE">SINGLE</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.ZFSRaidLevel.MIRROR">MIRROR</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.ZFSRaidLevel.RAIDZ">RAIDZ</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.ZFSRaidLevel.RAIDZ2">RAIDZ2</a></code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.ZFSRaidLevel.RAIDZ3">RAIDZ3</a></code> | *No description.* |
+
+---
+
+##### `SINGLE` <a name="SINGLE" id="@awlsring/cdktf-proxmox.ZFSRaidLevel.SINGLE"></a>
+
+---
+
+
+##### `MIRROR` <a name="MIRROR" id="@awlsring/cdktf-proxmox.ZFSRaidLevel.MIRROR"></a>
+
+---
+
+
+##### `RAIDZ` <a name="RAIDZ" id="@awlsring/cdktf-proxmox.ZFSRaidLevel.RAIDZ"></a>
+
+---
+
+
+##### `RAIDZ2` <a name="RAIDZ2" id="@awlsring/cdktf-proxmox.ZFSRaidLevel.RAIDZ2"></a>
+
+---
+
+
+##### `RAIDZ3` <a name="RAIDZ3" id="@awlsring/cdktf-proxmox.ZFSRaidLevel.RAIDZ3"></a>
+
+---
+
