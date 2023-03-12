@@ -255,7 +255,7 @@ export class DataProxmoxNodeStorageLvmThinpools extends cdktf.TerraformDataSourc
       terraformResourceType: 'proxmox_node_storage_lvm_thinpools',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.9',
+        providerVersion: '0.0.10',
         providerVersionConstraint: '~> 0.0'
       },
       provider: config.provider,
