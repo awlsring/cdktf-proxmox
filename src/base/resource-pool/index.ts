@@ -181,7 +181,7 @@ export class ResourcePool extends cdktf.TerraformResource {
       terraformResourceType: 'proxmox_resource_pool',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.9',
+        providerVersion: '0.0.10',
         providerVersionConstraint: '~> 0.0'
       },
       provider: config.provider,

@@ -442,7 +442,7 @@ export class DataProxmoxNetworkBonds extends cdktf.TerraformDataSource {
       terraformResourceType: 'proxmox_network_bonds',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.9',
+        providerVersion: '0.0.10',
         providerVersionConstraint: '~> 0.0'
       },
       provider: config.provider,

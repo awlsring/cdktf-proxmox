@@ -311,7 +311,7 @@ export class NetworkBond extends cdktf.TerraformResource {
       terraformResourceType: 'proxmox_network_bond',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.9',
+        providerVersion: '0.0.10',
         providerVersionConstraint: '~> 0.0'
       },
       provider: config.provider,
@@ -345,7 +345,7 @@ export class NetworkBond extends cdktf.TerraformResource {
     return this.getBooleanAttribute('active');
   }
 
-  // autostart - computed: false, optional: true, required: false
+  // autostart - computed: true, optional: true, required: false
   private _autostart?: boolean | cdktf.IResolvable; 
   public get autostart() {
     return this.getBooleanAttribute('autostart');

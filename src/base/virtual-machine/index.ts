@@ -4141,7 +4141,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
       terraformResourceType: 'proxmox_virtual_machine',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.9',
+        providerVersion: '0.0.10',
         providerVersionConstraint: '~> 0.0'
       },
       provider: config.provider,

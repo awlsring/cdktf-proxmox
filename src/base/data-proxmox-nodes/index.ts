@@ -350,7 +350,7 @@ export class DataProxmoxNodes extends cdktf.TerraformDataSource {
       terraformResourceType: 'proxmox_nodes',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.9',
+        providerVersion: '0.0.10',
         providerVersionConstraint: '~> 0.0'
       },
       provider: config.provider,
