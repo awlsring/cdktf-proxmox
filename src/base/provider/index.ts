@@ -71,7 +71,7 @@ export class ProxmoxProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'proxmox',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.10',
+        providerVersion: '0.0.11',
         providerVersionConstraint: '~> 0.0'
       },
       terraformProviderSource: 'awlsring/proxmox'

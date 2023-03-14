@@ -53,7 +53,7 @@ export class Lvm extends cdktf.TerraformResource {
       terraformResourceType: 'proxmox_lvm',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.10',
+        providerVersion: '0.0.11',
         providerVersionConstraint: '~> 0.0'
       },
       provider: config.provider,
