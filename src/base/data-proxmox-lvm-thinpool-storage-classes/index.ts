@@ -245,7 +245,7 @@ export class DataProxmoxLvmThinpoolStorageClasses extends cdktf.TerraformDataSou
       terraformResourceType: 'proxmox_lvm_thinpool_storage_classes',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.10',
+        providerVersion: '0.0.11',
         providerVersionConstraint: '~> 0.0'
       },
       provider: config.provider,
