@@ -43077,6 +43077,7 @@ Returns a reversible string representation.
 | <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.discard">discard</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.fileFormat">fileFormat</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.interfaceType">interfaceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.position">position</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.size">size</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.speedLimits">speedLimits</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksSpeedLimitsOutputReference</code> | *No description.* |
@@ -43135,6 +43136,16 @@ public readonly fileFormat: string;
 
 ```typescript
 public readonly interfaceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@awlsring/cdktf-proxmox.dataProxmoxTemplate.DataProxmoxTemplateDisksOutputReference.property.name"></a>
+
+```typescript
+public readonly name: string;
 ```
 
 - *Type:* string
@@ -48017,6 +48028,7 @@ Returns a reversible string representation.
 | <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplates.DataProxmoxTemplatesTemplatesDisksOutputReference.property.discard">discard</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplates.DataProxmoxTemplatesTemplatesDisksOutputReference.property.fileFormat">fileFormat</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplates.DataProxmoxTemplatesTemplatesDisksOutputReference.property.interfaceType">interfaceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplates.DataProxmoxTemplatesTemplatesDisksOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplates.DataProxmoxTemplatesTemplatesDisksOutputReference.property.position">position</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplates.DataProxmoxTemplatesTemplatesDisksOutputReference.property.size">size</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxTemplates.DataProxmoxTemplatesTemplatesDisksOutputReference.property.speedLimits">speedLimits</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxTemplates.DataProxmoxTemplatesTemplatesDisksSpeedLimitsOutputReference</code> | *No description.* |
@@ -48075,6 +48087,16 @@ public readonly fileFormat: string;
 
 ```typescript
 public readonly interfaceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@awlsring/cdktf-proxmox.dataProxmoxTemplates.DataProxmoxTemplatesTemplatesDisksOutputReference.property.name"></a>
+
+```typescript
+public readonly name: string;
 ```
 
 - *Type:* string
@@ -53565,6 +53587,7 @@ Returns a reversible string representation.
 | <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxVirtualMachines.DataProxmoxVirtualMachinesVirtualMachinesDisksOutputReference.property.discard">discard</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxVirtualMachines.DataProxmoxVirtualMachinesVirtualMachinesDisksOutputReference.property.fileFormat">fileFormat</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxVirtualMachines.DataProxmoxVirtualMachinesVirtualMachinesDisksOutputReference.property.interfaceType">interfaceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxVirtualMachines.DataProxmoxVirtualMachinesVirtualMachinesDisksOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxVirtualMachines.DataProxmoxVirtualMachinesVirtualMachinesDisksOutputReference.property.position">position</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxVirtualMachines.DataProxmoxVirtualMachinesVirtualMachinesDisksOutputReference.property.size">size</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@awlsring/cdktf-proxmox.dataProxmoxVirtualMachines.DataProxmoxVirtualMachinesVirtualMachinesDisksOutputReference.property.speedLimits">speedLimits</a></code> | <code>@awlsring/cdktf-proxmox.dataProxmoxVirtualMachines.DataProxmoxVirtualMachinesVirtualMachinesDisksSpeedLimitsOutputReference</code> | *No description.* |
@@ -53623,6 +53646,16 @@ public readonly fileFormat: string;
 
 ```typescript
 public readonly interfaceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@awlsring/cdktf-proxmox.dataProxmoxVirtualMachines.DataProxmoxVirtualMachinesVirtualMachinesDisksOutputReference.property.name"></a>
+
+```typescript
+public readonly name: string;
 ```
 
 - *Type:* string
@@ -62718,6 +62751,7 @@ public resetUseIothread(): void
 | --- | --- | --- |
 | <code><a href="#@awlsring/cdktf-proxmox.virtualMachine.VirtualMachineComputedDisksOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@awlsring/cdktf-proxmox.virtualMachine.VirtualMachineComputedDisksOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.virtualMachine.VirtualMachineComputedDisksOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@awlsring/cdktf-proxmox.virtualMachine.VirtualMachineComputedDisksOutputReference.property.speedLimits">speedLimits</a></code> | <code>@awlsring/cdktf-proxmox.virtualMachine.VirtualMachineComputedDisksSpeedLimitsOutputReference</code> | *No description.* |
 | <code><a href="#@awlsring/cdktf-proxmox.virtualMachine.VirtualMachineComputedDisksOutputReference.property.discardInput">discardInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@awlsring/cdktf-proxmox.virtualMachine.VirtualMachineComputedDisksOutputReference.property.fileFormatInput">fileFormatInput</a></code> | <code>string</code> | *No description.* |
@@ -62758,6 +62792,16 @@ If this returns an empty array the stack will not be attached.
 
 ```typescript
 public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@awlsring/cdktf-proxmox.virtualMachine.VirtualMachineComputedDisksOutputReference.property.name"></a>
+
+```typescript
+public readonly name: string;
 ```
 
 - *Type:* string
@@ -65389,6 +65433,7 @@ public resetUseIothread(): void
 | --- | --- | --- |
 | <code><a href="#@awlsring/cdktf-proxmox.virtualMachine.VirtualMachineDisksOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@awlsring/cdktf-proxmox.virtualMachine.VirtualMachineDisksOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@awlsring/cdktf-proxmox.virtualMachine.VirtualMachineDisksOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@awlsring/cdktf-proxmox.virtualMachine.VirtualMachineDisksOutputReference.property.speedLimits">speedLimits</a></code> | <code>@awlsring/cdktf-proxmox.virtualMachine.VirtualMachineDisksSpeedLimitsOutputReference</code> | *No description.* |
 | <code><a href="#@awlsring/cdktf-proxmox.virtualMachine.VirtualMachineDisksOutputReference.property.discardInput">discardInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@awlsring/cdktf-proxmox.virtualMachine.VirtualMachineDisksOutputReference.property.fileFormatInput">fileFormatInput</a></code> | <code>string</code> | *No description.* |
@@ -65429,6 +65474,16 @@ If this returns an empty array the stack will not be attached.
 
 ```typescript
 public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@awlsring/cdktf-proxmox.virtualMachine.VirtualMachineDisksOutputReference.property.name"></a>
+
+```typescript
+public readonly name: string;
 ```
 
 - *Type:* string

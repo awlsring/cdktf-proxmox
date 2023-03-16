@@ -607,6 +607,11 @@ export class DataProxmoxTemplateDisksOutputReference extends cdktf.ComplexObject
     return this.getStringAttribute('interface_type');
   }
 
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
   // position - computed: true, optional: false, required: false
   public get position() {
     return this.getNumberAttribute('position');
@@ -935,7 +940,7 @@ export class DataProxmoxTemplate extends cdktf.TerraformDataSource {
       terraformResourceType: 'proxmox_template',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.12',
+        providerVersion: '0.0.13',
         providerVersionConstraint: '~> 0.0'
       },
       provider: config.provider,

@@ -62,7 +62,7 @@ export class ZfsStorageClass extends cdktf.TerraformResource {
       terraformResourceType: 'proxmox_zfs_storage_class',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.12',
+        providerVersion: '0.0.13',
         providerVersionConstraint: '~> 0.0'
       },
       provider: config.provider,

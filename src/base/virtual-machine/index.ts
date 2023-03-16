@@ -1617,6 +1617,11 @@ export class VirtualMachineComputedDisksOutputReference extends cdktf.ComplexObj
     return this._interfaceType;
   }
 
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
   // position - computed: true, optional: false, required: true
   private _position?: number; 
   public get position() {
@@ -2866,6 +2871,11 @@ export class VirtualMachineDisksOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get interfaceTypeInput() {
     return this._interfaceType;
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
   }
 
   // position - computed: false, optional: false, required: true
@@ -4141,7 +4151,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
       terraformResourceType: 'proxmox_virtual_machine',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.12',
+        providerVersion: '0.0.13',
         providerVersionConstraint: '~> 0.0'
       },
       provider: config.provider,

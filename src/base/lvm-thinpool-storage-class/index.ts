@@ -68,7 +68,7 @@ export class LvmThinpoolStorageClass extends cdktf.TerraformResource {
       terraformResourceType: 'proxmox_lvm_thinpool_storage_class',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.12',
+        providerVersion: '0.0.13',
         providerVersionConstraint: '~> 0.0'
       },
       provider: config.provider,
