@@ -4141,7 +4141,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
       terraformResourceType: 'proxmox_virtual_machine',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.11',
+        providerVersion: '0.0.12',
         providerVersionConstraint: '~> 0.0'
       },
       provider: config.provider,
@@ -4279,7 +4279,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
     return this._cpu.internalValue;
   }
 
-  // description - computed: false, optional: true, required: false
+  // description - computed: true, optional: true, required: false
   private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
