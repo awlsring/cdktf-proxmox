@@ -152,7 +152,7 @@
   "cdktf": {
     "provider": {
       "name": "registry.terraform.io/awlsring/proxmox",
-      "version": "0.0.12"
+      "version": "0.0.13"
     }
   },
   "resolutions": {
