@@ -35,15 +35,14 @@
   },
   "ignorePatterns": [
     "*.js",
-    "!.projenrc.ts",
     "*.d.ts",
     "node_modules/",
     "*.generated.ts",
     "coverage",
-    "!.projenrc.ts",
-    "!projenrc/**/*.ts",
     "src/base/*",
-    "src/base/*"
+    "src/base/*",
+    "!.projenrc.ts",
+    "!projenrc/**/*.ts"
   ],
   "rules": {
     "indent": [
@@ -151,7 +150,6 @@
         "devDependencies": [
           "**/test/**",
           "**/build-tools/**",
-          "**/projenrc/**",
           ".projenrc.ts",
           "projenrc/**/*.ts"
         ],
