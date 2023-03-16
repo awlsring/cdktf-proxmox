@@ -299,7 +299,7 @@ export class NetworkBridge extends cdktf.TerraformResource {
       terraformResourceType: 'proxmox_network_bridge',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.12',
+        providerVersion: '0.0.13',
         providerVersionConstraint: '~> 0.0'
       },
       provider: config.provider,

@@ -451,7 +451,7 @@ export class DataProxmoxNetworkBridges extends cdktf.TerraformDataSource {
       terraformResourceType: 'proxmox_network_bridges',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.12',
+        providerVersion: '0.0.13',
         providerVersionConstraint: '~> 0.0'
       },
       provider: config.provider,

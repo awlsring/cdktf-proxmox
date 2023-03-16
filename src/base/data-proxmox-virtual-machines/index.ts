@@ -712,6 +712,11 @@ export class DataProxmoxVirtualMachinesVirtualMachinesDisksOutputReference exten
     return this.getStringAttribute('interface_type');
   }
 
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
   // position - computed: true, optional: false, required: false
   public get position() {
     return this.getNumberAttribute('position');
@@ -1201,7 +1206,7 @@ export class DataProxmoxVirtualMachines extends cdktf.TerraformDataSource {
       terraformResourceType: 'proxmox_virtual_machines',
       terraformGeneratorMetadata: {
         providerName: 'proxmox',
-        providerVersion: '0.0.12',
+        providerVersion: '0.0.13',
         providerVersionConstraint: '~> 0.0'
       },
       provider: config.provider,
