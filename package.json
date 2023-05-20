@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "@actions/core": "^1.1.0",
-    "@awlsring/projen-commons": "^0.0.122",
+    "@awlsring/projen-commons": "^0.0.123",
     "@types/jest": "^27",
     "@types/node": "^16",
     "@typescript-eslint/eslint-plugin": "^5",
@@ -65,7 +65,7 @@
     "jsii-pacmak": "^1.81.0",
     "node-fetch": "cjs",
     "npm-check-updates": "^16",
-    "projen": "^0.71.62",
+    "projen": "^0.71.64",
     "standard-version": "^9",
     "ts-jest": "^27",
     "ts-node": "^10.9.1",
@@ -79,8 +79,8 @@
     "constructs": "^10.1.52"
   },
   "resolutions": {
-    "@types/prettier": "2.6.0",
-    "@types/babel__traverse": "7.18.2"
+    "@types/babel__traverse": "7.18.2",
+    "@types/prettier": "2.6.0"
   },
   "keywords": [
     "backend",
