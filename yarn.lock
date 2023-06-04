@@ -25,10 +25,10 @@
     "@jridgewell/gen-mapping" "^0.3.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@awlsring/projen-commons@^0.0.137":
-  version "0.0.137"
-  resolved "https://registry.yarnpkg.com/@awlsring/projen-commons/-/projen-commons-0.0.137.tgz#fb9eea1ecd8844908d4cfa4dc6ac5c28161d2459"
-  integrity sha512-PY9qs9BxwVk8+LxzLg4nX8Q28Py7qy6t6aD+2wovb9H59/oy+zi0TDS3V7NJSho9sYHIqd2adAXAqFduCM0d5A==
+"@awlsring/projen-commons@^0.0.138":
+  version "0.0.138"
+  resolved "https://registry.yarnpkg.com/@awlsring/projen-commons/-/projen-commons-0.0.138.tgz#48cc60106735b82d20d4445e83686f006b199838"
+  integrity sha512-sLGohZeq+6RyuBlirC5fXUVlkCaLdKWaPByVtFh1HCr7WGHgpQwVTQ75Aj6Z4M2VhrYV319X/7nAJY2+A4WoTg==
   dependencies:
     projen "^0.71.82"
 
@@ -1859,9 +1859,9 @@ camelcase@^7.0.1:
   integrity sha512-xlx1yCK2Oc1APsPXDL2LdlNP6+uu8OCDdhOBSVT279M/S+y75O30C2VuD8T2ogdePBBl7PfPF4504tnLgX3zfw==
 
 caniuse-lite@^1.0.30001489:
-  version "1.0.30001492"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001492.tgz#4a06861788a52b4c81fd3344573b68cc87fe062b"
-  integrity sha512-2efF8SAZwgAX1FJr87KWhvuJxnGJKOnctQa8xLOskAXNXq8oiuqgl6u1kk3fFpsp3GgvzlRjiK1sl63hNtFADw==
+  version "1.0.30001494"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001494.tgz#3e56e04a48da7a79eae994559eb1ec02aaac862f"
+  integrity sha512-sY2B5Qyl46ZzfYDegrl8GBCzdawSLT4ThM9b9F+aDYUrAG2zCOyMbd2Tq34mS1g4ZKBfjRlzOohQMxx28x6wJg==
 
 case@^1.6.3:
   version "1.6.3"
@@ -2136,9 +2136,9 @@ console-control-strings@^1.1.0:
   integrity sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==
 
 constructs@^10.0.25, constructs@^10.1.52:
-  version "10.2.41"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.2.41.tgz#090e725b84d2da59ddb9e5c782f9678a0c49257a"
-  integrity sha512-csg/lxYKHA3meQX4JWs7EiTAtVYl681jTl8VxCK7jMfzbH5RzRsCA09HwYzslarQcFCSZyUMcgHVvZhUyABjAA==
+  version "10.2.42"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.2.42.tgz#881d1746dbb747586adb702b70d8c502b5c796da"
+  integrity sha512-QTy50blEmjrHexraR4JmxJtA7YCQ2p/IaDXiXNfy8lYNYnWQbp5YbAhDG1BSYvoRRgru/kB9CTlGtiLd9x3aUQ==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -7010,9 +7010,9 @@ typescript@^4.9.5:
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
 typescript@next:
-  version "5.2.0-dev.20230602"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.2.0-dev.20230602.tgz#01e2055aa8d8bde4431947c0c048c07c23cc6027"
-  integrity sha512-LenKdxmkwzZRmEKzShAq83TvEuvCGR8pCYBe0VpUTuJ7NMSK4r2yV2GTmJrSqtk8IoJAmc+PfymMQIfwX1JGQQ==
+  version "5.2.0-dev.20230603"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.2.0-dev.20230603.tgz#e9e618df48bd1d74296ac264dd816ed43dd96a27"
+  integrity sha512-jxLUGxmI27KgHSMU2bKNbnpq2WOQIJYJvBcOxcgBSxzCnTZTZmeWU/9nPKQCtbHorw+OTe+BxQWjVw21uhPxjQ==
 
 typescript@~3.9.10:
   version "3.9.10"
