@@ -25,10 +25,10 @@
     "@jridgewell/gen-mapping" "^0.3.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@awlsring/projen-commons@^0.0.138":
-  version "0.0.138"
-  resolved "https://registry.yarnpkg.com/@awlsring/projen-commons/-/projen-commons-0.0.138.tgz#48cc60106735b82d20d4445e83686f006b199838"
-  integrity sha512-sLGohZeq+6RyuBlirC5fXUVlkCaLdKWaPByVtFh1HCr7WGHgpQwVTQ75Aj6Z4M2VhrYV319X/7nAJY2+A4WoTg==
+"@awlsring/projen-commons@^0.0.139":
+  version "0.0.139"
+  resolved "https://registry.yarnpkg.com/@awlsring/projen-commons/-/projen-commons-0.0.139.tgz#6b631fc2d2849088a5f5026d12a9887bda6c55e8"
+  integrity sha512-hbF/a9W8M8TLA03acTPq5UdZTDJwpiVkbIlJJBO3h2URF3a+9CYYIzaI6CJCuvA77QQqjZonZ2zOgb9leqKXww==
   dependencies:
     projen "^0.71.82"
 
@@ -961,9 +961,9 @@
   integrity sha512-a31EnjuIDSX8IXBUib3cYLDRlPMU36AWX4xS8ysLaNu4ZzUesDiPt83pgrW2X1YLMe5L2HbDyaKK5BrL4cNKaQ==
 
 "@sindresorhus/is@^5.2.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-5.4.0.tgz#b1bfbd6024311ade045093b424536cefcc8e3a42"
-  integrity sha512-Ggh6E9AnMpiNXlbXfFUcWE9qm408rL8jDi7+PMBBx7TMbwEmiqAiSmZ+zydYwxcJLqPGNDoLc9mXDuMDBZg0sA==
+  version "5.4.1"
+  resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-5.4.1.tgz#c4383ce702fb90531c3d310506bab89e70427c53"
+  integrity sha512-axlrvsHlHlFmKKMEg4VyvMzFr93JWJj4eIfXY1STVuO2fsImCa7ncaiG5gC8HKOX590AW5RtRsC41/B+OfrSqw==
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.6"
@@ -2136,9 +2136,9 @@ console-control-strings@^1.1.0:
   integrity sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==
 
 constructs@^10.0.25, constructs@^10.1.52:
-  version "10.2.42"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.2.42.tgz#881d1746dbb747586adb702b70d8c502b5c796da"
-  integrity sha512-QTy50blEmjrHexraR4JmxJtA7YCQ2p/IaDXiXNfy8lYNYnWQbp5YbAhDG1BSYvoRRgru/kB9CTlGtiLd9x3aUQ==
+  version "10.2.43"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.2.43.tgz#81bbc7718d7535f26e6286dc711c1c1288ead6c8"
+  integrity sha512-i/Bo08YGBNGYUau9st+qghNfbdAnSeplSuoYcwI0Ixwh2je3u1ZqIv6KfmB/515QzO8mK5/WQ3hxu4N18er0MA==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -7010,9 +7010,9 @@ typescript@^4.9.5:
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
 typescript@next:
-  version "5.2.0-dev.20230603"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.2.0-dev.20230603.tgz#e9e618df48bd1d74296ac264dd816ed43dd96a27"
-  integrity sha512-jxLUGxmI27KgHSMU2bKNbnpq2WOQIJYJvBcOxcgBSxzCnTZTZmeWU/9nPKQCtbHorw+OTe+BxQWjVw21uhPxjQ==
+  version "5.2.0-dev.20230604"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.2.0-dev.20230604.tgz#1713801ff534308db6b7cca3dd1df1102a96841a"
+  integrity sha512-S+m9ocHTc37/7/vpvz9n9ClkqteqN3jcwFYAZb3Gc7uFmvBKcjHSU8y+ccAh+d1sOgzu3WPZW8WrbCsGZWmfCw==
 
 typescript@~3.9.10:
   version "3.9.10"
