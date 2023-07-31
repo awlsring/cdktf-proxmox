@@ -1863,7 +1863,7 @@ case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-cdktf-cli@^0.14.3:
+cdktf-cli@^0.14.0:
   version "0.14.3"
   resolved "https://registry.yarnpkg.com/cdktf-cli/-/cdktf-cli-0.14.3.tgz#33bd5f112b3d71157ba6d013f2983bf94b874e29"
   integrity sha512-yT1NM/fBauOp2NYEftHLood35jESa72Bbxs/0jYKMP9di0tEWY5tblFyhfFnWqMMtwMlrJbnTzPb8T7sNc5eZg==
@@ -1889,6 +1889,15 @@ cdktf-cli@^0.14.3:
     yargs "^17.6"
     yoga-layout-prebuilt "^1.10.0"
     zod "^1.11.17"
+
+cdktf@0.14.0:
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/cdktf/-/cdktf-0.14.0.tgz#579b0e2406540bec747865a8369218da92ce5237"
+  integrity sha512-WlJ0DmUXz5qsv00pVa9m892BljhB/P0PKJyC6ez7R16f4Oo+IhvaKVgstrn6X9D7djjLp4BIs8MUS0aK4FTOaQ==
+  dependencies:
+    archiver "5.3.1"
+    json-stable-stringify "^1.0.1"
+    semver "^7.3.7"
 
 cdktf@0.14.3:
   version "0.14.3"
@@ -2130,7 +2139,12 @@ console-control-strings@^1.1.0:
   resolved "https://registry.yarnpkg.com/console-control-strings/-/console-control-strings-1.1.0.tgz#3d7cf4464db6446ea644bf4b39507f9851008e8e"
   integrity sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==
 
-constructs@^10.0.25, constructs@^10.1.52:
+constructs@10.0.25:
+  version "10.0.25"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.25.tgz#c2f03fb4da134105fdf5382f4c1557b89d90aeeb"
+  integrity sha512-QxY4A7caIW1tI5ztbdZHKU/nWXiqluujmEVj5xCVhFhoBgOqU4ja3z3zXY4DUn2nf+PLxCjulf+viQ/h9RXB8A==
+
+constructs@^10.0.25:
   version "10.2.69"
   resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.2.69.tgz#5bb06693b317140fe310797ffd52c0d6cc595913"
   integrity sha512-0AiM/uQe5Uk6JVe/62oolmSN2MjbFQkOlYrM3fFGZLKuT+g7xlAI10EebFhyCcZwI2JAcWuWCmmCAyCothxjuw==
@@ -4711,7 +4725,7 @@ json-stable-stringify-without-jsonify@^1.0.1:
   resolved "https://registry.yarnpkg.com/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz#9db7b59496ad3f3cfef30a75142d2d930ad72651"
   integrity sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==
 
-json-stable-stringify@^1.0.2:
+json-stable-stringify@^1.0.1, json-stable-stringify@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/json-stable-stringify/-/json-stable-stringify-1.0.2.tgz#e06f23128e0bbe342dc996ed5a19e28b57b580e0"
   integrity sha512-eunSSaEnxV12z+Z73y/j5N37/In40GK4GmsSy+tEHJMxknvqnA7/djeYtAgW0GsWHUfg+847WJjKaEylk2y09g==

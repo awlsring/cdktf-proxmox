@@ -1,8 +1,8 @@
 import { AwlsringCdktfProviderLibrary } from '@awlsring/projen-commons/lib/project/provider/cdktf-provider-library';
 
 const project = new AwlsringCdktfProviderLibrary({
-  cdktfVersion: '^0.14.3',
-  constructsVersion: '^10.1.52',
+  cdktfVersion: '^0.14.0',
+  constructsVersion: '^10.0.25',
   provider: {
     owner: 'awlsring',
     name: 'proxmox',
@@ -15,12 +15,6 @@ const project = new AwlsringCdktfProviderLibrary({
     'cdktf',
     'proxmox',
     'backend',
-  ],
-  deps: [
-    'constructs@^10.1.52',
-  ],
-  devDeps: [
-    'constructs@10.1.52',
   ],
   publish: true,
   gitignore: [
