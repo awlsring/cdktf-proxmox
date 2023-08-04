@@ -308,25 +308,13 @@
           "exec": "yarn upgrade npm-check-updates"
         },
         {
-          "exec": "npm-check-updates --dep dev --upgrade --target=minor --reject='cdktf,constructs,jsii-rosetta,jsii,node-fetch'"
-        },
-        {
-          "exec": "npm-check-updates --dep bundle --upgrade --target=minor --reject='cdktf,constructs,jsii-rosetta,jsii,node-fetch'"
-        },
-        {
-          "exec": "npm-check-updates --dep peer --upgrade --target=minor --reject='cdktf,constructs,jsii-rosetta,jsii,node-fetch'"
-        },
-        {
-          "exec": "npm-check-updates --dep prod --upgrade --target=minor --reject='cdktf,constructs,jsii-rosetta,jsii,node-fetch'"
-        },
-        {
-          "exec": "npm-check-updates --dep optional --upgrade --target=minor --reject='cdktf,constructs,jsii-rosetta,jsii,node-fetch'"
+          "exec": "npm-check-updates --upgrade --target=minor --filter=@actions/core,@awlsring/projen-commons,@types/jest,@types/node,@typescript-eslint/eslint-plugin,@typescript-eslint/parser,cdktf-cli,dot-prop,eslint-import-resolver-node,eslint-import-resolver-typescript,eslint-plugin-import,eslint,jest-junit,jest,jsii-diff,jsii-docgen,jsii-pacmak,npm-check-updates,projen,standard-version,ts-jest,ts-node,typescript,cdktf,constructs"
         },
         {
           "exec": "yarn install --check-files"
         },
         {
-          "exec": "yarn upgrade @actions/core @awlsring/projen-commons @types/jest @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser cdktf-cli cdktf constructs dot-prop eslint-import-resolver-node eslint-import-resolver-typescript eslint-plugin-import eslint jest-junit jest jsii-diff jsii-docgen jsii-pacmak jsii-rosetta jsii node-fetch npm-check-updates projen standard-version ts-jest ts-node typescript cdktf constructs"
+          "exec": "yarn upgrade @actions/core @awlsring/projen-commons @types/jest @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser cdktf-cli dot-prop eslint-import-resolver-node eslint-import-resolver-typescript eslint-plugin-import eslint jest-junit jest jsii-diff jsii-docgen jsii-pacmak npm-check-updates projen standard-version ts-jest ts-node typescript cdktf constructs"
         },
         {
           "exec": "npx projen"
