@@ -30,12 +30,12 @@
     "@jridgewell/gen-mapping" "^0.3.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@awlsring/projen-commons@^0.0.210":
-  version "0.0.210"
-  resolved "https://registry.yarnpkg.com/@awlsring/projen-commons/-/projen-commons-0.0.210.tgz#0a4bbc8b0d1b0d1d5e466f7eef80ab3ce949b5e0"
-  integrity sha512-Wz6CscA7/BlOif7terx9WiCrzy24SnYYFCw8DvmBRrAx6H0lvXcZ7cnVkrciOzrCAGF0bR96d6iEn+ASa9ViLQ==
+"@awlsring/projen-commons@^0.0.211":
+  version "0.0.211"
+  resolved "https://registry.yarnpkg.com/@awlsring/projen-commons/-/projen-commons-0.0.211.tgz#8c7ec22f00078cab7f619320b3161b881d82e453"
+  integrity sha512-h1dPizYwqN2oii493Mx9Y4LpSyabRjy0E3KU0bzW1FvYL4JoDok/oLKqJ/AUtzx8o2JzSL6RVlwdNVVqWaYs1g==
   dependencies:
-    projen "^0.72.12"
+    projen "^0.72.13"
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.22.10", "@babel/code-frame@^7.22.5":
   version "7.22.10"
@@ -2574,9 +2574,9 @@ eastasianwidth@^0.2.0:
   integrity sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==
 
 electron-to-chromium@^1.4.477:
-  version "1.4.490"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.490.tgz#d99286f6e915667fa18ea4554def1aa60eb4d5f1"
-  integrity sha512-6s7NVJz+sATdYnIwhdshx/N/9O6rvMxmhVoDSDFdj6iA45gHR8EQje70+RYsF4GeB+k0IeNSBnP7yG9ZXJFr7A==
+  version "1.4.492"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.492.tgz#83fed8beb64ec60578069e15dddd17b13a77ca56"
+  integrity sha512-36K9b/6skMVwAIEsC7GiQ8I8N3soCALVSHqWHzNDtGemAcI9Xu8hP02cywWM0A794rTHm0b0zHPeLJHtgFVamQ==
 
 emittery@^0.8.1:
   version "0.8.1"
@@ -5726,10 +5726,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.72.12:
-  version "0.72.12"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.72.12.tgz#8e04e50658dd578c2c3fd2492fe99a20cd311600"
-  integrity sha512-kYXLrYkYfk+VbVd9wTTA5aW37kC4iQzV4RLl2vPqSAfJpOiqyKwJHhY6PIF8VgugGahCIXbBCVVHR8FVTcaEnQ==
+projen@^0.72.13:
+  version "0.72.13"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.72.13.tgz#f645eb8699159c5bd7309b5f68f8935d3e459b13"
+  integrity sha512-k0d/w5W+C4d7rqfh+aB4/0h4oNXyG2zlBGYrghrYZUo0YaxdIrHMjn+PiBOq2HWeNMnNemEqe/kFc2bix4tp6w==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -6874,9 +6874,9 @@ typescript@^4.9.5:
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
 typescript@next:
-  version "5.3.0-dev.20230814"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.3.0-dev.20230814.tgz#cc35a445e0a9044da5ffb275797c6b9a258a96e4"
-  integrity sha512-ztAo8S7pDTqodkSIPPdh4mL5T7+//1xfOP17O2yFW3dx3u/87MG4qsiZ5HIOoV0L9Kkr/fFw5bqGXHcDT/Nclg==
+  version "5.3.0-dev.20230815"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.3.0-dev.20230815.tgz#290cf6828530783e40518bc85e98fecf9ab0e280"
+  integrity sha512-AB4arWte1oMsTpFUSnkhgLOzWRR6SLMtQ4WjDl+I0mDC3nh0UH5SEJtwjSt7lYIg/xylgXduCFEDoM1Vvv3uPg==
 
 typescript@~3.9.10:
   version "3.9.10"
