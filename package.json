@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "@actions/core": "^1.1.0",
-    "@awlsring/projen-commons": "^0.0.224",
+    "@awlsring/projen-commons": "^0.0.225",
     "@types/jest": "^27",
     "@types/node": "^16",
     "@typescript-eslint/eslint-plugin": "^6",
@@ -66,7 +66,7 @@
     "jsii-rosetta": "1.x",
     "node-fetch": "cjs",
     "npm-check-updates": "^16",
-    "projen": "^0.73.6",
+    "projen": "^0.73.7",
     "standard-version": "^9",
     "ts-jest": "^27",
     "ts-node": "^10.9.1",
