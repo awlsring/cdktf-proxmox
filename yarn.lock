@@ -2663,9 +2663,9 @@ eastasianwidth@^0.2.0:
   integrity sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==
 
 electron-to-chromium@^1.4.535:
-  version "1.4.574"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.574.tgz#6de04d7c6e244e5ffcae76d2e2a33b02cab66781"
-  integrity sha512-bg1m8L0n02xRzx4LsTTMbBPiUd9yIR+74iPtS/Ao65CuXvhVZHP0ym1kSdDG3yHFDXqHQQBKujlN1AQ8qZnyFg==
+  version "1.4.575"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.575.tgz#7c0b87eb2c6214a993699792abd704de41255c39"
+  integrity sha512-kY2BGyvgAHiX899oF6xLXSIf99bAvvdPhDoJwG77nxCSyWYuRH6e9a9a3gpXBvCs6lj4dQZJkfnW2hdKWHEISg==
 
 emittery@^0.8.1:
   version "0.8.1"
@@ -4645,9 +4645,9 @@ jsii-rosetta@^1.71.0, jsii-rosetta@^1.80.0, jsii-rosetta@^1.91.0:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.741:
-  version "0.1.953"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.953.tgz#3b63a39a66d2b8d0f9edd6899b5487f3a313ff0d"
-  integrity sha512-HIJEsYUgwj+Xsg368PPJVAWVJB9m0YYRT1xbP4SexWc9OU8/pulMb8QPkPc7STe37qE/AreNzfj95JsmKdU0+A==
+  version "0.1.954"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.954.tgz#05958577b527a4f04a65f55fa23d1a242c3bcffc"
+  integrity sha512-5OP3m/9VWoRZsB1iFasosv5QBVWQTcyWk7Di5yRJd8alWZzrLBMQ7MgQR3JYahBB5FGw4VD/BO76DtwF2smw8A==
   dependencies:
     fs-extra "^9.1.0"
     jsii "~5.2.23"
@@ -7019,9 +7019,9 @@ typescript@^4.9.5:
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
 typescript@next:
-  version "5.3.0-dev.20231101"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.3.0-dev.20231101.tgz#911f63c9428f517584bae41fd9ccae31b9a2d371"
-  integrity sha512-yt5zz7L+TBfzeJhMA/tAEO1YU8J2DWsFN3LbeMslNPXL3S0lR3yvePdl6fXCk7QFjnfaRtXH0noNdWg2imHWXg==
+  version "5.3.0-dev.20231102"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.3.0-dev.20231102.tgz#2baa0540e57ce8a4fbf283b17c194b6ea2ffc412"
+  integrity sha512-M1maLdHyAvE+y4w27IBplkqekR5Lzf2B7XualvF3lXJUC2165swvSmpThFdfHcXxP/+/SYmLI9z2CVvN7pEK+g==
 
 typescript@~3.9.10:
   version "3.9.10"
